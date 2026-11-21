@@ -1,0 +1,251 @@
+{
+  "provisional": true,
+  "revision": "approved_glucerna_sugar_taste",
+  "queries": 171,
+  "cells": 7182,
+  "grade_dist": {
+    "1": 1907,
+    "2": 514,
+    "0": 4761
+  },
+  "queries_with_no_grade2": 44,
+  "queries_with_grade2": 127,
+  "no_grade2_by_category": {
+    "kids_infant_unsupported": 5,
+    "health_claim_e1": 15,
+    "pack_size_unverified": 7,
+    "genuine_no_match": 9,
+    "low_sugar_unspecified": 1,
+    "coffee_mix_absent": 1,
+    "missing_brand_flavor_product": 6
+  },
+  "no_grade2_category_sum": 44,
+  "no_grade2": [
+    {
+      "train_index": 7,
+      "class": "uht_kids",
+      "query": "uht cow milk for kids"
+    },
+    {
+      "train_index": 14,
+      "class": "health_claim_milk",
+      "query": "gatas nga dili makapatambok"
+    },
+    {
+      "train_index": 15,
+      "class": "health_claim_milk",
+      "query": "gatas para sa nag diet"
+    },
+    {
+      "train_index": 16,
+      "class": "health_claim_milk",
+      "query": "gatas para sa gusto mo niwang"
+    },
+    {
+      "train_index": 21,
+      "class": "health_claim_milk",
+      "query": "light milk for weight loss"
+    },
+    {
+      "train_index": 22,
+      "class": "health_claim_milk",
+      "query": "milk for dieting low calorie"
+    },
+    {
+      "train_index": 25,
+      "class": "health_claim_milk",
+      "query": "gatas para sa nagda-diet"
+    },
+    {
+      "train_index": 26,
+      "class": "health_claim_milk",
+      "query": "gatas na hindi nakakataba"
+    },
+    {
+      "train_index": 58,
+      "class": "powder_tin_unverified",
+      "query": "powdered cow milk in a tin"
+    },
+    {
+      "train_index": 59,
+      "class": "none_in_catalog",
+      "query": "toyo"
+    },
+    {
+      "train_index": 60,
+      "class": "none_in_catalog",
+      "query": "itlog"
+    },
+    {
+      "train_index": 66,
+      "class": "none_in_catalog",
+      "query": "yogurt"
+    },
+    {
+      "train_index": 71,
+      "class": "none_in_catalog",
+      "query": "sabon"
+    },
+    {
+      "train_index": 72,
+      "class": "none_in_catalog",
+      "query": "sardinas"
+    },
+    {
+      "train_index": 73,
+      "class": "none_in_catalog",
+      "query": "asukal"
+    },
+    {
+      "train_index": 74,
+      "class": "health_claim_milk",
+      "query": "Gatas nga dili makataba"
+    },
+    {
+      "train_index": 75,
+      "class": "health_claim_milk",
+      "query": "gatas nga dili kaayo makataba"
+    },
+    {
+      "train_index": 76,
+      "class": "health_claim_milk",
+      "query": "gatas nga dili makataba para sa diet"
+    },
+    {
+      "train_index": 77,
+      "class": "health_claim_milk",
+      "query": "gatas dili makataba"
+    },
+    {
+      "train_index": 78,
+      "class": "health_claim_milk",
+      "query": "gatas na hindi makataba"
+    },
+    {
+      "train_index": 86,
+      "class": "none_in_catalog",
+      "query": "1 litro nga coke"
+    },
+    {
+      "train_index": 93,
+      "class": "health_claim_milk",
+      "query": "gatas para dili motaas ang timbang"
+    },
+    {
+      "train_index": 97,
+      "class": "health_claim_milk",
+      "query": "gatas para sa nagpaniwang"
+    },
+    {
+      "train_index": 98,
+      "class": "health_claim_milk",
+      "query": "gatas nga dili makadugang og timbang"
+    },
+    {
+      "train_index": 106,
+      "class": "low_sugar_unspecified",
+      "query": "gatas nga ubos ang asukal"
+    },
+    {
+      "train_index": 107,
+      "class": "none_in_catalog",
+      "query": "presko nga isda"
+    },
+    {
+      "train_index": 108,
+      "class": "none_in_catalog",
+      "query": "asin ug asukal"
+    },
+    {
+      "train_index": 109,
+      "class": "coffee_mix_absent",
+      "query": "kape nga 3 in 1"
+    },
+    {
+      "train_index": 112,
+      "class": "probiotic_absent",
+      "query": "gatas nga probiotic"
+    },
+    {
+      "train_index": 113,
+      "class": "infant_or_kids_absent",
+      "query": "gatas nga pang kids"
+    },
+    {
+      "train_index": 116,
+      "class": "bottle_unverified",
+      "query": "gatas nga naa sa botelya"
+    },
+    {
+      "train_index": 126,
+      "class": "carton_unverified",
+      "query": "Gatas nga naa sa karton"
+    },
+    {
+      "train_index": 130,
+      "class": "thick_creamer",
+      "query": "Gatas nga thick creamer"
+    },
+    {
+      "train_index": 134,
+      "class": "infant_or_kids_absent",
+      "query": "Gatas para sa 1 year old"
+    },
+    {
+      "train_index": 135,
+      "class": "infant_or_kids_absent",
+      "query": "Gatas para sa newborn"
+    },
+    {
+      "train_index": 147,
+      "class": "chocolate_milk_brand_absent",
+      "query": "Chuckie nga chocolate milk"
+    },
+    {
+      "train_index": 149,
+      "class": "flavor_absent",
+      "query": "Gatas nga banana flavor"
+    },
+    {
+      "train_index": 150,
+      "class": "flavor_absent",
+      "query": "Gatas nga strawberry flavor"
+    },
+    {
+      "train_index": 151,
+      "class": "vanilla_absent",
+      "query": "Gatas nga vanilla para sa adulto"
+    },
+    {
+      "train_index": 161,
+      "class": "probiotic_absent",
+      "query": "Kanang gatas nga naay probiotics"
+    },
+    {
+      "train_index": 164,
+      "class": "infant_or_kids_absent",
+      "query": "Gatas nga para sa bata pero dili pangbaby"
+    },
+    {
+      "train_index": 169,
+      "class": "size_300g_absent",
+      "query": "Gatas nga 300 grams"
+    },
+    {
+      "train_index": 170,
+      "class": "size_680g_absent",
+      "query": "Gatas nga 680 grams"
+    },
+    {
+      "train_index": 171,
+      "class": "size_4_8kg_absent",
+      "query": "Gatas nga 4.8 kilos"
+    }
+  ],
+  "ambiguous_queries": 2,
+  "cells_changed_vs_previous_provisional": 7,
+  "queries_changed_vs_previous_provisional": 7,
+  "consistency_issues": 0,
+  "official_blank_filled_cells": 0,
+  "unmapped": []
+}

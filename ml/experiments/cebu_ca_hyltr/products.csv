@@ -1,0 +1,43 @@
+product_key,name,description,category,brand,form,source,fat,sugar,organic,volume_ml,is_milk_spec
+alaska-evaporada-creamer-370ml,Alaska Evaporada Creamer 370ml,Evaporated filled milk creamer for cooking and coffee.,Canned Goods & Soups,alaska,,,,regular,False,,0
+alaska-fresh-full-cream-milk-1l,Alaska Fresh Full Cream Milk 1L,"Rich and creamy 100% fresh cow milk, UHT processed.","Dairy, Eggs & Cheese",alaska,,cow,full,regular,False,1000,1
+alaska-low-fat-milk-1l,Alaska Low Fat Milk 1L,Light milk with less fat for weight watchers.,"Dairy, Eggs & Cheese",alaska,,cow,low,regular,False,1000,1
+alaska-sweetened-condensed-milk-300ml,Alaska Sweetened Condensed Milk 300ml,"Sweetened condensed creamer for desserts, leche flan and halo-halo.",Canned Goods & Soups,alaska,,,,sweetened,False,,0
+almond-breeze-unsweetened-almond-milk-946ml,Almond Breeze Unsweetened Almond Milk 946ml,"Plant-based almond milk with zero sugar, only 30 calories per glass.",Beverages,almond breeze,,plant,low,unsweetened,False,946,1
+anchor-skim-milk-powder-400g,Anchor Skim Milk Powder 400g,"New Zealand skimmed milk powder, 99% fat free.","Dairy, Eggs & Cheese",anchor,powder,cow,non,regular,False,3200,1
+anlene-gold-no-added-sugar-milk-powder-600g,Anlene Gold No Added Sugar Milk Powder 600g,"High calcium adult milk powder with no added sugar, low fat.",Nutrition & Wellness,anlene,powder,cow,low,no_added,False,4500,1
+arla-lactose-free-semi-skimmed-milk-1l,Arla Lactose Free Semi-Skimmed Milk 1L,"Semi-skimmed cow milk, 1.5% fat, lactose free.","Dairy, Eggs & Cheese",arla,,cow,low,regular,False,1000,1
+arla-organic-whole-milk-1l,Arla Organic Whole Milk 1L,"Certified organic milk. No pesticides, no artificial fertilizer, no antibiotics.","Dairy, Eggs & Cheese",arla,,cow,full,regular,True,1000,1
+bear-brand-fortified-powdered-milk-320g,Bear Brand Fortified Powdered Milk 320g,"Powdered milk drink made from cow milk, fortified with iron and zinc.","Dairy, Eggs & Cheese",bear brand,powder,cow,full,regular,False,2400,1
+beef-tapa-karne-sa-baka-500g,Beef Tapa (Karne sa Baka) 500g,"Cured beef from cow, ready to fry.",Meat & Seafood,,,,,,False,,0
+cadbury-dairy-milk-chocolate-bar-165g,Cadbury Dairy Milk Chocolate Bar 165g,Milk chocolate bar.,"Cookies, Snacks & Candy",cadbury,,,,sweetened,False,,0
+coffee-mate-original-creamer-450g,Coffee-Mate Original Creamer 450g,Non-dairy coffee creamer powder.,Beverages,coffee-mate,,,,,False,,0
+eden-cheese-165g,Eden Cheese 165g,Processed cheddar cheese from milk.,"Dairy, Eggs & Cheese",eden,,,,,False,,0
+farm-fresh-organic-carabao-milk-500ml,Farm Fresh Organic Carabao Milk 500ml,Organic carabao milk from grass-fed carabaos in Bohol. Walay kemikal.,"Dairy, Eggs & Cheese",,,carabao,full,regular,True,500,1
+fresh-carabao-milk-500ml,Fresh Carabao Milk 500ml,Gatas sa kalabaw from a Nueva Ecija dairy cooperative.,"Dairy, Eggs & Cheese",,,carabao,full,regular,False,500,1
+fresh-goat-milk-500ml,Fresh Goat Milk 500ml,Gatas sa kanding. Easy to digest goat milk.,"Dairy, Eggs & Cheese",,,goat,full,regular,False,500,1
+fresh-milk-1l,Fresh Milk 1L,Full-cream fresh cow milk.,"Dairy, Eggs & Cheese",,,cow,full,regular,False,1000,1
+fresh-tomatoes-1kg,Fresh Tomatoes 1kg,Locally sourced ripe tomatoes.,Fruits & Vegetables,,,,,,,,
+glucerna-diabetes-nutrition-milk-400g,Glucerna Diabetes Nutrition Milk 400g,"Diabetes-specific milk formula with slow-release carbohydrates. Sugar free, helps manage blood sugar.",Nutrition & Wellness,glucerna,powder,cow,low,no_added,False,1800,1
+green-basket-organic-unsweetened-oat-milk-1l,Green Basket Organic Unsweetened Oat Milk 1L,Organic oat drink with no added sugar. Vegan and dairy-free.,Beverages,green basket,,plant,low,unsweetened,True,1000,1
+horizon-organic-low-fat-milk-946ml,Horizon Organic Low Fat Milk 946ml,Certified organic 1% low fat milk.,"Dairy, Eggs & Cheese",horizon,,cow,low,regular,True,946,1
+jasmine-rice-5kg,Jasmine Rice 5kg,Premium long-grain jasmine rice.,"Grains, Pasta & Sides",,,,,,,,
+low-fat-whole-wheat-crackers-250g,Low Fat Whole Wheat Crackers 250g,Baked crackers with less fat.,"Cookies, Snacks & Candy",,,,low,,False,,0
+magnolia-butter-salted-225g,Magnolia Butter Salted 225g,Creamy butter made from cow cream.,"Dairy, Eggs & Cheese",magnolia,,,full,,False,,0
+magnolia-fresh-milk-1l,Magnolia Fresh Milk 1L,Pasteurized full cream fresh milk from local dairy cows.,"Dairy, Eggs & Cheese",magnolia,,cow,full,regular,False,1000,1
+magnolia-low-fat-milk-1l,Magnolia Low Fat Milk 1L,"Fresh cow milk with reduced fat, only 1.5% fat.","Dairy, Eggs & Cheese",magnolia,,cow,low,regular,False,1000,1
+meiji-whole-milk-946ml,Meiji Whole Milk 946ml,Japanese style whole milk from Holstein cows.,"Dairy, Eggs & Cheese",meiji,,cow,full,regular,False,946,1
+nesquik-chocolate-milk-drink-180ml,Nesquik Chocolate Milk Drink 180ml,Chocolate flavored cow milk drink. Sweetened.,Beverages,nesquik,,cow,full,sweetened,False,180,1
+nestle-fresh-milk-1l,Nestle Fresh Milk 1L,Pure fresh milk from cows. Natural source of calcium and protein.,"Dairy, Eggs & Cheese",nestle,,cow,full,regular,False,1000,1
+nestle-fresh-milk-no-sugar-added-1l,Nestle Fresh Milk No Sugar Added 1L,Fresh cow milk with no sugar added. Suitable for people watching their sugar intake.,"Dairy, Eggs & Cheese",nestle,,cow,full,no_added,False,1000,1
+nestle-non-fat-skim-milk-1l,Nestle Non-Fat Skim Milk 1L,"Fat-free skim milk, 0% fat. Same calcium as regular milk.","Dairy, Eggs & Cheese",nestle,,cow,non,regular,False,1000,1
+nestle-vegan-oat-milk-300ml,Nestle Vegan Oat Milk 300ml,"Plant-based vegan oat milk. Dairy-free, not from cow.","Dairy, Eggs & Cheese",nestle,,plant,,regular,False,300,1
+organic-brown-rice-2kg,Organic Brown Rice 2kg,Certified organic unpolished brown rice.,"Grains, Pasta & Sides",,,,,,True,,0
+organic-lettuce-250g,Organic Lettuce 250g,Pesticide-free organic romaine lettuce.,Fruits & Vegetables,,,,,,True,,0
+organic-valley-whole-milk-1l,Organic Valley Whole Milk 1L,USDA certified organic whole milk from pasture-raised cows.,"Dairy, Eggs & Cheese",organic valley,,cow,full,regular,True,1000,1
+pandesal-12-pcs,Pandesal (12 pcs),Freshly baked Filipino bread rolls.,Bread & Bakery,,,,,,,,
+selecta-cookies-and-cream-ice-cream-14l,Selecta Cookies and Cream Ice Cream 1.4L,Ice cream made with fresh milk.,Frozen Foods,selecta,,,,sweetened,False,,0
+silk-unsweetened-soy-milk-946ml,Silk Unsweetened Soy Milk 946ml,"Dairy-free soy milk with no sugar, good source of protein.",Beverages,silk,,plant,low,unsweetened,False,946,1
+sugar-free-wafers-for-diabetics-150g,Sugar-Free Wafers for Diabetics 150g,Vanilla wafers sweetened with stevia. No sugar added.,"Cookies, Snacks & Candy",,,,,no_added,False,,0
+ufc-coconut-milk-gata-400ml,UFC Coconut Milk (Gata) 400ml,Gata sa lubi for ginataan and curry. Coconut cream for cooking.,Canned Goods & Soups,ufc,,,,,False,,0
+wintermelon-milk-tea-500ml,Wintermelon Milk Tea 500ml,Ready-to-drink milk tea with tapioca pearls.,Beverages,,,,,sweetened,False,,0

@@ -1,0 +1,172 @@
+train_index,product_class,ambiguous,query,cluster_id,split,intent,lang,alaska-evaporada-creamer-370ml,alaska-fresh-full-cream-milk-1l,alaska-low-fat-milk-1l,alaska-sweetened-condensed-milk-300ml,almond-breeze-unsweetened-almond-milk-946ml,anchor-skim-milk-powder-400g,anlene-gold-no-added-sugar-milk-powder-600g,arla-lactose-free-semi-skimmed-milk-1l,arla-organic-whole-milk-1l,bear-brand-fortified-powdered-milk-320g,beef-tapa-karne-sa-baka-500g,cadbury-dairy-milk-chocolate-bar-165g,coffee-mate-original-creamer-450g,eden-cheese-165g,farm-fresh-organic-carabao-milk-500ml,fresh-carabao-milk-500ml,fresh-goat-milk-500ml,fresh-milk-1l,fresh-tomatoes-1kg,glucerna-diabetes-nutrition-milk-400g,green-basket-organic-unsweetened-oat-milk-1l,horizon-organic-low-fat-milk-946ml,jasmine-rice-5kg,low-fat-whole-wheat-crackers-250g,magnolia-butter-salted-225g,magnolia-fresh-milk-1l,magnolia-low-fat-milk-1l,meiji-whole-milk-946ml,nesquik-chocolate-milk-drink-180ml,nestle-fresh-milk-1l,nestle-fresh-milk-no-sugar-added-1l,nestle-non-fat-skim-milk-1l,nestle-vegan-oat-milk-300ml,organic-brown-rice-2kg,organic-lettuce-250g,organic-valley-whole-milk-1l,pandesal-12-pcs,selecta-cookies-and-cream-ice-cream-14l,silk-unsweetened-soy-milk-946ml,sugar-free-wafers-for-diabetics-150g,ufc-coconut-milk-gata-400ml,wintermelon-milk-tea-500ml
+1,cow_milk,,gusto ko og gatas nga gikan sa baka,1,train,cow,ceb,1,2,2,1,0,2,2,2,2,2,0,0,0,0,1,1,1,2,0,1,0,2,0,0,0,2,2,2,1,2,2,2,0,0,0,2,0,0,0,0,0,0
+2,cow_milk,,puro nga gatas sa among baka,2,train,cow,ceb,1,2,2,1,0,2,2,2,2,2,0,0,0,0,1,1,1,2,0,1,0,2,0,0,0,2,2,2,1,2,2,2,0,0,0,2,0,0,0,0,0,0
+3,cow_milk_1l,,pure cow milk 1 liter,3,train,cow,en,0,2,2,0,0,1,1,2,2,1,0,0,0,0,1,1,1,2,0,1,0,1,0,0,0,2,2,1,0,2,2,2,0,0,0,2,0,0,0,0,0,0
+4,whole_cow_milk,,whole milk from cows,4,train,cow,en,0,2,1,0,0,1,1,1,2,2,0,0,0,0,1,1,1,2,0,1,0,1,0,0,0,2,1,2,0,2,2,1,0,0,0,2,0,0,0,0,0,0
+5,fresh_drinking_milk,,full cream fresh milk,5,train,cow,en,0,2,1,0,1,1,1,1,2,1,0,0,0,0,2,2,2,2,0,1,1,1,0,0,0,2,1,2,1,2,2,1,1,0,0,2,0,0,1,0,0,0
+6,cow_milk,,regular dairy milk,6,train,cow,en,1,2,2,1,0,2,2,2,2,2,0,0,0,0,1,1,1,2,0,1,0,2,0,0,0,2,2,2,1,2,2,2,0,0,0,2,0,0,0,0,0,0
+7,uht_kids,,uht cow milk for kids,7,train,cow,en,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+8,powdered_milk,,powdered cow milk,8,train,cow,en,0,1,1,0,0,2,2,1,1,2,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+9,cow_milk_1l,,fresh milk ng baka 1 litro,9,train,cow,tl,0,2,2,0,0,1,1,2,2,1,0,0,0,0,1,1,1,2,0,1,0,1,0,0,0,2,2,1,0,2,2,2,0,0,0,2,0,0,0,0,0,0
+10,cow_milk,,real cow milk not plant based,10,train,cow,en,1,2,2,1,0,2,2,2,2,2,0,0,0,0,1,1,1,2,0,1,0,2,0,0,0,2,2,2,1,2,2,2,0,0,0,2,0,0,0,0,0,0
+11,holstein,,holstein cow fresh milk,11,train,cow,en,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,2,0,1,1,0,0,0,0,1,0,0,0,0,0,0
+12,nonfat_milk,,gatas nga walay tambok,13,train,low_fat,ceb,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+13,low_fat_cow_milk,,gatas nga gamay ra og tambok,14,train,low_fat,ceb,0,0,2,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+14,health_claim_milk,,gatas nga dili makapatambok,15,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+15,health_claim_milk,,gatas para sa nag diet,16,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+16,health_claim_milk,,gatas para sa gusto mo niwang,17,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+17,nonfat_milk,,skim nga gatas,18,train,low_fat,ceb,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+18,nonfat_milk,,non fat milk,13,train,low_fat,en,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+19,nonfat_milk,,fat free milk,13,train,low_fat,en,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+20,low_fat_cow_milk,,reduced fat milk,19,train,low_fat,en,0,0,2,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+21,health_claim_milk,,light milk for weight loss,20,train,low_fat,en,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+22,health_claim_milk,,milk for dieting low calorie,21,train,low_fat,en,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+23,semi_skimmed,,semi skimmed milk,22,train,low_fat,en,0,0,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+24,nonfat_milk,,gatas na walang taba,13,train,low_fat,tl,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+25,health_claim_milk,,gatas para sa nagda-diet,16,train,low_fat,tl,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+26,health_claim_milk,,gatas na hindi nakakataba,15,train,low_fat,tl,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+27,low_fat_cow_milk,,low fat na gatas para pumayat,23,train,low_fat,taglish,0,0,2,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+28,no_sugar_cebuano,,gatas nga walay asukal,13,train,diabetic,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,2,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,2,0,0,0
+29,diabetic_nutrition_milk,,gatas para sa may diabetes,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+30,diabetic_nutrition_milk,,gatas para sa taas og sugar sa dugo,25,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+31,not_sweet_taste,,gatas nga dili tam-is,26,train,diabetic,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,2,0,0,0
+32,diabetic_nutrition_milk,,gatas para sa diabetiko,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+33,no_added_sugar_milk,,gatas nga no sugar added,27,train,diabetic,ceb,0,1,1,0,1,1,2,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,2,1,0,0,0,1,0,0,1,0,0,0
+34,sugar_free_milk,,sugar free milk,13,train,diabetic,en,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+35,no_added_sugar_milk,,no sugar added milk,27,train,diabetic,en,0,1,1,0,1,1,2,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,2,1,0,0,0,1,0,0,1,0,0,0
+36,unsweetened_milk,,unsweetened milk,28,train,diabetic,en,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,2,0,0,0
+37,diabetic_powder,,diabetic milk powder,29,train,diabetic,en,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,diabetic_nutrition_milk,,milk safe for diabetes,30,train,diabetic,en,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+39,diabetic_nutrition_milk,,milk for people with high blood sugar,31,train,diabetic,en,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+40,almond_drink,,zero sugar almond milk,32,train,diabetic,en,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+41,soy_drink,,unsweetened soy milk,33,train,diabetic,en,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,0,0,0
+42,no_sugar_cebuano,,gatas na walang asukal,13,train,diabetic,tl,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,2,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,2,0,0,0
+43,diabetic_nutrition_milk,,gatas para sa may diabetes na lolo,24,train,diabetic,tl,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+44,not_sweet_taste,,gatas na hindi matamis,34,train,diabetic,tl,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,2,0,0,0
+45,diabetic_nutrition_milk,,gatas para sa mataas ang blood sugar,25,train,diabetic,tl,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+46,sugar_free_milk,,sugar free na gatas,13,train,diabetic,taglish,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+47,diabetic_nutrition_milk,,gatas para sa may sakit sa asukal,35,train,diabetic,tl,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+48,organic_milk_generic,,milk from organic farm,36,train,organic,en,0,1,1,0,0,1,1,1,2,1,0,0,0,0,2,0,0,1,0,1,2,2,0,0,0,1,1,1,0,1,1,1,0,0,0,2,0,0,0,0,0,0
+49,organic_milk_generic,,milk without pesticides and chemicals,38,train,organic,en,0,1,1,0,0,1,1,1,2,1,0,0,0,0,2,0,0,1,0,1,2,2,0,0,0,1,1,1,0,1,1,1,0,0,0,2,0,0,0,0,0,0
+50,organic_milk_generic,,gatas nga walay kemikal,40,train,organic,ceb,0,1,1,0,0,1,1,1,2,1,0,0,0,0,2,0,0,1,0,1,2,2,0,0,0,1,1,1,0,1,1,1,0,0,0,2,0,0,0,0,0,0
+51,organic_milk_generic,,natural nga gatas walay pestisidyo,41,train,organic,ceb,0,1,1,0,0,1,1,1,2,1,0,0,0,0,2,0,0,1,0,1,2,2,0,0,0,1,1,1,0,1,1,1,0,0,0,2,0,0,0,0,0,0
+52,organic_milk_generic,,gatas na walang kemikal,40,train,organic,tl,0,1,1,0,0,1,1,1,2,1,0,0,0,0,2,0,0,1,0,1,2,2,0,0,0,1,1,1,0,1,1,1,0,0,0,2,0,0,0,0,0,0
+53,organic_fresh_dairy,,natural at organic na fresh milk,43,train,organic,taglish,0,1,1,0,0,1,1,1,2,1,0,0,0,0,2,0,0,1,0,1,1,2,0,0,0,1,1,1,0,1,1,1,0,0,0,2,0,0,0,0,0,0
+54,usda_organic,,usda organic milk,44,train,organic,en,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0
+55,powdered_milk,,gatas nga pulbos,45,train,powder,ceb,0,1,1,0,0,2,2,1,1,2,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+56,powdered_milk,,gatas na pulbos,45,train,powder,tl,0,1,1,0,0,2,2,1,1,2,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+57,powdered_milk,,gatas sa pulbos,45,train,powder,ceb,0,1,1,0,0,2,2,1,1,2,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+58,powder_tin_unverified,,powdered cow milk in a tin,8,train,powder,en,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,none_in_catalog,,toyo,50,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+60,none_in_catalog,,itlog,52,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,butter,,butter,54,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,milk_tea,,milk tea,56,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+63,coconut_gata,,gata sa lubi,58,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+64,cooking_dairy,,condensed milk,60,train,other,en,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,creamer,,coffee creamer,62,train,other,en,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,none_in_catalog,,yogurt,64,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,rice,,organic brown rice,66,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0
+68,crackers,,low fat crackers,68,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,beef,,karne sa baka,69,train,other,ceb,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,beef,,tapa sa baka,71,train,other,ceb,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,none_in_catalog,,sabon,73,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,none_in_catalog,,sardinas,75,train,other,tl,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,none_in_catalog,,asukal,77,train,other,tl,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,health_claim_milk,,Gatas nga dili makataba,15,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+75,health_claim_milk,,gatas nga dili kaayo makataba,78,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+76,health_claim_milk,,gatas nga dili makataba para sa diet,15,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+77,health_claim_milk,,gatas dili makataba,15,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+78,health_claim_milk,,gatas na hindi makataba,15,train,low_fat,tl,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+79,diabetic_nutrition_milk,,Gatas para sa mga diabetic,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+80,diabetic_nutrition_milk,,gatas para sa diabetic,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+81,diabetic_nutrition_milk,,gatas para sa mga may diabetes,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+82,diabetic_nutrition_milk,,gatas para sa mga diabetic nga walay asukal,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+83,diabetic_nutrition_milk,,diabetic nga gatas,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+84,diabetic_nutrition_milk,,milk for diabetics,24,train,diabetic,en,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+85,organic_fresh_dairy,,organic na fresh milk,43,train,organic,taglish,0,1,1,0,0,1,1,1,2,1,0,0,0,0,2,0,0,1,0,1,1,2,0,0,0,1,1,1,0,1,1,1,0,0,0,2,0,0,0,0,0,0
+86,none_in_catalog,,1 litro nga coke,81,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,beef,,karne sa baka para sa sinugba,69,train,other,ceb,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,biscuits,,biskwit para sa diabetic,83,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+89,milk_tea,,milk tea nga wintermelon,85,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+90,cheese,,keso nga eden,87,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,cow_milk,,palit ko og gatas nga gikan sa baka,89,train,cow,ceb,1,2,2,1,0,2,2,2,2,2,0,0,0,0,1,1,1,2,0,1,0,2,0,0,0,2,2,2,1,2,2,2,0,0,0,2,0,0,0,0,0,0
+92,low_fat_cow_milk,,gatas nga gamay ang tambok,14,train,low_fat,ceb,0,0,2,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+93,health_claim_milk,,gatas para dili motaas ang timbang,90,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+94,nonfat_milk,,non-fat nga gatas,13,train,low_fat,ceb,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+95,low_fat_cow_milk,,gatas nga gaan ra ang tambok para sa diet,91,train,low_fat,ceb,0,0,2,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+96,nonfat_milk,,skim milk nga walay tambok,92,train,low_fat,ceb,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+97,health_claim_milk,,gatas para sa nagpaniwang,93,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+98,health_claim_milk,,gatas nga dili makadugang og timbang,94,train,low_fat,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+99,diabetic_nutrition_milk,,gatas para sa naay diabetes,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+100,no_added_sugar_milk,,gatas nga walay dugang nga asukal,27,train,diabetic,ceb,0,1,1,0,1,1,2,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,2,1,0,0,0,1,0,0,1,0,0,0
+101,diabetic_nutrition_milk,,mangita ko og gatas para sa diabetic,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+102,diabetic_nutrition_milk,,gatas nga dili makataas sa sugar,95,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+103,sugar_free_milk,,sugar free nga gatas,13,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+104,diabetic_nutrition_milk,,gatas para sa lolo nga diabetic,24,train,diabetic,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,2,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+105,unsweetened_milk,,unsweetened nga gatas,28,train,diabetic,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,2,0,0,0
+106,low_sugar_unspecified,No low-sugar spec; no Grade 2.,gatas nga ubos ang asukal,96,train,diabetic,ceb,0,1,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0
+107,none_in_catalog,,presko nga isda,98,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+108,none_in_catalog,,asin ug asukal,100,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+109,coffee_mix_absent,"No 3-in-1 mix in catalog; Coffee-Mate/evaporada are related (1), not 2.",kape nga 3 in 1,102,train,other,ceb,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+110,cooking_dairy,,condensada nga gatas,103,train,other,ceb,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+111,drinking_liquid,,gatas nga mainom dretso,104,train,cow,ceb,0,2,2,0,2,1,1,2,2,1,0,0,0,0,2,2,2,2,0,1,2,2,0,0,0,2,2,2,1,2,2,2,2,0,0,2,0,0,2,0,0,0
+112,probiotic_absent,,gatas nga probiotic,105,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+113,infant_or_kids_absent,,gatas nga pang kids,106,train,powder,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+114,drinking_liquid,,gatas nga mainom,104,train,cow,ceb,0,2,2,0,2,1,1,2,2,1,0,0,0,0,2,2,2,2,0,1,2,2,0,0,0,2,2,2,1,2,2,2,2,0,0,2,0,0,2,0,0,0
+115,fresh_drinking_milk,,gatas nga fresh,107,train,cow,ceb,0,2,2,0,1,1,1,2,2,1,0,0,0,0,2,2,2,2,0,1,1,2,0,0,0,2,2,2,0,2,2,2,1,0,0,2,0,0,1,0,0,0
+116,bottle_unverified,,gatas nga naa sa botelya,108,train,cow,ceb,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+117,flavored_chocolate_drink,,naay flavor nga gatas,110,train,cow,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,2,1,1,1,0,0,0,1,0,0,0,0,0,0
+118,cooking_milk,,pangluto nga gatas,111,train,cow,ceb,2,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,1,0
+119,soy_drink,,soya milk,113,train,cow,en,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,0,0,0
+120,powder_brand,,Bear Brand nga gatas,114,train,powder,ceb,0,0,0,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+121,dessert_not_fresh,,Gatas para sa dessert pero dili fresh milk,118,train,cow,ceb,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+122,lactose_free,,Gatas nga walay lactose,120,train,cow,ceb,0,1,1,0,0,1,1,2,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+123,drinking_liquid,,Gatas nga liquid,121,train,cow,ceb,0,2,2,0,2,1,1,2,2,1,0,0,0,0,2,2,2,2,0,1,2,2,0,0,0,2,2,2,1,2,2,2,2,0,0,2,0,0,2,0,0,0
+124,nonfat_milk,,Gatas nga non-fat,13,train,low_fat,ceb,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0
+125,drinking_liquid,,Gatas nga pwede imnon kada adlaw,122,train,cow,ceb,0,2,2,0,2,1,1,2,2,1,0,0,0,0,2,2,2,2,0,1,2,2,0,0,0,2,2,2,1,2,2,2,2,0,0,2,0,0,2,0,0,0
+126,carton_unverified,,Gatas nga naa sa karton,123,train,cow,ceb,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+127,canned_cooking,,Gatas nga naa sa lata,108,train,cow,ceb,2,0,0,2,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+128,cooking_dairy,,Gatas nga evaporated,124,train,cow,ceb,2,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+129,cooking_dairy,,Gatas nga condensed,103,train,cow,ceb,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+130,thick_creamer,,Gatas nga thick creamer,125,train,cow,ceb,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+131,plant_drink,,Gatas nga gikan sa tanom,126,train,cow,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,1,1,1,0,1,1,1,2,0,0,1,0,0,2,0,1,0
+132,adult_powder,,Gatas para sa tigulang,127,train,powder,ceb,0,1,1,0,0,1,2,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+133,adult_powder,,Gatas para sa edaran,129,train,powder,ceb,0,1,1,0,0,1,2,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+134,infant_or_kids_absent,,Gatas para sa 1 year old,131,train,powder,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+135,infant_or_kids_absent,,Gatas para sa newborn,133,train,powder,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+136,dessert_condensed,,Gatas para sa mango float,135,train,cow,ceb,1,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0
+137,dessert_condensed,,Gatas para sa fruit salad,136,train,cow,ceb,1,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0
+138,dessert_condensed,,Gatas para sa leche flan,137,train,cow,ceb,1,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0
+139,dessert_condensed,,Gatas para sa halo-halo,138,train,cow,ceb,1,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0
+140,dessert_condensed,,Gatas para sa champorado,139,train,cow,ceb,1,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0
+141,cooking_milk,,Gatas para sa sopas,140,train,cow,ceb,2,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,1,0
+142,cereal_drinking_milk,,Gatas para sa cereal,141,train,cow,ceb,0,2,2,0,1,1,1,2,2,1,0,0,0,0,0,0,0,2,0,1,1,2,0,0,0,2,2,2,1,2,2,2,1,0,0,2,0,0,1,0,0,0
+143,alaska_drinking_milk,,Alaska nga gatas,142,train,powder,ceb,1,2,2,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,1,0
+144,powder_brand,,Anchor nga gatas,144,train,cow,ceb,0,0,0,0,0,2,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+145,nestle_fresh,,Nestlé nga fresh milk,145,train,cow,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,2,2,0,0,0,0,1,0,0,0,0,0,0
+146,powder_brand,,Anlene nga gatas,146,train,powder,ceb,0,0,0,0,0,1,2,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+147,chocolate_milk_brand_absent,,Chuckie nga chocolate milk,148,train,cow,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+148,flavored_chocolate_drink,,Gatas nga chocolate flavor,149,train,cow,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,2,1,1,1,0,0,0,1,0,0,0,0,0,0
+149,flavor_absent,,Gatas nga banana flavor,150,train,cow,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+150,flavor_absent,,Gatas nga strawberry flavor,151,train,cow,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+151,vanilla_absent,,Gatas nga vanilla para sa adulto,152,train,powder,ceb,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+152,fresh_drinking_milk,,Naa moy gatas nga fresh?,107,train,cow,ceb,0,2,2,0,1,1,1,2,2,1,0,0,0,0,2,2,2,2,0,1,1,2,0,0,0,2,2,2,0,2,2,2,1,0,0,2,0,0,1,0,0,0
+153,milk_for_coffee,,Mangita kog gatas para sa akong kape,153,train,cow,ceb,1,2,2,0,1,1,1,2,2,1,0,0,1,0,2,2,2,2,0,1,1,2,0,0,0,2,2,2,1,2,2,2,1,0,0,2,0,0,1,0,0,0
+154,dessert_condensed,,Kanang gatas nga panghimog dessert,154,train,cow,ceb,1,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0
+155,low_fat_cow_milk,,Naa moy gatas nga dili kaayo tambok?,155,train,low_fat,ceb,0,0,2,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+156,flavored_chocolate_drink,,Gusto kog gatas nga chocolate,156,train,cow,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,2,1,1,1,0,0,0,1,0,0,0,0,0,0
+157,adult_powder,,Naa moy gatas nga pang tigulang?,158,train,powder,ceb,0,1,1,0,0,1,2,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+158,drinking_liquid,,Kanang gatas nga pwede diretso imnon,159,train,cow,ceb,0,2,2,0,2,1,1,2,2,1,0,0,0,0,2,2,2,2,0,1,2,2,0,0,0,2,2,2,1,2,2,2,2,0,0,2,0,0,2,0,0,0
+159,cooking_milk,,Mangita kog gatas nga pangluto og sopas,160,train,cow,ceb,2,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,1,0
+160,plant_drink,,Naa moy gatas nga dili gikan sa hayop?,161,train,cow,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,1,1,1,0,1,1,1,2,0,0,1,0,0,2,0,1,0
+161,probiotic_absent,,Kanang gatas nga naay probiotics,162,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,0,0
+162,fresh_not_powder,,Gatas nga fresh pero dili powdered,107,train,cow,ceb,0,2,2,0,1,0,0,2,2,0,0,0,0,0,2,2,2,2,0,0,1,2,0,0,0,2,2,2,0,2,2,2,1,0,0,2,0,0,1,0,0,0
+163,cooking_not_condensed,,Gatas nga pangluto pero dili condensed,163,train,cow,ceb,2,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,1,0
+164,infant_or_kids_absent,,Gatas nga para sa bata pero dili pangbaby,165,train,powder,ceb,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0
+165,cow_not_full_cream,,Gatas nga gikan sa baka pero dili full cream,166,train,low_fat,ceb,0,1,2,0,1,2,2,2,1,0,0,0,0,0,0,0,0,1,0,1,1,2,0,0,0,1,2,1,0,1,1,2,1,0,0,1,0,0,1,0,0,0
+166,vegan_drink,,Gatas nga vegan pero dili chocolate,167,train,cow,ceb,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0
+167,fresh_not_low_fat,,Gatas nga fresh pero dili low fat,107,train,cow,ceb,0,2,1,0,1,0,0,1,2,0,0,0,0,0,2,2,2,2,0,0,1,1,0,0,0,2,1,2,0,2,2,1,1,0,0,2,0,0,1,0,0,0
+168,dessert_condensed,,Gatas para sa dessert nga tam-is ug creamy,169,train,cow,ceb,1,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0
+169,size_300g_absent,,Gatas nga 300 grams,171,train,powder,ceb,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,size_680g_absent,,Gatas nga 680 grams,173,train,powder,ceb,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+171,size_4_8kg_absent,,Gatas nga 4.8 kilos,175,train,powder,ceb,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

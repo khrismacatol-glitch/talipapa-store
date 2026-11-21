@@ -1,0 +1,8 @@
+train_index,query,product_key,old_grade,new_grade
+8,powdered cow milk,glucerna-diabetes-nutrition-milk-400g,2,1
+31,gatas nga dili tam-is,glucerna-diabetes-nutrition-milk-400g,2,1
+44,gatas na hindi matamis,glucerna-diabetes-nutrition-milk-400g,2,1
+55,gatas nga pulbos,glucerna-diabetes-nutrition-milk-400g,2,1
+56,gatas na pulbos,glucerna-diabetes-nutrition-milk-400g,2,1
+57,gatas sa pulbos,glucerna-diabetes-nutrition-milk-400g,2,1
+165,Gatas nga gikan sa baka pero dili full cream,glucerna-diabetes-nutrition-milk-400g,2,1

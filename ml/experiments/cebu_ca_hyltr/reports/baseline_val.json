@@ -1,0 +1,75 @@
+{
+  "split": "val",
+  "catalog_size": 42,
+  "queries_in_split": 51,
+  "queries_fully_labeled": 51,
+  "price_queries_excluded": [
+    "Barato nga powdered milk",
+    "Gatas nga barato pero dako og size",
+    "Gatas nga dili molapas 100",
+    "barato na bugas",
+    "barato na tuyo"
+  ],
+  "status": "ok",
+  "systems": {
+    "bm25": {
+      "ranking": {
+        "P@5": 0.17647058823529413,
+        "R@5": 0.4123482726423903,
+        "NDCG@5": 0.6943342915922365,
+        "MRR": 0.4617822406969342
+      },
+      "binary_top5_micro": {
+        "TP": 45,
+        "FP": 210,
+        "FN": 79,
+        "TN": 1808,
+        "accuracy": 0.8650793650793651,
+        "precision": 0.17647058823529413,
+        "recall": 0.3629032258064516,
+        "f1": 0.23746701846965698
+      },
+      "n_queries": 51
+    },
+    "labse": {
+      "ranking": {
+        "P@5": 0.21960784313725493,
+        "R@5": 0.49762982115923293,
+        "NDCG@5": 0.7860541431299999,
+        "MRR": 0.5679738562091503
+      },
+      "binary_top5_micro": {
+        "TP": 56,
+        "FP": 199,
+        "FN": 68,
+        "TN": 1819,
+        "accuracy": 0.8753501400560224,
+        "precision": 0.2196078431372549,
+        "recall": 0.45161290322580644,
+        "f1": 0.2955145118733509
+      },
+      "n_queries": 51
+    },
+    "hybrid_current": {
+      "ranking": {
+        "P@5": 0.21176470588235297,
+        "R@5": 0.4954481792717087,
+        "NDCG@5": 0.753174978546517,
+        "MRR": 0.5313170469426161
+      },
+      "binary_top5_micro": {
+        "TP": 54,
+        "FP": 180,
+        "FN": 70,
+        "TN": 1838,
+        "accuracy": 0.8832866479925303,
+        "precision": 0.23076923076923078,
+        "recall": 0.43548387096774194,
+        "f1": 0.3016759776536313
+      },
+      "n_queries": 51
+    }
+  },
+  "model_version": "20261116T085420Z",
+  "mix": "LTR_WEIGHT * minmax(lambdamart) + TEXT_WEIGHT * minmax(extra_term_bm25)"
+}

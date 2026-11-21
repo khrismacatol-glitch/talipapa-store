@@ -1,0 +1,172 @@
+﻿train_index,review_flag,review_note,query,cluster_id,split,intent,lang,alaska-evaporada-creamer-370ml,alaska-fresh-full-cream-milk-1l,alaska-low-fat-milk-1l,alaska-sweetened-condensed-milk-300ml,almond-breeze-unsweetened-almond-milk-946ml,anchor-skim-milk-powder-400g,anlene-gold-no-added-sugar-milk-powder-600g,arla-lactose-free-semi-skimmed-milk-1l,arla-organic-whole-milk-1l,bear-brand-fortified-powdered-milk-320g,beef-tapa-karne-sa-baka-500g,cadbury-dairy-milk-chocolate-bar-165g,coffee-mate-original-creamer-450g,eden-cheese-165g,farm-fresh-organic-carabao-milk-500ml,fresh-carabao-milk-500ml,fresh-goat-milk-500ml,fresh-milk-1l,fresh-tomatoes-1kg,glucerna-diabetes-nutrition-milk-400g,green-basket-organic-unsweetened-oat-milk-1l,horizon-organic-low-fat-milk-946ml,jasmine-rice-5kg,low-fat-whole-wheat-crackers-250g,magnolia-butter-salted-225g,magnolia-fresh-milk-1l,magnolia-low-fat-milk-1l,meiji-whole-milk-946ml,nesquik-chocolate-milk-drink-180ml,nestle-fresh-milk-1l,nestle-fresh-milk-no-sugar-added-1l,nestle-non-fat-skim-milk-1l,nestle-vegan-oat-milk-300ml,organic-brown-rice-2kg,organic-lettuce-250g,organic-valley-whole-milk-1l,pandesal-12-pcs,selecta-cookies-and-cream-ice-cream-14l,silk-unsweetened-soy-milk-946ml,sugar-free-wafers-for-diabetics-150g,ufc-coconut-milk-gata-400ml,wintermelon-milk-tea-500ml
+1,JUDGMENT,Cow vs carabao/goat/plant on generic gatas,gusto ko og gatas nga gikan sa baka,1,train,cow,ceb,1,2,2,1,1,2,2,2,2,2,0,0,1,0,1,1,1,2,0,2,1,2,0,0,0,2,2,2,2,2,2,2,1,0,0,2,0,0,1,0,0,0
+2,JUDGMENT,Cow vs carabao/goat/plant on generic gatas,puro nga gatas sa among baka,2,train,cow,ceb,1,2,2,1,1,2,2,2,2,2,0,0,1,0,1,1,1,2,0,2,1,2,0,0,0,2,2,2,2,2,2,2,1,0,0,2,0,0,1,0,0,0
+3,JUDGMENT,1 liter vs 946 ml cow packs,pure cow milk 1 liter,3,train,cow,en,1,2,2,1,1,2,2,2,2,2,0,0,1,0,1,1,1,2,0,2,1,2,0,0,0,2,2,2,2,2,2,2,1,0,0,2,0,0,1,0,0,0
+4,,,whole milk from cows,4,train,cow,en,1,2,1,1,1,1,1,1,2,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,2,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+5,,,full cream fresh milk,5,train,cow,en,0,2,1,0,1,1,1,1,1,1,0,0,0,0,2,2,2,2,0,1,1,1,0,0,0,2,1,1,1,2,2,1,1,0,0,1,0,0,1,0,0,0
+6,JUDGMENT,Cow vs carabao/goat/plant on generic gatas,regular dairy milk,6,train,cow,en,1,2,2,1,1,2,2,2,2,2,0,0,1,0,1,1,1,2,0,2,1,2,0,0,0,2,2,2,2,2,2,2,1,0,0,2,0,0,1,0,0,0
+7,JUDGMENT,UHT is on Alaska Fresh; kids not in specs,uht cow milk for kids,7,train,cow,en,1,1,1,1,0,1,1,1,1,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0
+8,,,powdered cow milk,8,train,cow,en,0,1,1,0,1,2,2,1,1,2,0,0,0,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+9,JUDGMENT,1 litro vs 946 ml cow packs,fresh milk ng baka 1 litro,9,train,cow,tl,0,2,1,0,1,1,1,1,1,1,0,0,0,0,2,2,2,2,0,1,1,1,0,0,0,2,1,1,1,2,2,1,1,0,0,1,0,0,1,0,0,0
+10,JUDGMENT,Cow vs carabao/goat/plant; not plant based,real cow milk not plant based,10,train,cow,en,0,2,2,0,1,2,2,2,2,2,0,0,0,0,1,1,1,2,0,2,1,2,0,0,0,2,2,2,2,2,2,2,1,0,0,2,0,0,1,0,0,0
+11,JUDGMENT,Holstein is in Meiji description; other full cream?,holstein cow fresh milk,11,train,cow,en,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,2,1,1,1,1,0,0,0,1,0,0,0,0,0,0
+12,JUDGMENT,Zero-fat skim vs low-fat,gatas nga walay tambok,13,train,low_fat,ceb,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+13,,,gatas nga gamay ra og tambok,14,train,low_fat,ceb,0,1,2,0,2,1,2,2,1,1,0,0,0,0,1,1,1,1,0,2,2,2,0,0,0,1,2,1,1,1,1,1,1,0,0,1,0,0,2,0,0,0
+14,JUDGMENT,Health claim (dili makapatambok) vs fat spec,gatas nga dili makapatambok,15,train,low_fat,ceb,1,2,2,1,2,2,2,2,2,2,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+15,JUDGMENT,Diet claim vs low-fat spec,gatas para sa nag diet,16,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+16,JUDGMENT,Weight-loss claim vs low-fat spec,gatas para sa gusto mo niwang,17,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+17,,,skim nga gatas,18,train,low_fat,ceb,1,1,1,1,1,2,1,2,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+18,,,non fat milk,13,train,low_fat,en,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+19,,,fat free milk,13,train,low_fat,en,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+20,,,reduced fat milk,19,train,low_fat,en,0,1,2,0,2,1,2,2,1,1,0,0,0,0,1,1,1,1,0,2,2,2,0,0,0,1,2,1,1,1,1,1,1,0,0,1,0,0,2,0,0,0
+21,JUDGMENT,Weight-loss claim vs light/low-fat spec,light milk for weight loss,20,train,low_fat,en,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+22,JUDGMENT,Low calorie vs Almond Breeze 30 cal vs low-fat dairy,milk for dieting low calorie,21,train,low_fat,en,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+23,,,semi skimmed milk,22,train,low_fat,en,0,0,1,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+24,,,gatas na walang taba,13,train,low_fat,tl,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+25,,,gatas para sa nagda-diet,16,train,low_fat,tl,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+26,JUDGMENT,Health claim (hindi nakakataba) vs fat spec,gatas na hindi nakakataba,15,train,low_fat,tl,1,2,2,1,2,2,2,2,2,2,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+27,,,low fat na gatas para pumayat,23,train,low_fat,taglish,0,1,2,0,2,1,2,2,1,1,0,0,0,0,1,1,1,1,0,2,2,2,0,0,0,1,2,1,1,1,1,1,1,0,0,1,0,0,2,0,0,0
+28,,,gatas nga walay asukal,13,train,diabetic,ceb,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+29,JUDGMENT,Glucerna-only vs other unsweetened milks,gatas para sa may diabetes,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+30,JUDGMENT,Diabetes / blood sugar vs Glucerna vs unsweetened,gatas para sa taas og sugar sa dugo,25,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+31,,,gatas nga dili tam-is,26,train,diabetic,ceb,1,1,1,1,2,1,2,1,1,1,0,0,1,0,1,1,1,1,0,1,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+32,,,gatas para sa diabetiko,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+33,,,gatas nga no sugar added,27,train,diabetic,ceb,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+34,JUDGMENT,Sugar-free vs no-sugar-added vs unsweetened,sugar free milk,13,train,diabetic,en,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+35,,,no sugar added milk,27,train,diabetic,en,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+36,,,unsweetened milk,28,train,diabetic,en,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+37,,,diabetic milk powder,29,train,diabetic,en,0,1,1,0,1,2,2,1,1,2,0,0,0,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+38,JUDGMENT,Medical claim (safe for diabetes),milk safe for diabetes,30,train,diabetic,en,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+39,JUDGMENT,High blood sugar vs Glucerna vs unsweetened,milk for people with high blood sugar,31,train,diabetic,en,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+40,,,zero sugar almond milk,32,train,diabetic,en,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+41,,,unsweetened soy milk,33,train,diabetic,en,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0
+42,,,gatas na walang asukal,13,train,diabetic,tl,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+43,JUDGMENT,Diabetes + lolo: Glucerna vs Anlene adult,gatas para sa may diabetes na lolo,24,train,diabetic,tl,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+44,,,gatas na hindi matamis,34,train,diabetic,tl,1,1,1,1,2,1,2,1,1,1,0,0,1,0,1,1,1,1,0,1,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+45,,,gatas para sa mataas ang blood sugar,25,train,diabetic,tl,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+46,,,sugar free na gatas,13,train,diabetic,taglish,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+47,,,gatas para sa may sakit sa asukal,35,train,diabetic,tl,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+48,,,milk from organic farm,36,train,organic,en,0,1,1,0,1,1,1,1,2,1,0,0,0,0,2,1,1,1,0,1,2,2,0,0,0,1,1,1,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+49,,,milk without pesticides and chemicals,38,train,organic,en,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+50,JUDGMENT,Walay kemikal vs organic flag vs Farm Fresh copy,gatas nga walay kemikal,40,train,organic,ceb,0,1,1,0,1,1,1,1,2,1,0,0,0,0,2,1,1,1,0,1,2,2,0,0,0,1,1,1,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+51,,,natural nga gatas walay pestisidyo,41,train,organic,ceb,0,1,1,0,1,1,1,1,2,1,0,0,0,0,2,1,1,1,0,1,2,2,0,0,0,1,1,1,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+52,,,gatas na walang kemikal,40,train,organic,tl,0,1,1,0,1,1,1,1,2,1,0,0,0,0,2,1,1,1,0,1,2,2,0,0,0,1,1,1,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+53,,,natural at organic na fresh milk,43,train,organic,taglish,0,1,1,0,1,1,1,1,2,1,0,0,0,0,2,1,1,1,0,1,2,2,0,0,0,1,1,1,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+54,JUDGMENT,USDA text is on Organic Valley; other organic?,usda organic milk,44,train,organic,en,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0
+55,,,gatas nga pulbos,45,train,powder,ceb,0,1,1,0,1,2,2,1,1,2,0,0,0,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+56,,,gatas na pulbos,45,train,powder,tl,0,1,1,0,1,2,2,1,1,2,0,0,0,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+57,,,gatas sa pulbos,45,train,powder,ceb,0,1,1,0,1,2,2,1,1,2,0,0,0,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+58,,,powdered cow milk in a tin,8,train,powder,en,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,NO_MATCH,"Soy sauce, not soy milk",toyo,50,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+60,NO_MATCH,No eggs in catalog,itlog,52,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,,,butter,54,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,,,milk tea,56,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+63,,,gata sa lubi,58,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+64,,,condensed milk,60,train,other,en,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,,,coffee creamer,62,train,other,en,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,NO_MATCH,No yogurt in catalog,yogurt,64,train,other,en,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,,,organic brown rice,66,train,other,en,0,1,1,0,1,1,1,1,2,1,0,0,0,0,2,1,1,1,0,1,2,2,0,0,0,1,1,1,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+68,,,low fat crackers,68,train,other,en,0,1,2,0,2,1,2,2,1,1,0,0,0,0,1,1,1,1,0,2,2,2,0,0,0,1,2,1,1,1,1,1,1,0,0,1,0,0,2,0,0,0
+69,,,karne sa baka,69,train,other,ceb,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,,,tapa sa baka,71,train,other,ceb,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,NO_MATCH,No soap in catalog,sabon,73,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,NO_MATCH,No sardines in catalog,sardinas,75,train,other,tl,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,NO_MATCH,No sugar pack in catalog,asukal,77,train,other,tl,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,JUDGMENT,Health claim (dili makataba) vs fat spec,Gatas nga dili makataba,15,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+75,JUDGMENT,Health claim vs fat spec,gatas nga dili kaayo makataba,78,train,low_fat,ceb,1,2,2,1,2,2,2,2,2,2,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+76,JUDGMENT,Health claim vs fat spec,gatas nga dili makataba para sa diet,15,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+77,JUDGMENT,Health claim vs fat spec,gatas dili makataba,15,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+78,JUDGMENT,Health claim vs fat spec,gatas na hindi makataba,15,train,low_fat,tl,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+79,,,Gatas para sa mga diabetic,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+80,,,gatas para sa diabetic,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+81,,,gatas para sa mga may diabetes,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+82,JUDGMENT,Diabetic + walay asukal: Glucerna vs unsweetened,gatas para sa mga diabetic nga walay asukal,24,train,diabetic,ceb,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+83,,,diabetic nga gatas,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+84,,,milk for diabetics,24,train,diabetic,en,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+85,,,organic na fresh milk,43,train,organic,taglish,0,1,1,0,1,1,1,1,2,1,0,0,0,0,2,1,1,1,0,1,2,2,0,0,0,1,1,1,1,1,1,1,1,0,0,2,0,0,1,0,0,0
+86,NO_MATCH,No cola; milk tea is not Coke,1 litro nga coke,81,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,,,karne sa baka para sa sinugba,69,train,other,ceb,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,,,biskwit para sa diabetic,83,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+89,,,milk tea nga wintermelon,85,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+90,,,keso nga eden,87,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,,,palit ko og gatas nga gikan sa baka,89,train,cow,ceb,1,2,2,1,1,2,2,2,2,2,0,0,1,0,1,1,1,2,0,2,1,2,0,0,0,2,2,2,2,2,2,2,1,0,0,2,0,0,1,0,0,0
+92,,,gatas nga gamay ang tambok,14,train,low_fat,ceb,0,1,2,0,2,1,2,2,1,1,0,0,0,0,1,1,1,1,0,2,2,2,0,0,0,1,2,1,1,1,1,1,1,0,0,1,0,0,2,0,0,0
+93,JUDGMENT,Weight claim vs fat spec,gatas para dili motaas ang timbang,90,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+94,,,non-fat nga gatas,13,train,low_fat,ceb,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+95,,,gatas nga gaan ra ang tambok para sa diet,91,train,low_fat,ceb,0,1,2,0,2,1,2,2,1,1,0,0,0,0,1,1,1,1,0,2,2,2,0,0,0,1,2,1,1,1,1,1,1,0,0,1,0,0,2,0,0,0
+96,,,skim milk nga walay tambok,92,train,low_fat,ceb,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+97,JUDGMENT,Weight-loss claim vs fat spec,gatas para sa nagpaniwang,93,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+98,JUDGMENT,Weight claim vs fat spec,gatas nga dili makadugang og timbang,94,train,low_fat,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+99,,,gatas para sa naay diabetes,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+100,,,gatas nga walay dugang nga asukal,27,train,diabetic,ceb,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+101,,,mangita ko og gatas para sa diabetic,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+102,JUDGMENT,Will not raise sugar vs Glucerna vs unsweetened,gatas nga dili makataas sa sugar,95,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+103,,,sugar free nga gatas,13,train,diabetic,ceb,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+104,JUDGMENT,Lolo diabetic: Glucerna vs Anlene,gatas para sa lolo nga diabetic,24,train,diabetic,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,2,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+105,,,unsweetened nga gatas,28,train,diabetic,ceb,0,1,1,0,2,1,2,1,1,1,0,0,0,0,1,1,1,1,0,2,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+106,,,gatas nga ubos ang asukal,96,train,diabetic,ceb,1,1,1,1,2,1,2,1,1,1,0,0,1,0,1,1,1,1,0,1,2,1,0,0,0,1,1,1,1,1,2,1,1,0,0,1,0,0,2,0,0,0
+107,NO_MATCH,No fish in catalog,presko nga isda,98,train,other,ceb,0,2,1,0,1,1,1,1,1,1,0,0,0,0,2,2,2,2,0,1,1,1,0,0,0,2,1,1,1,2,2,1,1,0,0,1,0,0,1,0,0,0
+108,NO_MATCH,No salt or sugar SKUs,asin ug asukal,100,train,other,ceb,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+109,,,kape nga 3 in 1,102,train,other,ceb,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+110,,,condensada nga gatas,103,train,other,ceb,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+111,,,gatas nga mainom dretso,104,train,cow,ceb,1,2,2,1,2,1,1,2,2,1,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+112,,,gatas nga probiotic,105,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+113,JUDGMENT,Pang kids: no growing-up formula SKU,gatas nga pang kids,106,train,powder,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+114,,,gatas nga mainom,104,train,cow,ceb,1,2,2,1,2,1,1,2,2,1,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+115,,,gatas nga fresh,107,train,cow,ceb,0,2,1,0,1,1,1,1,1,1,0,0,0,0,2,2,2,2,0,1,1,1,0,0,0,2,1,1,1,2,2,1,1,0,0,1,0,0,1,0,0,0
+116,JUDGMENT,Botelya: no bottle pack in specs,gatas nga naa sa botelya,108,train,cow,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+117,,,naay flavor nga gatas,110,train,cow,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,2,1,1,1,1,0,0,1,0,0,1,0,0,0
+118,JUDGMENT,Pangluto: evaporada/condensed/gata vs drinking milk,pangluto nga gatas,111,train,cow,ceb,2,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+119,,,soya milk,113,train,cow,en,1,1,1,1,2,1,1,1,1,1,0,0,1,0,1,1,2,1,0,1,2,1,0,0,0,1,1,1,1,1,1,1,2,0,0,1,0,0,2,0,0,0
+120,,,Bear Brand nga gatas,114,train,powder,ceb,0,1,1,0,1,1,1,1,1,2,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+121,JUDGMENT,Dessert but not fresh: condensed vs ice cream,Gatas para sa dessert pero dili fresh milk,118,train,cow,ceb,2,0,1,2,1,1,1,1,1,1,0,0,2,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,1,1,0,0,1,0,0,1,0,0,0
+122,,,Gatas nga walay lactose,120,train,cow,ceb,0,1,1,0,1,1,1,2,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+123,,,Gatas nga liquid,121,train,cow,ceb,1,2,2,1,2,1,1,2,2,1,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+124,,,Gatas nga non-fat,13,train,low_fat,ceb,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,2,1,0,0,1,0,0,1,0,0,0
+125,,,Gatas nga pwede imnon kada adlaw,122,train,cow,ceb,1,2,2,1,2,1,1,2,2,1,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+126,JUDGMENT,Karton vs lata vs other packs,Gatas nga naa sa karton,123,train,cow,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+127,JUDGMENT,Lata: canned cooking vs powder tins,Gatas nga naa sa lata,108,train,cow,ceb,2,1,1,2,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+128,,,Gatas nga evaporated,124,train,cow,ceb,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+129,,,Gatas nga condensed,103,train,cow,ceb,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+130,JUDGMENT,Thick creamer: evaporada vs condensed vs Coffee-Mate,Gatas nga thick creamer,125,train,cow,ceb,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+131,,,Gatas nga gikan sa tanom,126,train,cow,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,2,1,0,0,0,1,1,1,1,1,1,1,2,0,0,1,0,0,2,0,0,0
+132,,,Gatas para sa tigulang,127,train,powder,ceb,1,1,1,1,1,1,2,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+133,,,Gatas para sa edaran,129,train,powder,ceb,1,1,1,1,1,1,2,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+134,,,Gatas para sa 1 year old,131,train,powder,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+135,,,Gatas para sa newborn,133,train,powder,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+136,,,Gatas para sa mango float,135,train,cow,ceb,1,1,1,2,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+137,,,Gatas para sa fruit salad,136,train,cow,ceb,1,1,1,2,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+138,,,Gatas para sa leche flan,137,train,cow,ceb,1,1,1,2,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+139,,,Gatas para sa halo-halo,138,train,cow,ceb,1,1,1,2,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+140,JUDGMENT,Champorado: condensed vs drinking milk,Gatas para sa champorado,139,train,cow,ceb,2,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+141,JUDGMENT,Sopas: evaporada vs fresh milk,Gatas para sa sopas,140,train,cow,ceb,2,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+142,,,Gatas para sa cereal,141,train,cow,ceb,1,2,2,1,1,1,1,2,2,1,0,0,1,0,1,1,1,2,0,1,1,2,0,0,0,2,2,2,1,2,2,2,1,0,0,2,0,0,1,0,0,0
+143,JUDGMENT,Alaska brand: four Alaska SKUs,Alaska nga gatas,142,train,powder,ceb,2,2,2,2,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+144,,,Anchor nga gatas,144,train,cow,ceb,0,1,1,0,1,2,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+145,JUDGMENT,Nestle fresh vs no-sugar-added,Nestlé nga fresh milk,145,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,2,2,2,2,0,0,1,0,0,1,0,0,0
+146,,,Anlene nga gatas,146,train,powder,ceb,0,1,1,0,1,1,2,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+147,,,Chuckie nga chocolate milk,148,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+148,,,Gatas nga chocolate flavor,149,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,2,1,1,1,1,0,0,1,0,0,1,0,0,0
+149,,,Gatas nga banana flavor,150,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+150,,,Gatas nga strawberry flavor,151,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+151,JUDGMENT,"Vanilla adult: Anlene is adult, not vanilla",Gatas nga vanilla para sa adulto,152,train,powder,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+152,,,Naa moy gatas nga fresh?,107,train,cow,ceb,0,2,1,0,1,1,1,1,1,1,0,0,0,0,2,2,2,2,0,1,1,1,0,0,0,2,1,1,1,2,2,1,1,0,0,1,0,0,1,0,0,0
+153,JUDGMENT,Kape: drinking milk vs creamer vs evaporada,Mangita kog gatas para sa akong kape,153,train,cow,ceb,2,1,1,1,1,1,1,1,1,1,0,0,2,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+154,,,Kanang gatas nga panghimog dessert,154,train,cow,ceb,1,1,1,2,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+155,,,Naa moy gatas nga dili kaayo tambok?,155,train,low_fat,ceb,1,1,2,1,1,1,1,2,1,1,0,0,1,0,1,1,1,1,0,1,1,2,0,0,0,1,2,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+156,,,Gusto kog gatas nga chocolate,156,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,2,1,1,1,1,0,0,1,0,0,1,0,0,0
+157,,,Naa moy gatas nga pang tigulang?,158,train,powder,ceb,1,1,1,1,1,1,2,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+158,,,Kanang gatas nga pwede diretso imnon,159,train,cow,ceb,1,2,2,1,2,1,1,2,2,1,0,0,1,0,2,2,2,2,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,0,2,0,0,2,0,0,0
+159,,,Mangita kog gatas nga pangluto og sopas,160,train,cow,ceb,2,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+160,JUDGMENT,Not from animals: plant drinks vs UFC gata,Naa moy gatas nga dili gikan sa hayop?,161,train,cow,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,2,1,0,0,0,1,1,1,1,1,1,1,2,0,0,1,0,0,2,0,0,0
+161,,,Kanang gatas nga naay probiotics,162,train,cow,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+162,,,Gatas nga fresh pero dili powdered,107,train,cow,ceb,0,2,1,0,1,0,0,1,1,0,0,0,0,0,2,2,2,2,0,0,1,1,0,0,0,2,2,1,1,2,2,1,1,0,0,1,0,0,1,0,0,0
+163,JUDGMENT,Cooking but not condensed: evaporada vs gata vs fresh,Gatas nga pangluto pero dili condensed,163,train,cow,ceb,2,1,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+164,,,Gatas nga para sa bata pero dili pangbaby,165,train,powder,ceb,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+165,,,Gatas nga gikan sa baka pero dili full cream,166,train,low_fat,ceb,0,0,2,0,1,2,2,2,0,0,0,0,0,0,0,0,0,0,0,2,1,2,0,0,0,0,2,0,0,0,0,2,1,0,0,0,0,0,1,0,0,0
+166,JUDGMENT,Vegan not chocolate: oat/soy/almond vs UFC,Gatas nga vegan pero dili chocolate,167,train,cow,ceb,0,1,1,0,2,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,2,1,0,0,0,1,1,1,1,1,1,1,2,0,0,1,0,0,2,0,0,0
+167,,,Gatas nga fresh pero dili low fat,107,train,cow,ceb,0,2,0,0,0,0,0,0,1,1,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,2,0,1,1,2,2,0,1,0,0,1,0,0,0,0,0,0
+168,,,Gatas para sa dessert nga tam-is ug creamy,169,train,cow,ceb,1,1,1,2,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+169,JUDGMENT,300 g vs Bear Brand 320 g vs 300 ml oat,Gatas nga 300 grams,171,train,powder,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+170,JUDGMENT,680 g vs Anlene 600 g,Gatas nga 680 grams,173,train,powder,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0
+171,JUDGMENT,4.8 kg vs Anlene reconstituted 4500 ml,Gatas nga 4.8 kilos,175,train,powder,ceb,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0

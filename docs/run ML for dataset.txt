@@ -1,0 +1,18 @@
+# 1. App
+composer install
+npm install
+copy .env.example .env
+php artisan key:generate
+# edit .env: DB_*, SEMANTIC_SEARCH_ENABLED=true, SEMANTIC_SEARCH_URL=http://127.0.0.1:8088
+php artisan migrate --seed
+npm run build
+
+# 2. ML service
+py -3.14 -m venv ml\.venv
+ml\.venv\Scripts\python -m pip install -r ml\requirements.txt
+
+cd ml
+..\ml\.venv\Scripts\python build_qrels.py, 
+..\ml\.venv\Scripts\python train.py
+
+.venv/Scripts/python -m uvicorn app:app --port 8088

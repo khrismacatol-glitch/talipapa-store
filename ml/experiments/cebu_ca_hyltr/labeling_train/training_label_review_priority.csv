@@ -1,0 +1,172 @@
+﻿train_index,query,review_flag,grade_2,grade_1,grade_0,changed_cells,review_priority,note
+1,gusto ko og gatas nga gikan sa baka,JUDGMENT,18,10,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+2,puro nga gatas sa among baka,JUDGMENT,18,10,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+3,pure cow milk 1 liter,JUDGMENT,18,10,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+4,whole milk from cows,,4,24,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+5,full cream fresh milk,,8,17,17,14,HIGH,Proposed only: verify product specifications and intent before approving
+6,regular dairy milk,JUDGMENT,18,10,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+7,uht cow milk for kids,JUDGMENT,0,21,21,0,HIGH,Proposed only: verify product specifications and intent before approving
+8,powdered cow milk,,4,21,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+9,fresh milk ng baka 1 litro,JUDGMENT,8,17,17,14,HIGH,Proposed only: verify product specifications and intent before approving
+10,real cow milk not plant based,JUDGMENT,18,7,17,3,HIGH,Proposed only: verify product specifications and intent before approving
+11,holstein cow fresh milk,JUDGMENT,1,17,24,4,HIGH,Proposed only: verify product specifications and intent before approving
+12,gatas nga walay tambok,JUDGMENT,2,23,17,4,HIGH,Proposed only: verify product specifications and intent before approving
+13,gatas nga gamay ra og tambok,,9,16,17,8,HIGH,Proposed only: verify product specifications and intent before approving
+14,gatas nga dili makapatambok,JUDGMENT,25,3,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+15,gatas para sa nag diet,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+16,gatas para sa gusto mo niwang,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+17,skim nga gatas,,3,25,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+18,non fat milk,,2,23,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+19,fat free milk,,2,23,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+20,reduced fat milk,,9,16,17,8,HIGH,Proposed only: verify product specifications and intent before approving
+21,light milk for weight loss,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+22,milk for dieting low calorie,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+23,semi skimmed milk,,1,10,31,20,HIGH,Proposed only: verify product specifications and intent before approving
+24,gatas na walang taba,,2,23,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+25,gatas para sa nagda-diet,,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+26,gatas na hindi nakakataba,JUDGMENT,25,3,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+27,low fat na gatas para pumayat,,9,16,17,12,HIGH,Proposed only: verify product specifications and intent before approving
+28,gatas nga walay asukal,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+29,gatas para sa may diabetes,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+30,gatas para sa taas og sugar sa dugo,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+31,gatas nga dili tam-is,,5,23,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+32,gatas para sa diabetiko,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+33,gatas nga no sugar added,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+34,sugar free milk,JUDGMENT,6,19,17,4,HIGH,Proposed only: verify product specifications and intent before approving
+35,no sugar added milk,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+36,unsweetened milk,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+37,diabetic milk powder,,4,21,17,6,HIGH,Proposed only: verify product specifications and intent before approving
+38,milk safe for diabetes,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+39,milk for people with high blood sugar,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+40,zero sugar almond milk,,1,5,36,5,HIGH,Proposed only: verify product specifications and intent before approving
+41,unsweetened soy milk,,1,2,39,2,NORMAL,Proposed only: verify product specifications and intent before approving
+42,gatas na walang asukal,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+43,gatas para sa may diabetes na lolo,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+44,gatas na hindi matamis,,5,23,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+45,gatas para sa mataas ang blood sugar,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+46,sugar free na gatas,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+47,gatas para sa may sakit sa asukal,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+48,milk from organic farm,,5,20,17,3,NORMAL,Proposed only: verify product specifications and intent before approving
+49,milk without pesticides and chemicals,,0,5,37,0,HIGH,Proposed only: verify product specifications and intent before approving
+50,gatas nga walay kemikal,JUDGMENT,5,20,17,25,HIGH,Proposed only: verify product specifications and intent before approving
+51,natural nga gatas walay pestisidyo,,5,20,17,25,HIGH,Proposed only: verify product specifications and intent before approving
+52,gatas na walang kemikal,,5,20,17,25,HIGH,Proposed only: verify product specifications and intent before approving
+53,natural at organic na fresh milk,,5,20,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+54,usda organic milk,JUDGMENT,1,4,37,1,HIGH,Proposed only: verify product specifications and intent before approving
+55,gatas nga pulbos,,4,21,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+56,gatas na pulbos,,4,21,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+57,gatas sa pulbos,,4,21,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+58,powdered cow milk in a tin,,0,4,38,24,HIGH,Proposed only: verify product specifications and intent before approving
+59,toyo,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+60,itlog,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+61,butter,,1,0,41,0,NORMAL,Proposed only: verify product specifications and intent before approving
+62,milk tea,,1,0,41,0,NORMAL,Proposed only: verify product specifications and intent before approving
+63,gata sa lubi,,1,0,41,0,NORMAL,Proposed only: verify product specifications and intent before approving
+64,condensed milk,,1,2,39,0,NORMAL,Proposed only: verify product specifications and intent before approving
+65,coffee creamer,,1,1,40,0,NORMAL,Proposed only: verify product specifications and intent before approving
+66,yogurt,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+67,organic brown rice,,5,20,17,27,HIGH,Proposed only: verify product specifications and intent before approving
+68,low fat crackers,,9,16,17,26,HIGH,Proposed only: verify product specifications and intent before approving
+69,karne sa baka,,0,1,41,0,HIGH,Proposed only: verify product specifications and intent before approving
+70,tapa sa baka,,1,0,41,0,NORMAL,Proposed only: verify product specifications and intent before approving
+71,sabon,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+72,sardinas,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+73,asukal,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+74,Gatas nga dili makataba,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+75,gatas nga dili kaayo makataba,JUDGMENT,25,3,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+76,gatas nga dili makataba para sa diet,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+77,gatas dili makataba,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+78,gatas na hindi makataba,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+79,Gatas para sa mga diabetic,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+80,gatas para sa diabetic,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+81,gatas para sa mga may diabetes,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+82,gatas para sa mga diabetic nga walay asukal,JUDGMENT,6,19,17,9,HIGH,Proposed only: verify product specifications and intent before approving
+83,diabetic nga gatas,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+84,milk for diabetics,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+85,organic na fresh milk,,5,20,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+86,1 litro nga coke,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+87,karne sa baka para sa sinugba,,0,1,41,0,HIGH,Proposed only: verify product specifications and intent before approving
+88,biskwit para sa diabetic,,1,1,40,0,NORMAL,Proposed only: verify product specifications and intent before approving
+89,milk tea nga wintermelon,,1,0,41,0,NORMAL,Proposed only: verify product specifications and intent before approving
+90,keso nga eden,,1,0,41,0,NORMAL,Proposed only: verify product specifications and intent before approving
+91,palit ko og gatas nga gikan sa baka,,18,10,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+92,gatas nga gamay ang tambok,,9,16,17,8,HIGH,Proposed only: verify product specifications and intent before approving
+93,gatas para dili motaas ang timbang,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+94,non-fat nga gatas,,2,23,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+95,gatas nga gaan ra ang tambok para sa diet,,9,16,17,12,HIGH,Proposed only: verify product specifications and intent before approving
+96,skim milk nga walay tambok,,2,23,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+97,gatas para sa nagpaniwang,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+98,gatas nga dili makadugang og timbang,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+99,gatas para sa naay diabetes,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+100,gatas nga walay dugang nga asukal,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+101,mangita ko og gatas para sa diabetic,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+102,gatas nga dili makataas sa sugar,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+103,sugar free nga gatas,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+104,gatas para sa lolo nga diabetic,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+105,unsweetened nga gatas,,6,19,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+106,gatas nga ubos ang asukal,,5,23,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+107,presko nga isda,NO_MATCH,8,17,17,25,HIGH,Proposed only: verify product specifications and intent before approving
+108,asin ug asukal,NO_MATCH,0,0,42,0,HIGH,Proposed only: verify product specifications and intent before approving
+109,kape nga 3 in 1,,0,2,40,0,HIGH,Proposed only: verify product specifications and intent before approving
+110,condensada nga gatas,,1,2,39,0,NORMAL,Proposed only: verify product specifications and intent before approving
+111,gatas nga mainom dretso,,22,6,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+112,gatas nga probiotic,,0,25,17,3,HIGH,Proposed only: verify product specifications and intent before approving
+113,gatas nga pang kids,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+114,gatas nga mainom,,22,6,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+115,gatas nga fresh,,8,17,17,14,HIGH,Proposed only: verify product specifications and intent before approving
+116,gatas nga naa sa botelya,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+117,naay flavor nga gatas,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+118,pangluto nga gatas,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+119,soya milk,,5,23,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+120,Bear Brand nga gatas,,1,24,17,27,HIGH,Proposed only: verify product specifications and intent before approving
+121,Gatas para sa dessert pero dili fresh milk,JUDGMENT,3,17,22,10,HIGH,Proposed only: verify product specifications and intent before approving
+122,Gatas nga walay lactose,,1,24,17,3,NORMAL,Proposed only: verify product specifications and intent before approving
+123,Gatas nga liquid,,22,6,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+124,Gatas nga non-fat,,2,23,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+125,Gatas nga pwede imnon kada adlaw,,22,6,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+126,Gatas nga naa sa karton,JUDGMENT,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+127,Gatas nga naa sa lata,JUDGMENT,2,26,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+128,Gatas nga evaporated,,1,1,40,0,NORMAL,Proposed only: verify product specifications and intent before approving
+129,Gatas nga condensed,,1,2,39,0,NORMAL,Proposed only: verify product specifications and intent before approving
+130,Gatas nga thick creamer,JUDGMENT,0,3,39,0,HIGH,Proposed only: verify product specifications and intent before approving
+131,Gatas nga gikan sa tanom,,4,21,17,4,NORMAL,Proposed only: verify product specifications and intent before approving
+132,Gatas para sa tigulang,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+133,Gatas para sa edaran,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+134,Gatas para sa 1 year old,,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+135,Gatas para sa newborn,,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+136,Gatas para sa mango float,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+137,Gatas para sa fruit salad,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+138,Gatas para sa leche flan,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+139,Gatas para sa halo-halo,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+140,Gatas para sa champorado,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+141,Gatas para sa sopas,JUDGMENT,1,27,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+142,Gatas para sa cereal,,13,15,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+143,Alaska nga gatas,JUDGMENT,4,23,15,1,HIGH,Proposed only: verify product specifications and intent before approving
+144,Anchor nga gatas,,1,24,17,3,NORMAL,Proposed only: verify product specifications and intent before approving
+145,Nestlé nga fresh milk,JUDGMENT,4,21,17,14,HIGH,Proposed only: verify product specifications and intent before approving
+146,Anlene nga gatas,,1,24,17,3,NORMAL,Proposed only: verify product specifications and intent before approving
+147,Chuckie nga chocolate milk,,0,25,17,24,HIGH,Proposed only: verify product specifications and intent before approving
+148,Gatas nga chocolate flavor,,1,24,17,3,NORMAL,Proposed only: verify product specifications and intent before approving
+149,Gatas nga banana flavor,,0,25,17,24,HIGH,Proposed only: verify product specifications and intent before approving
+150,Gatas nga strawberry flavor,,0,25,17,24,HIGH,Proposed only: verify product specifications and intent before approving
+151,Gatas nga vanilla para sa adulto,JUDGMENT,0,25,17,24,HIGH,Proposed only: verify product specifications and intent before approving
+152,Naa moy gatas nga fresh?,,8,17,17,14,HIGH,Proposed only: verify product specifications and intent before approving
+153,Mangita kog gatas para sa akong kape,JUDGMENT,2,26,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+154,Kanang gatas nga panghimog dessert,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+155,Naa moy gatas nga dili kaayo tambok?,,4,24,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+156,Gusto kog gatas nga chocolate,,1,24,17,3,NORMAL,Proposed only: verify product specifications and intent before approving
+157,Naa moy gatas nga pang tigulang?,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+158,Kanang gatas nga pwede diretso imnon,,22,6,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+159,Mangita kog gatas nga pangluto og sopas,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+160,Naa moy gatas nga dili gikan sa hayop?,JUDGMENT,4,21,17,4,HIGH,Proposed only: verify product specifications and intent before approving
+161,Kanang gatas nga naay probiotics,,0,25,17,3,HIGH,Proposed only: verify product specifications and intent before approving
+162,Gatas nga fresh pero dili powdered,,9,12,21,16,HIGH,Proposed only: verify product specifications and intent before approving
+163,Gatas nga pangluto pero dili condensed,JUDGMENT,1,26,15,27,HIGH,Proposed only: verify product specifications and intent before approving
+164,Gatas nga para sa bata pero dili pangbaby,,0,28,14,0,HIGH,Proposed only: verify product specifications and intent before approving
+165,Gatas nga gikan sa baka pero dili full cream,,8,4,30,24,HIGH,Proposed only: verify product specifications and intent before approving
+166,Gatas nga vegan pero dili chocolate,JUDGMENT,4,21,17,4,HIGH,Proposed only: verify product specifications and intent before approving
+167,Gatas nga fresh pero dili low fat,,8,6,28,22,HIGH,Proposed only: verify product specifications and intent before approving
+168,Gatas para sa dessert nga tam-is ug creamy,,1,27,14,0,NORMAL,Proposed only: verify product specifications and intent before approving
+169,Gatas nga 300 grams,JUDGMENT,0,25,17,3,HIGH,Proposed only: verify product specifications and intent before approving
+170,Gatas nga 680 grams,JUDGMENT,0,25,17,3,HIGH,Proposed only: verify product specifications and intent before approving
+171,Gatas nga 4.8 kilos,JUDGMENT,0,25,17,3,HIGH,Proposed only: verify product specifications and intent before approving

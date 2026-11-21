@@ -1,0 +1,29 @@
+{
+  "products": 42,
+  "queries": 322,
+  "clusters": 203,
+  "splits": {
+    "test": 100,
+    "train": 171,
+    "val": 51
+  },
+  "grades_filled": 0,
+  "snapshot": "20261116T085420Z",
+  "copied_artifacts": [
+    "meta.json",
+    "ranker.txt",
+    "ranker_text_only.txt",
+    "intent_classifier.joblib",
+    "product_milk_classifier.joblib",
+    "intent_prototypes.npy"
+  ],
+  "production_ranker_untouched": true,
+  "test_expand": {
+    "added": 31,
+    "source": "thesis_test_expand_100",
+    "grades_auto_filled": false,
+    "halo_halo_skipped_already_train": true,
+    "substitute_for_halo_halo": "gatas para sa scrambled egg",
+    "pancake_verified_not_in_train_val": true
+  }
+}

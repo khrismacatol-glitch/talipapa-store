@@ -1,0 +1,323 @@
+query,cluster_id,split,intent,lang,legacy_split,source,stage2_example
+gatas gikan sa baka,0,test,cow,ceb,train,queries.csv,0
+presko nga gatas gikan sa baka,0,test,cow,ceb,train,queries.csv,0
+fresh milk gikan sa baka,0,test,cow,ceb,train,queries.csv,0
+gusto ko og gatas nga gikan sa baka,1,train,cow,ceb,train,queries.csv,0
+puro nga gatas sa among baka,2,train,cow,ceb,train,queries.csv,0
+gatas sa baka nga full cream,0,test,cow,ceb,train,queries.csv,0
+cow's milk,0,test,cow,en,train,queries.csv,0
+fresh cow milk,0,test,cow,en,train,queries.csv,0
+pure cow milk 1 liter,3,train,cow,en,train,queries.csv,0
+whole milk from cows,4,train,cow,en,train,queries.csv,0
+full cream fresh milk,5,train,cow,en,train,queries.csv,0
+regular dairy milk,6,train,cow,en,train,queries.csv,0
+uht cow milk for kids,7,train,cow,en,train,queries.csv,0
+powdered cow milk,8,train,cow,en,train,queries.csv,0
+gatas ng baka,0,test,cow,tl,train,queries.csv,0
+sariwang gatas ng baka,0,test,cow,tl,train,queries.csv,0
+gatas na galing sa baka,0,test,cow,tl,train,queries.csv,0
+purong gatas mula sa baka,0,test,cow,tl,train,queries.csv,0
+fresh milk ng baka 1 litro,9,train,cow,tl,train,queries.csv,0
+gatas ng baka para sa bata,0,test,cow,tl,train,queries.csv,0
+dairy milk galing sa baka,0,test,cow,taglish,train,queries.csv,0
+real cow milk not plant based,10,train,cow,en,train,queries.csv,0
+gatas sa baka nga powdered,0,test,cow,ceb,train,queries.csv,0
+tinuod nga gatas sa baka dili soy,0,test,cow,ceb,train,queries.csv,0
+holstein cow fresh milk,11,train,cow,en,train,queries.csv,0
+gatas nga low fat,12,val,low_fat,ceb,train,queries.csv,0
+gatas nga walay tambok,13,train,low_fat,ceb,train,queries.csv,0
+gatas nga gamay ra og tambok,14,train,low_fat,ceb,train,queries.csv,0
+gatas nga dili makapatambok,15,train,low_fat,ceb,train,queries.csv,0
+gatas para sa nag diet,16,train,low_fat,ceb,train,queries.csv,0
+gatas para sa gusto mo niwang,17,train,low_fat,ceb,train,queries.csv,0
+skim nga gatas,18,train,low_fat,ceb,train,queries.csv,0
+low fat milk,12,val,low_fat,en,train,queries.csv,0
+non fat milk,13,train,low_fat,en,train,queries.csv,0
+fat free milk,13,train,low_fat,en,train,queries.csv,0
+skim milk 1 liter,0,test,low_fat,en,train,queries.csv,0
+reduced fat milk,19,train,low_fat,en,train,queries.csv,0
+light milk for weight loss,20,train,low_fat,en,train,queries.csv,0
+milk for dieting low calorie,21,train,low_fat,en,train,queries.csv,0
+semi skimmed milk,22,train,low_fat,en,train,queries.csv,0
+gatas na walang taba,13,train,low_fat,tl,train,queries.csv,0
+gatas na mababa ang taba,12,val,low_fat,tl,train,queries.csv,0
+gatas para sa nagda-diet,16,train,low_fat,tl,train,queries.csv,0
+gatas na hindi nakakataba,15,train,low_fat,tl,train,queries.csv,0
+low fat na gatas para pumayat,23,train,low_fat,taglish,train,queries.csv,0
+gatas nga walay asukal,13,train,diabetic,ceb,train,queries.csv,0
+gatas para sa may diabetes,24,train,diabetic,ceb,train,queries.csv,0
+gatas para sa taas og sugar sa dugo,25,train,diabetic,ceb,train,queries.csv,0
+gatas nga dili tam-is,26,train,diabetic,ceb,train,queries.csv,0
+gatas para sa diabetiko,24,train,diabetic,ceb,train,queries.csv,0
+gatas nga no sugar added,27,train,diabetic,ceb,train,queries.csv,0
+sugar free milk,13,train,diabetic,en,train,queries.csv,0
+no sugar added milk,27,train,diabetic,en,train,queries.csv,0
+unsweetened milk,28,train,diabetic,en,train,queries.csv,0
+diabetic milk powder,29,train,diabetic,en,train,queries.csv,0
+milk safe for diabetes,30,train,diabetic,en,train,queries.csv,0
+milk for people with high blood sugar,31,train,diabetic,en,train,queries.csv,0
+zero sugar almond milk,32,train,diabetic,en,train,queries.csv,0
+unsweetened soy milk,33,train,diabetic,en,train,queries.csv,0
+gatas na walang asukal,13,train,diabetic,tl,train,queries.csv,0
+gatas para sa may diabetes na lolo,24,train,diabetic,tl,train,queries.csv,0
+gatas na hindi matamis,34,train,diabetic,tl,train,queries.csv,0
+gatas para sa mataas ang blood sugar,25,train,diabetic,tl,train,queries.csv,0
+sugar free na gatas,13,train,diabetic,taglish,train,queries.csv,0
+gatas para sa may sakit sa asukal,35,train,diabetic,tl,train,queries.csv,0
+organic milk,0,test,organic,en,train,queries.csv,0
+certified organic whole milk,0,test,organic,en,train,queries.csv,0
+organic fresh milk 1 liter,0,test,organic,en,train,queries.csv,0
+milk from organic farm,36,train,organic,en,train,queries.csv,0
+organic dairy milk no antibiotics,37,val,organic,en,train,queries.csv,0
+milk without pesticides and chemicals,38,train,organic,en,train,queries.csv,0
+natural organic cow milk,39,val,organic,en,train,queries.csv,0
+organic oat milk,0,test,organic,en,train,queries.csv,0
+gatas nga walay kemikal,40,train,organic,ceb,train,queries.csv,0
+natural nga gatas walay pestisidyo,41,train,organic,ceb,train,queries.csv,0
+gatas gikan sa organic nga uma,0,test,organic,ceb,train,queries.csv,0
+puro organic nga gatas sa baka,0,test,organic,ceb,train,queries.csv,0
+gatas nga walay antibiotics ug kemikal,42,val,organic,ceb,train,queries.csv,0
+gatas na walang kemikal,40,train,organic,tl,train,queries.csv,0
+gatas mula sa organic na bukid,0,test,organic,tl,train,queries.csv,0
+natural at organic na fresh milk,43,train,organic,taglish,train,queries.csv,0
+usda organic milk,44,train,organic,en,train,queries.csv,0
+organic low fat milk,12,val,organic,en,train,queries.csv,0
+gatas nga pulbos,45,train,powder,ceb,train,queries.csv,0
+gatas nga powdered,0,test,powder,ceb,train,queries.csv,0
+powdered milk,0,test,powder,en,train,queries.csv,0
+milk powder,0,test,powder,en,train,queries.csv,0
+powdered milk drink,46,val,powder,en,train,queries.csv,0
+gatas na pulbos,45,train,powder,tl,train,queries.csv,0
+powdered nga gatas,0,test,powder,ceb,train,queries.csv,0
+gatas sa pulbos,45,train,powder,ceb,train,queries.csv,0
+bear brand powder milk,47,val,powder,en,train,queries.csv,0
+gatas nga powder dili karton,0,test,powder,ceb,train,queries.csv,0
+powdered cow milk in a tin,8,train,powder,en,train,queries.csv,0
+gatas na powder hindi fresh milk,0,test,powder,tl,train,queries.csv,0
+bugas,48,val,other,ceb,train,queries.csv,0
+toyo,50,train,other,ceb,train,queries.csv,0
+mantika,51,val,other,ceb,train,queries.csv,0
+itlog,52,train,other,ceb,train,queries.csv,0
+keso,53,val,other,tl,train,queries.csv,0
+butter,54,train,other,en,train,queries.csv,0
+kape,55,val,other,tl,train,queries.csv,0
+milk tea,56,train,other,en,train,queries.csv,0
+coconut milk for ginataan,57,val,other,en,train,queries.csv,0
+gata sa lubi,58,train,other,ceb,train,queries.csv,0
+chocolate bar,59,val,other,en,train,queries.csv,0
+condensed milk,60,train,other,en,train,queries.csv,0
+evaporated creamer,61,val,other,en,train,queries.csv,0
+coffee creamer,62,train,other,en,train,queries.csv,0
+ice cream,63,val,other,en,train,queries.csv,0
+yogurt,64,train,other,en,train,queries.csv,0
+organic nga bugas,65,val,other,ceb,train,queries.csv,0
+organic brown rice,66,train,other,en,train,queries.csv,0
+sugar free biscuits,67,val,other,en,train,queries.csv,0
+low fat crackers,68,train,other,en,train,queries.csv,0
+karne sa baka,69,train,other,ceb,train,queries.csv,0
+beef tapa,70,val,other,en,train,queries.csv,0
+tapa sa baka,71,train,other,ceb,train,queries.csv,0
+coke 1 liter,72,val,other,en,train,queries.csv,0
+sabon,73,train,other,ceb,train,queries.csv,0
+tinapay,74,val,other,tl,train,queries.csv,0
+sardinas,75,train,other,tl,train,queries.csv,0
+organic vegetables,76,val,other,en,train,queries.csv,0
+asukal,77,train,other,tl,train,queries.csv,0
+Gatas sa baka,0,test,cow,ceb,test,queries.csv,0
+gatas sa baka 1 litro,0,test,cow,ceb,test,queries.csv,0
+palit kog gatas sa baka,0,test,cow,ceb,test,queries.csv,0
+fresh nga gatas sa baka,0,test,cow,ceb,test,queries.csv,0
+cow milk fresh,0,test,cow,en,test,queries.csv,0
+gatas sa baka nga fresh milk,0,test,cow,ceb,test,queries.csv,0
+Gatas nga dili makataba,15,train,low_fat,ceb,test,queries.csv,0
+gatas nga dili kaayo makataba,78,train,low_fat,ceb,test,queries.csv,0
+gatas nga dili makataba para sa diet,15,train,low_fat,ceb,test,queries.csv,0
+gatas dili makataba,15,train,low_fat,ceb,test,queries.csv,0
+low fat nga gatas,12,val,low_fat,ceb,test,queries.csv,0
+gatas na hindi makataba,15,train,low_fat,tl,test,queries.csv,0
+Gatas para sa mga diabetic,24,train,diabetic,ceb,test,queries.csv,0
+gatas para sa diabetic,24,train,diabetic,ceb,test,queries.csv,0
+gatas para sa mga may diabetes,24,train,diabetic,ceb,test,queries.csv,0
+gatas para sa mga diabetic nga walay asukal,24,train,diabetic,ceb,test,queries.csv,0
+diabetic nga gatas,24,train,diabetic,ceb,test,queries.csv,0
+milk for diabetics,24,train,diabetic,en,test,queries.csv,0
+Gatas na organic,0,test,organic,taglish,test,queries.csv,0
+gatas nga organic,0,test,organic,ceb,test,queries.csv,0
+organic nga gatas,0,test,organic,ceb,test,queries.csv,0
+organikong gatas,0,test,organic,tl,test,queries.csv,0
+gatas na organic 1 litro,0,test,organic,taglish,test,queries.csv,0
+organic na fresh milk,43,train,organic,taglish,test,queries.csv,0
+gatas nga powder,0,test,powder,ceb,test,queries.csv,1
+gatas na powder,0,test,powder,tl,test,queries.csv,0
+powdered milk 400g,79,val,powder,en,test,queries.csv,0
+palit kog gatas nga powder,0,test,powder,ceb,test,queries.csv,0
+1 litro nga coke,81,train,other,ceb,test,queries.csv,0
+karne sa baka para sa sinugba,69,train,other,ceb,test,queries.csv,0
+organic nga lettuce,82,val,other,ceb,test,queries.csv,0
+biskwit para sa diabetic,83,train,other,ceb,test,queries.csv,0
+gata para sa ginataan,84,val,other,ceb,test,queries.csv,0
+milk tea nga wintermelon,85,train,other,ceb,test,queries.csv,0
+condensed milk para sa leche flan,86,val,other,taglish,test,queries.csv,0
+keso nga eden,87,train,other,ceb,test,queries.csv,0
+chocolate nga dairy milk,88,val,other,en,test,queries.csv,0
+mangita ko og gatas sa baka,0,test,cow,ceb,train,queries.csv,0
+unsa ang presko nga gatas gikan sa baka,0,test,cow,ceb,train,queries.csv,0
+palit ko og gatas nga gikan sa baka,89,train,cow,ceb,train,queries.csv,0
+gatas sa baka para sa mga bata,0,test,cow,ceb,train,queries.csv,0
+full cream nga gatas sa baka,0,test,cow,ceb,train,queries.csv,0
+gatas sa baka sa karton,0,test,cow,ceb,train,queries.csv,0
+gusto ko og tinuod nga gatas sa baka,0,test,cow,ceb,train,queries.csv,0
+duha ka litro nga gatas sa baka,0,test,cow,ceb,train,queries.csv,0
+gatas nga gamay ang tambok,14,train,low_fat,ceb,train,queries.csv,0
+mangita ko og low fat nga gatas,12,val,low_fat,ceb,train,queries.csv,0
+gatas para dili motaas ang timbang,90,train,low_fat,ceb,train,queries.csv,0
+non-fat nga gatas,13,train,low_fat,ceb,train,queries.csv,0
+gatas nga gaan ra ang tambok para sa diet,91,train,low_fat,ceb,train,queries.csv,0
+skim milk nga walay tambok,92,train,low_fat,ceb,train,queries.csv,0
+gatas para sa nagpaniwang,93,train,low_fat,ceb,train,queries.csv,0
+gatas nga dili makadugang og timbang,94,train,low_fat,ceb,train,queries.csv,0
+gatas para sa naay diabetes,24,train,diabetic,ceb,train,queries.csv,0
+gatas nga walay dugang nga asukal,27,train,diabetic,ceb,train,queries.csv,0
+mangita ko og gatas para sa diabetic,24,train,diabetic,ceb,train,queries.csv,0
+gatas nga dili makataas sa sugar,95,train,diabetic,ceb,train,queries.csv,0
+sugar free nga gatas,13,train,diabetic,ceb,train,queries.csv,0
+gatas para sa lolo nga diabetic,24,train,diabetic,ceb,train,queries.csv,0
+unsweetened nga gatas,28,train,diabetic,ceb,train,queries.csv,0
+gatas nga ubos ang asukal,96,train,diabetic,ceb,train,queries.csv,0
+organic nga gatas gikan sa baka,0,test,organic,ceb,train,queries.csv,0
+gatas nga organic ug natural,0,test,organic,ceb,train,queries.csv,0
+mangita ko og organic nga gatas,0,test,organic,ceb,train,queries.csv,0
+gatas nga walay pestisidyo ug kemikal,97,val,organic,ceb,train,queries.csv,0
+natural nga gatas nga organic,0,test,organic,ceb,train,queries.csv,0
+organic whole milk,0,test,organic,ceb,train,queries.csv,0
+palit ko og organic nga gatas,0,test,organic,ceb,train,queries.csv,0
+gatas gikan sa organic nga baka,0,test,organic,ceb,train,queries.csv,0
+presko nga isda,98,train,other,ceb,train,queries.csv,0
+manok nga tinola,99,val,other,ceb,train,queries.csv,0
+asin ug asukal,100,train,other,ceb,train,queries.csv,0
+pan de sal,101,val,other,ceb,train,queries.csv,0
+kape nga 3 in 1,102,train,other,ceb,train,queries.csv,0
+condensada nga gatas,103,train,other,ceb,train,queries.csv,0
+gatas nga mainom dretso,104,train,cow,ceb,train,queries.csv,0
+gatas nga probiotic,105,train,cow,ceb,train,queries.csv,0
+gatas nga pang kids,106,train,powder,ceb,train,queries.csv,0
+gatas nga mainom,104,train,cow,ceb,train,queries.csv,0
+gatas nga fresh,107,train,cow,ceb,train,queries.csv,0
+gatas nga naa sa botelya,108,train,cow,ceb,train,queries.csv,0
+gatas para sa kape,109,val,cow,ceb,train,queries.csv,0
+gatas nga tam-is,0,test,cow,ceb,train,queries.csv,0
+naay flavor nga gatas,110,train,cow,ceb,train,queries.csv,0
+pangluto nga gatas,111,train,cow,ceb,train,queries.csv,0
+gatas pangbaby,112,val,powder,ceb,train,queries.csv,0
+soya milk,113,train,cow,en,train,queries.csv,0
+Bear Brand nga gatas,114,train,powder,ceb,train,queries.csv,0
+sabon nga naay gatas,117,val,other,ceb,train,queries.csv,0
+Gatas para sa kape pero dili tam-is,109,val,cow,ceb,train,queries.csv,1
+Gatas para sa dessert pero dili fresh milk,118,train,cow,ceb,train,queries.csv,0
+Gatas nga low fat pero dili powder,12,val,low_fat,ceb,train,queries.csv,1
+Gatas nga organic ug walay sugar,0,test,organic,ceb,train,queries.csv,1
+Gatas para sa kape nga dili creamer,109,val,cow,ceb,train,queries.csv,0
+Gatas nga walay lactose,120,train,cow,ceb,train,queries.csv,0
+Gatas nga liquid,121,train,cow,ceb,test,queries.csv,0
+Gatas nga full cream,0,test,cow,ceb,test,queries.csv,0
+Gatas nga non-fat,13,train,low_fat,ceb,test,queries.csv,0
+Gatas nga powdered pero chocolate,0,test,powder,ceb,test,queries.csv,0
+Gatas nga pwede imnon kada adlaw,122,train,cow,ceb,test,queries.csv,0
+Gatas nga naa sa karton,123,train,cow,ceb,test,queries.csv,0
+Gatas nga naa sa lata,108,train,cow,ceb,test,queries.csv,0
+Gatas nga evaporated,124,train,cow,ceb,test,queries.csv,0
+Gatas nga condensed,103,train,cow,ceb,test,queries.csv,0
+Gatas nga thick creamer,125,train,cow,ceb,test,queries.csv,0
+Gatas nga gikan sa tanom,126,train,cow,ceb,test,queries.csv,0
+Gatas para sa tigulang,127,train,powder,ceb,test,queries.csv,0
+Gatas para sa bukog,128,val,powder,ceb,test,queries.csv,0
+Gatas para sa edaran,129,train,powder,ceb,test,queries.csv,0
+Gatas para sa 3 years old,130,val,powder,ceb,test,queries.csv,0
+Gatas para sa 1 year old,131,train,powder,ceb,test,queries.csv,0
+Gatas para sa 6 months nga baby,132,val,powder,ceb,test,queries.csv,0
+Gatas para sa newborn,133,train,powder,ceb,test,queries.csv,0
+Gatas para sa 4 months old,134,val,powder,ceb,test,queries.csv,0
+Gatas para sa mango float,135,train,cow,ceb,test,queries.csv,0
+Gatas para sa fruit salad,136,train,cow,ceb,test,queries.csv,0
+Gatas para sa leche flan,137,train,cow,ceb,test,queries.csv,0
+Gatas para sa halo-halo,138,train,cow,ceb,test,queries.csv,0
+Gatas para sa champorado,139,train,cow,ceb,test,queries.csv,0
+Gatas para sa sopas,140,train,cow,ceb,test,queries.csv,0
+Gatas para sa cereal,141,train,cow,ceb,test,queries.csv,0
+Alaska nga gatas,142,train,powder,ceb,test,queries.csv,0
+Birch Tree nga gatas,143,val,powder,ceb,test,queries.csv,0
+Anchor nga gatas,144,train,cow,ceb,test,queries.csv,0
+Nestlé nga fresh milk,145,train,cow,ceb,test,queries.csv,0
+Nido nga gatas para sa bata,0,test,powder,ceb,test,queries.csv,0
+Anlene nga gatas,146,train,powder,ceb,test,queries.csv,0
+Ensure nga gatas,147,val,powder,ceb,test,queries.csv,0
+Chuckie nga chocolate milk,148,train,cow,ceb,test,queries.csv,0
+Gatas nga chocolate flavor,149,train,cow,ceb,test,queries.csv,0
+Gatas nga banana flavor,150,train,cow,ceb,test,queries.csv,0
+Gatas nga strawberry flavor,151,train,cow,ceb,test,queries.csv,0
+Gatas nga vanilla para sa adulto,152,train,powder,ceb,test,queries.csv,0
+Naa moy gatas nga fresh?,107,train,cow,ceb,test,queries.csv,0
+Mangita kog gatas para sa akong kape,153,train,cow,ceb,test,queries.csv,0
+Kanang gatas nga panghimog dessert,154,train,cow,ceb,test,queries.csv,0
+Naa moy gatas nga dili kaayo tambok?,155,train,low_fat,ceb,test,queries.csv,0
+Gusto kog gatas nga chocolate,156,train,cow,ceb,test,queries.csv,0
+Kanang gatas nga para sa akong anak nga tres anyos,157,val,powder,ceb,test,queries.csv,0
+Naa moy gatas nga pang tigulang?,158,train,powder,ceb,test,queries.csv,0
+Kanang gatas nga pwede diretso imnon,159,train,cow,ceb,test,queries.csv,0
+Mangita kog gatas nga pangluto og sopas,160,train,cow,ceb,test,queries.csv,0
+Naa moy gatas nga dili gikan sa hayop?,161,train,cow,ceb,test,queries.csv,0
+Kanang gatas nga naay probiotics,162,train,cow,ceb,test,queries.csv,0
+Gusto kog gatas nga tam-is para sa salad,0,test,cow,ceb,test,queries.csv,0
+Gatas nga fresh pero dili powdered,107,train,cow,ceb,test,queries.csv,0
+Gatas nga chocolate pero dili powder,0,test,cow,ceb,test,queries.csv,0
+Gatas nga powdered pero dili chocolate,0,test,powder,ceb,test,queries.csv,0
+Gatas nga pangluto pero dili condensed,163,train,cow,ceb,test,queries.csv,0
+Gatas nga tam-is pero dili chocolate,0,test,cow,ceb,test,queries.csv,0
+Gatas nga para sa adulto pero dili pangbata,164,val,powder,ceb,test,queries.csv,0
+Gatas nga para sa bata pero dili pangbaby,165,train,powder,ceb,test,queries.csv,0
+Gatas nga gikan sa baka pero dili full cream,166,train,low_fat,ceb,test,queries.csv,0
+Gatas nga vegan pero dili chocolate,167,train,cow,ceb,test,queries.csv,0
+Gatas nga soya pero dili chocolate,168,test,cow,ceb,test,queries.csv,1
+Gatas nga fresh pero dili low fat,107,train,cow,ceb,test,queries.csv,0
+Gatas para sa kape pero dili condensed,109,val,cow,ceb,test,queries.csv,0
+Gatas para sa dessert nga tam-is ug creamy,169,train,cow,ceb,test,queries.csv,0
+Gatas nga pangbaby pero dili pang 3 years old,170,val,powder,ceb,test,queries.csv,0
+Gatas nga naay flavor pero dili chocolate,0,test,cow,ceb,test,queries.csv,0
+Gatas nga 1 litro,0,test,cow,ceb,test,queries.csv,0
+Gatas nga 300 grams,171,train,powder,ceb,test,queries.csv,0
+Gatas nga 400 grams para sa baby,172,val,powder,ceb,test,queries.csv,0
+Gatas nga 680 grams,173,train,powder,ceb,test,queries.csv,0
+Gatas nga 2.4 kilos para sa bata,174,val,powder,ceb,test,queries.csv,0
+Gatas nga 4.8 kilos,175,train,powder,ceb,test,queries.csv,0
+gatas nga presko,176,test,cow,ceb,,stage2_example,1
+gatas sa kalabaw,177,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga almond,178,test,cow,ceb,,thesis_test_expand_100,0
+gatas naa sa pakete,179,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga daku,180,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga plain,181,test,cow,ceb,,thesis_test_expand_100,0
+pangsabaw nga gatas,182,test,cow,ceb,,thesis_test_expand_100,0
+gatas para sa butong,183,test,cow,ceb,,thesis_test_expand_100,0
+gatas pampahamis,184,test,cow,ceb,,thesis_test_expand_100,0
+gluten-free nga gatas,185,test,other,ceb,,thesis_test_expand_100,0
+gatas pangsnacks,186,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga pang sud-an,187,test,cow,ceb,,thesis_test_expand_100,0
+gatas para sa iro,188,test,other,ceb,,thesis_test_expand_100,0
+gatas sa kanding,189,test,cow,ceb,,thesis_test_expand_100,0
+Magnolia nga gatas,190,test,cow,ceb,,thesis_test_expand_100,0
+Meiji nga gatas,191,test,cow,ceb,,thesis_test_expand_100,0
+Arla nga gatas,192,test,cow,ceb,,thesis_test_expand_100,0
+Horizon nga gatas,193,test,cow,ceb,,thesis_test_expand_100,0
+Glucerna nga gatas,194,test,diabetic,ceb,,thesis_test_expand_100,0
+Nesquik nga gatas,195,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga 180 ml,196,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga 946 ml,197,test,cow,ceb,,thesis_test_expand_100,0
+japanese style nga gatas,198,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga pasteurized,199,test,cow,ceb,,thesis_test_expand_100,0
+gatas gikan sa Nueva Ecija,200,test,cow,ceb,,thesis_test_expand_100,0
+gatas gikan sa Bohol,201,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga New Zealand,202,test,cow,ceb,,thesis_test_expand_100,0
+gatas para sa scrambled egg,203,test,cow,ceb,,thesis_test_expand_100,0
+gatas para sa tsamporado,204,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga plant-based,205,test,cow,ceb,,thesis_test_expand_100,0
+gatas nga fortified iron ug zinc,206,test,powder,ceb,,thesis_test_expand_100,0
+Gatas para sa pancake,207,test,cow,ceb,,thesis_test_expand_100,0

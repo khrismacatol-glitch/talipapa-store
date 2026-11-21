@@ -1,0 +1,105 @@
+query,family,split,lang,contrast_group,notes
+gatas nga fresh milk 1 litro,milk,train,ceb,,Grade drinking milk SKUs. Condensed/evaporated creamers are usually 1 if the shopper said fresh milk.
+bear brand powdered milk drink,milk,train,en,,
+sariwang gatas ng baka,milk,train,tl,,
+alaska low fat milk,milk,train,en,,
+gatas nga evaporated,milk,train,ceb,,Evaporated milk vs drinking milk: assign 2 only if you judge it the same product concept.
+powdered milk 320g,milk,train,en,,
+gatas na walang asukal,milk,train,tl,,
+magnolia fresh milk,milk,val,en,,
+gatas nga walay tambok,milk,val,ceb,,
+bear brand fortified powdered milk,milk,test,en,,"FROZEN test. Do not paraphrase into train."
+palit ko og gatas nga powder,milk,test,ceb,,FROZEN test.
+gatas na low fat,milk,test,tl,,FROZEN test.
+delata nga corned beef,canned,train,ceb,corned_beef_vs_tuna,Corned tuna is related (1) not corned beef (2).
+argentina corned beef,canned,train,en,corned_beef_vs_tuna,
+de lata na sardinas,canned,train,tl,tinapa_vs_sardines,
+canned tuna flakes,canned,train,en,corned_beef_vs_tuna,
+young's town corned beef,canned,train,en,corned_beef_vs_tuna,
+delata para sa ulam,canned,train,ceb,,Broad canned ulam: you decide 2 vs 1. Do not mark rice or soap.
+century tuna flakes,canned,val,en,corned_beef_vs_tuna,
+de latang sardinas sa tomato sauce,canned,val,tl,tinapa_vs_sardines,
+palit kog corned beef,canned,test,ceb,corned_beef_vs_tuna,FROZEN test. Corned tuna should not be grade 2.
+san marino corned tuna,canned,test,en,corned_beef_vs_tuna,FROZEN test. Corned beef should not be grade 2.
+argentina nga delata,canned,test,tl,corned_beef_vs_tuna,FROZEN test.
+sardinas sa tomato sauce,seafood,train,ceb,tinapa_vs_sardines,Canned sardines. Tinapa/smoked fish is a different concept if present.
+555 sardines,seafood,train,en,tinapa_vs_sardines,
+mega sardines,seafood,train,en,tinapa_vs_sardines,
+tuna flakes in oil,seafood,train,en,,
+isda nga delata,seafood,train,ceb,,
+fresca sardines hot and spicy,seafood,val,en,tinapa_vs_sardines,
+sardinas na may sili,seafood,val,tl,tinapa_vs_sardines,
+tinapa,seafood,test,ceb,tinapa_vs_sardines,FROZEN test. Catalog currently has no tinapa SKU. Sardines are related (1) unless you add smoked fish.
+smoked fish,seafood,test,en,tinapa_vs_sardines,FROZEN test.
+sardinas,seafood,test,tl,tinapa_vs_sardines,FROZEN test. Tinapa is not a sardine can.
+bugas nga jasmine,rice,train,ceb,rice_vs_infant_cereal,Cerelac rice cereal is not table rice (0 or 1 at most).
+bigas 5kg,rice,train,tl,rice_vs_infant_cereal,
+jasmine rice,rice,train,en,rice_vs_infant_cereal,
+organic brown rice,rice,train,en,rice_vs_infant_cereal,
+bugas para sa kan-on,rice,train,ceb,rice_vs_infant_cereal,
+brown rice,rice,val,en,rice_vs_infant_cereal,
+organikong bigas,rice,val,tl,rice_vs_infant_cereal,
+palit kog bugas,rice,test,ceb,rice_vs_infant_cereal,FROZEN test.
+jasmine rice 5kg,rice,test,en,rice_vs_infant_cereal,FROZEN test.
+bigas na brown,rice,test,tl,rice_vs_infant_cereal,FROZEN test.
+sabon pang laba ariel,laundry_soap,train,ceb,laundry_vs_bath,Bath/germicidal soap is related at most (1), not grade 2.
+surf detergent powder,laundry_soap,train,en,laundry_vs_bath,
+sabon sa damit,laundry_soap,train,tl,laundry_vs_bath,
+tide laundry bar,laundry_soap,train,en,laundry_vs_bath,
+wings detergent powder,laundry_soap,train,en,laundry_vs_bath,
+ariel detergent powder,laundry_soap,val,en,laundry_vs_bath,
+sabon panglabada,laundry_soap,val,tl,laundry_vs_bath,
+sabon pang laba,laundry_soap,test,ceb,laundry_vs_bath,FROZEN test. Do not give 2 to Bioderm/Safeguard bath soap.
+laundry detergent powder,laundry_soap,test,en,laundry_vs_bath,FROZEN test.
+perla laundry soap bar,laundry_soap,test,en,laundry_vs_bath,FROZEN test.
+sabon pang ligo bioderm,bath_soap,train,ceb,laundry_vs_bath,Laundry detergent is not bath soap (0 or 1).
+safeguard bar soap,bath_soap,train,en,laundry_vs_bath,
+sabon sa katawan,bath_soap,train,tl,laundry_vs_bath,
+kojie san soap,bath_soap,train,en,laundry_vs_bath,
+silka whitening soap,bath_soap,train,en,laundry_vs_bath,
+bioderm germicidal soap,bath_soap,val,en,laundry_vs_bath,
+pampaligo na sabon,bath_soap,val,tl,laundry_vs_bath,
+sabon pang ligo,bath_soap,test,ceb,laundry_vs_bath,FROZEN test. Ariel/Surf/Tide are not grade 2.
+bath soap,bath_soap,test,en,laundry_vs_bath,FROZEN test.
+safeguard,bath_soap,test,en,laundry_vs_bath,FROZEN test.
+sabon pang hugas plato,dishwashing,train,ceb,dishwashing_vs_laundry,Laundry powder is not dishwashing paste.
+dazz dishwashing paste,dishwashing,train,en,dishwashing_vs_laundry,
+axion dishwashing paste,dishwashing,train,en,dishwashing_vs_laundry,
+smart dishwashing paste lemon,dishwashing,train,en,dishwashing_vs_laundry,
+hugas pinggan,dishwashing,train,tl,dishwashing_vs_laundry,
+dishwashing paste kalamansi,dishwashing,val,en,dishwashing_vs_laundry,
+panghugas ng plato,dishwashing,val,tl,dishwashing_vs_laundry,
+palit kog sabon pang hugas plato,dishwashing,test,ceb,dishwashing_vs_laundry,FROZEN test.
+dazz paste lime,dishwashing,test,en,dishwashing_vs_laundry,FROZEN test.
+dishwashing paste,dishwashing,test,en,dishwashing_vs_laundry,FROZEN test.
+downy fabric conditioner,household,train,en,,
+fabcon para sa laba,household,train,ceb,,
+downy garden bloom,household,train,en,,
+kondisyoner sa damit,household,train,tl,,
+surf fabric conditioner,household,train,en,,
+downy fabcon antibac,household,val,en,,
+pampalambot ng damit,household,val,tl,,
+palit kog downy,household,test,ceb,,FROZEN test.
+fabric conditioner,household,test,en,,FROZEN test.
+fabcon indoor dry,household,test,en,,FROZEN test.
+nangaayo kog gatas nga bear brand,milk,train,ceb,,Natural Bisaya. Powdered milk drink SKUs are 2; chocolate/coffee mixes are 1.
+palit kog gatas nga evaporated,milk,train,ceb,,
+unsaon nako og argentina nga corned beef,canned,train,ceb,corned_beef_vs_tuna,Corned tuna is 1.
+nangaayo kog delata para sa paniudto,canned,train,ceb,,
+palit kog mega sardinas,seafood,train,ceb,tinapa_vs_sardines,Sardine cans 2; tinapa/smoked fish 1 if present.
+nangaayo kog 555 sardinas,seafood,train,ceb,tinapa_vs_sardines,
+tuna nga delata para sa kan-on,seafood,train,ceb,corned_beef_vs_tuna,
+bugas nga 5 kilo,rice,train,ceb,rice_vs_infant_cereal,Table rice 2; Cerelac 1 or 0.
+kan-on nga bugas dili cereal,rice,train,ceb,rice_vs_infant_cereal,
+sabon para sa paglaba surf,laundry_soap,train,ceb,laundry_vs_bath,Bath soap is 1 not 2.
+nangaayo kog sabon pang damit,laundry_soap,train,ceb,laundry_vs_bath,
+sabon bioderm para sa lawas,bath_soap,train,ceb,laundry_vs_bath,Laundry powder is 1 not 2.
+kojie san nga sabon pang ligo,bath_soap,train,ceb,laundry_vs_bath,
+dazz nga panghugas plato,dishwashing,train,ceb,dishwashing_vs_laundry,
+axion para sa mga plato,dishwashing,train,ceb,dishwashing_vs_laundry,
+nangaayo kog downy nga fabcon,household,train,ceb,,
+surf nga conditioner sa damit,household,train,ceb,,
+nangaayo kog gatas nga magnolia,milk,val,ceb,,
+delata nga sardinas para sa ulam,seafood,val,ceb,tinapa_vs_sardines,
+sabon para sa pagligo dili laba,bath_soap,val,ceb,laundry_vs_bath,
+panghugas plato nga kalamansi,dishwashing,val,ceb,dishwashing_vs_laundry,

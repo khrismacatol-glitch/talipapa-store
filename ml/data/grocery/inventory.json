@@ -1,0 +1,160 @@
+{
+  "source": "ml/data/live_products.json (encoded catalog)",
+  "mysql_available_snapshot": "ml/data/grocery/products_mysql_available.json",
+  "product_rows": 768,
+  "unique_names": 706,
+  "by_store_aisle": {
+    "Buy It Again": 600,
+    "Dairy, Eggs & Cheese": 44,
+    "Fruits & Vegetables": 40,
+    "Beverages": 26,
+    "Grains, Pasta & Sides": 23,
+    "Cookies, Snacks & Candy": 23,
+    "Bread & Bakery": 3,
+    "Meat & Seafood": 3,
+    "Canned Goods & Soups": 3,
+    "Nutrition & Wellness": 2,
+    "Frozen Foods": 1
+  },
+  "by_labeling_family_unique_names": {
+    "bath_soap": 12,
+    "canned": 33,
+    "dishwashing": 5,
+    "household": 28,
+    "laundry_soap": 36,
+    "milk": 12,
+    "rice": 2,
+    "rice_adjacent_not_table_rice": 2,
+    "seafood": 31
+  },
+  "family_name_samples": {
+    "bath_soap": [
+      "Bioderm Family Germicidal Soap Coolness 60g",
+      "Bioderm Germicidal Soap Bloom Pink 60g",
+      "Bioderm Germicidal Soap Coolness Blue 135g",
+      "Bioderm Germicidal Soap Freshen Green 60g",
+      "Bioderm Germicidal Soap Glow Yellow 60g",
+      "Bioderm Germicidal Soap Intense Coolness",
+      "Bioderm Germicidal Soap Timeless Beige 60g",
+      "Kojie San Kojic Acid Skin Lightening Soap",
+      "Kojie San Skin Lightening Soap 65g X 3's",
+      "Safeguard Bar Soap White 22g",
+      "Silka Whitening Herbal Soap Papaya 65g",
+      "Skin White Whitening Soap Classic 65g"
+    ],
+    "canned": [
+      "555 Sardines In Tomato Sauce Hot Red 155g",
+      "555 Tuna Flakes - Caldereta 5.5oz",
+      "Alaska Evaporada Creamer 370ml",
+      "Alaska Sweetened Condensed Milk 300ml",
+      "Argentina Beef Loaf 100g",
+      "Argentina Beef Loaf 150G",
+      "Argentina Corned Beef",
+      "Argentina Corned Beef 260g",
+      "Atami Sardines Hot 155g",
+      "Century Tuna Flakes Hot And Spicy 155g",
+      "Century Tuna Flakes Hot And Spicy 95g",
+      "Century Tuna Flakes In Vegetable Oil 180g"
+    ],
+    "dishwashing": [
+      "Axion Dishwashing Paste Lemon Bonus Pack 550g",
+      "Dazz Dishwashing Paste Lime Cup 400g",
+      "Smart Dishwashing Paste Kalamansi 200g",
+      "Smart Dishwashing Paste Lemon 200g",
+      "Smart Dishwashing Paste Lemon 400g"
+    ],
+    "household": [
+      "5 All Purpose Instant Super Glue",
+      "Ariel Detergent Powder With Freshness Of Downy Passion 64g 6's + 1",
+      "Calla With Fabric Conditioner Floral Fresh Powder Detergent 100g",
+      "Calla With Fabric Conditioner Rose Garden 800g",
+      "Charmee Feminine Pads All Flow Cottony Soft With Wings 8's",
+      "Downy Fabcon Fabric Conditioner Antibac 26ml",
+      "Downy Fabcon Fabric Conditioner Passion 20ml",
+      "Downy Fabcon Garden Bloom Fabric Conditioner 24ml 6s",
+      "Downy Fabcon Kontra Kulob Fabric Conditioner Indoor Dry 22ml",
+      "Downy Fabcon Sunrise Fresh 25ml X 6",
+      "Downy Fabric Conditioner Garden Bloom 26ml 6's + 1",
+      "Downy Fabric Conditioner Garden Bloom 38ml"
+    ],
+    "laundry_soap": [
+      "Ariel Detergent Powder Sunrise Fresh 66g",
+      "Ariel Detergent Powder Tripid Pack Sunrise Fresh 90g 6's + 1",
+      "Ariel Detergent Powder With Freshness Of Downy Passion 64g 6's + 1",
+      "Calla With Fabric Conditioner Floral Fresh Powder Detergent 100g",
+      "Calla With Fabric Conditioner Rose Garden 800g",
+      "Champion 1 Todo Bar 130g + 1 Powder Sachet 35g Detergent Powder Todo Tipid Pack",
+      "Champion Mini Hotdog 250g",
+      "Champion Supra Power Anti-Bacterial Sunny Fresh Scent",
+      "Downy Fabcon Fabric Conditioner Antibac 26ml",
+      "Downy Fabcon Fabric Conditioner Passion 20ml",
+      "Downy Fabcon Garden Bloom Fabric Conditioner 24ml 6s",
+      "Downy Fabcon Kontra Kulob Fabric Conditioner Indoor Dry 22ml"
+    ],
+    "milk": [
+      "Alaska Fortified Powdered Filled Milk 300g",
+      "Alaska Fortified Powdered Milk Drink Original 680g",
+      "Bear Brand Adult Plus Powdered Milk Drink",
+      "Bear Brand Fortified Choco Milk Drink",
+      "Bear Brand Fortified Powdered Milk Drink",
+      "Bear Brand Nestlé Adult Plus Milk Drink With Coffee 33g",
+      "Birch Tree Fortified Milk",
+      "Birch Tree Fortified Powdered Chocolate Milk Drink 290g",
+      "Birch Tree Fortified Powdered Milk Drink 925g",
+      "Bonakid 1-3 Years Old Milk Supplement Powder 350g",
+      "Chuckie Nestlé My Chocolatey Buddy Chocolate Milk Drink 110mL",
+      "Vitamilk Double Choco Shake Soymilk Drink 300ML"
+    ],
+    "rice": [
+      "Jasmine Rice 5kg",
+      "Organic Brown Rice 2kg"
+    ],
+    "rice_adjacent_not_table_rice": [
+      "Cerelac Nestlé Infant Cereals Rice & Soya 120g",
+      "Cerelac Nestlé Infant Cereals Rice & Soya 20g"
+    ],
+    "seafood": [
+      "555 Sardines In Tomato Sauce Hot Red 155g",
+      "555 Tuna Flakes - Caldereta 5.5oz",
+      "Ajinomoto Tasty Boy Regular Breading Mix",
+      "Atami Sardines Hot 155g",
+      "Century Tuna Flakes Hot And Spicy 155g",
+      "Century Tuna Flakes Hot And Spicy 95g",
+      "Century Tuna Flakes In Vegetable Oil 180g",
+      "Combino Dough Shellfish",
+      "Family S Brand Bonus Pack Sardines In Tomato Sauce Chili 155g",
+      "Fresca Sardines Hot And Spicy 155g",
+      "Fresca Sardines In Tomato Sauce 155g",
+      "Fresca Tuna Flakes Flakes In Oil 150g"
+    ]
+  },
+  "gaps": [
+    "No listing name contains tinapa. Tinapa queries have no grade-2 SKU until you add smoked fish / tinapa.",
+    "Store aisle 'Buy It Again' holds most encoded SKUs; aisle names are not reliable family labels.",
+    "Inventory families can overlap (e.g. sardines in canned and seafood). Overlap is not a relevance grade."
+  ],
+  "queries": {
+    "total": 83,
+    "by_split": {
+      "train": 43,
+      "val": 16,
+      "test": 24
+    },
+    "by_family": {
+      "milk": 12,
+      "canned": 11,
+      "seafood": 10,
+      "rice": 10,
+      "laundry_soap": 10,
+      "bath_soap": 10,
+      "dishwashing": 10,
+      "household": 10
+    },
+    "by_lang": {
+      "ceb": 21,
+      "en": 43,
+      "tl": 19
+    }
+  },
+  "labels": "none assigned by this script"
+}

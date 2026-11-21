@@ -1,0 +1,14 @@
+{
+  "production_ranker": "ml/models/ranker.txt",
+  "production_mix": "LTR_WEIGHT * minmax(lambdamart) + TEXT_WEIGHT * minmax(extra_term_bm25)",
+  "scheduler_command": "search:retrain",
+  "scheduler": "weeklyOn(1, 03:00)",
+  "scheduler_timezone": "UTC (config/app.php timezone)",
+  "asia_manila_equivalent": "Monday 11:00",
+  "promotes_production": false,
+  "candidate_output": "ml/models/candidates/<YmdTHMSZ>/",
+  "experiment_root": "ml/experiments/cebu_ca_hyltr",
+  "held_out_file": "splits.csv",
+  "feedback_blocked_from_held_out": true,
+  "experimental_ranker_deployed": false
+}

@@ -1,0 +1,74 @@
+﻿train_index,query,cells_changed,primary_reason
+5,full cream fresh milk,14,Fresh milk request
+8,powdered cow milk,4,Powder form
+9,fresh milk ng baka 1 litro,14,Fresh milk request
+10,real cow milk not plant based,3,Animal milk constraint
+11,holstein cow fresh milk,4,Holstein specified
+12,gatas nga walay tambok,4,Non-fat is not low-fat
+13,gatas nga gamay ra og tambok,8,Low-fat requirement
+18,non fat milk,4,Non-fat is not low-fat
+19,fat free milk,4,Non-fat is not low-fat
+20,reduced fat milk,8,Low-fat requirement
+23,semi skimmed milk,20,Semi-skimmed
+24,gatas na walang taba,4,Non-fat is not low-fat
+27,low fat na gatas para pumayat,12,Low-fat requirement
+28,gatas nga walay asukal,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+33,gatas nga no sugar added,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+34,sugar free milk,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+35,no sugar added milk,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+36,unsweetened milk,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+37,diabetic milk powder,6,Powder form
+40,zero sugar almond milk,5,Almond zero-sugar
+41,unsweetened soy milk,2,Unsweetened soy
+42,gatas na walang asukal,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+46,sugar free na gatas,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+48,milk from organic farm,3,Organic specification
+50,gatas nga walay kemikal,25,Organic specification
+51,natural nga gatas walay pestisidyo,25,Organic specification
+52,gatas na walang kemikal,25,Organic specification
+53,natural at organic na fresh milk,4,Organic specification
+54,usda organic milk,1,USDA certification
+55,gatas nga pulbos,4,Powder form
+56,gatas na pulbos,4,Powder form
+57,gatas sa pulbos,4,Powder form
+58,powdered cow milk in a tin,24,Tin packaging not verified
+67,organic brown rice,27,Organic specification
+68,low fat crackers,26,Low-fat requirement
+82,gatas para sa mga diabetic nga walay asukal,9,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+85,organic na fresh milk,4,Organic specification
+92,gatas nga gamay ang tambok,8,Low-fat requirement
+94,non-fat nga gatas,4,Non-fat is not low-fat
+95,gatas nga gaan ra ang tambok para sa diet,12,Low-fat requirement
+96,skim milk nga walay tambok,4,Non-fat is not low-fat
+100,gatas nga walay dugang nga asukal,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+103,sugar free nga gatas,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+105,unsweetened nga gatas,4,Sugar requirement: no-added/unsweetened; no unsupported zero-sugar inference
+107,presko nga isda,25,Fresh milk request
+112,gatas nga probiotic,3,No probiotic claim in catalog
+115,gatas nga fresh,14,Fresh milk request
+120,Bear Brand nga gatas,27,Brand mismatch
+121,Gatas para sa dessert pero dili fresh milk,10,Exclude fresh
+122,Gatas nga walay lactose,3,Lactose-free requirement
+124,Gatas nga non-fat,4,Non-fat is not low-fat
+131,Gatas nga gikan sa tanom,4,Plant/vegan constraint
+143,Alaska nga gatas,1,Brand mismatch
+144,Anchor nga gatas,3,Brand mismatch
+145,Nestlé nga fresh milk,14,Brand mismatch
+146,Anlene nga gatas,3,Brand mismatch
+147,Chuckie nga chocolate milk,24,"Chuckie brand is absent; Nesquik is another chocolate milk, not Chuckie"
+148,Gatas nga chocolate flavor,3,Chocolate flavor
+149,Gatas nga banana flavor,24,Requested flavor absent
+150,Gatas nga strawberry flavor,24,Requested flavor absent
+151,Gatas nga vanilla para sa adulto,24,Requested flavor absent
+152,Naa moy gatas nga fresh?,14,Fresh milk request
+156,Gusto kog gatas nga chocolate,3,Chocolate flavor
+160,Naa moy gatas nga dili gikan sa hayop?,4,Plant/vegan constraint
+161,Kanang gatas nga naay probiotics,3,No probiotic claim in catalog
+162,Gatas nga fresh pero dili powdered,16,Exclude powder; fresh milk requested
+163,Gatas nga pangluto pero dili condensed,27,Exclude condensed
+165,Gatas nga gikan sa baka pero dili full cream,24,Exclude full cream
+166,Gatas nga vegan pero dili chocolate,4,Plant/vegan constraint
+167,Gatas nga fresh pero dili low fat,22,Exclude low-fat
+169,Gatas nga 300 grams,3,Requested size absent
+170,Gatas nga 680 grams,3,Requested size absent
+171,Gatas nga 4.8 kilos,3,Requested size absent

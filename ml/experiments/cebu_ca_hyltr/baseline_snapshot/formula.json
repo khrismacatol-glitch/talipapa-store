@@ -1,0 +1,17 @@
+{
+  "name": "current_hybrid_lambdamart",
+  "source_model_version": "20261116T085420Z",
+  "source_dir": "C:\\ASELCO\\Workspace\\GitHub\\Talipapa\\talipapa-store\\ml\\models",
+  "snapshot_dir": "C:\\ASELCO\\Workspace\\GitHub\\Talipapa\\talipapa-store\\ml\\experiments\\cebu_ca_hyltr\\baseline_snapshot",
+  "ltr_weight": 1.0,
+  "text_weight": 1.25,
+  "labse_weight": 1.0,
+  "bm25_weight": 1.0,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75
+  },
+  "mix": "LTR_WEIGHT * minmax(lambdamart) + TEXT_WEIGHT * minmax(extra_term_bm25)",
+  "labse": "L2-normalized product embedding dot query embedding",
+  "production_models_untouched": true
+}

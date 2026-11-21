@@ -1,0 +1,297 @@
+query,intent,split,lang
+gatas gikan sa baka,cow,train,ceb
+presko nga gatas gikan sa baka,cow,train,ceb
+fresh milk gikan sa baka,cow,train,ceb
+gusto ko og gatas nga gikan sa baka,cow,train,ceb
+puro nga gatas sa among baka,cow,train,ceb
+gatas sa baka nga full cream,cow,train,ceb
+cow's milk,cow,train,en
+fresh cow milk,cow,train,en
+pure cow milk 1 liter,cow,train,en
+whole milk from cows,cow,train,en
+full cream fresh milk,cow,train,en
+regular dairy milk,cow,train,en
+uht cow milk for kids,cow,train,en
+powdered cow milk,cow,train,en
+gatas ng baka,cow,train,tl
+sariwang gatas ng baka,cow,train,tl
+gatas na galing sa baka,cow,train,tl
+purong gatas mula sa baka,cow,train,tl
+fresh milk ng baka 1 litro,cow,train,tl
+gatas ng baka para sa bata,cow,train,tl
+dairy milk galing sa baka,cow,train,taglish
+real cow milk not plant based,cow,train,en
+gatas sa baka nga powdered,cow,train,ceb
+tinuod nga gatas sa baka dili soy,cow,train,ceb
+holstein cow fresh milk,cow,train,en
+gatas nga low fat,low_fat,train,ceb
+gatas nga walay tambok,low_fat,train,ceb
+gatas nga gamay ra og tambok,low_fat,train,ceb
+gatas nga dili makapatambok,low_fat,train,ceb
+gatas para sa nag diet,low_fat,train,ceb
+gatas para sa gusto mo niwang,low_fat,train,ceb
+skim nga gatas,low_fat,train,ceb
+low fat milk,low_fat,train,en
+non fat milk,low_fat,train,en
+fat free milk,low_fat,train,en
+skim milk 1 liter,low_fat,train,en
+reduced fat milk,low_fat,train,en
+light milk for weight loss,low_fat,train,en
+milk for dieting low calorie,low_fat,train,en
+semi skimmed milk,low_fat,train,en
+gatas na walang taba,low_fat,train,tl
+gatas na mababa ang taba,low_fat,train,tl
+gatas para sa nagda-diet,low_fat,train,tl
+gatas na hindi nakakataba,low_fat,train,tl
+low fat na gatas para pumayat,low_fat,train,taglish
+gatas nga walay asukal,diabetic,train,ceb
+gatas para sa may diabetes,diabetic,train,ceb
+gatas para sa taas og sugar sa dugo,diabetic,train,ceb
+gatas nga dili tam-is,diabetic,train,ceb
+gatas para sa diabetiko,diabetic,train,ceb
+gatas nga no sugar added,diabetic,train,ceb
+sugar free milk,diabetic,train,en
+no sugar added milk,diabetic,train,en
+unsweetened milk,diabetic,train,en
+diabetic milk powder,diabetic,train,en
+milk safe for diabetes,diabetic,train,en
+milk for people with high blood sugar,diabetic,train,en
+zero sugar almond milk,diabetic,train,en
+unsweetened soy milk,diabetic,train,en
+gatas na walang asukal,diabetic,train,tl
+gatas para sa may diabetes na lolo,diabetic,train,tl
+gatas na hindi matamis,diabetic,train,tl
+gatas para sa mataas ang blood sugar,diabetic,train,tl
+sugar free na gatas,diabetic,train,taglish
+gatas para sa may sakit sa asukal,diabetic,train,tl
+organic milk,organic,train,en
+certified organic whole milk,organic,train,en
+organic fresh milk 1 liter,organic,train,en
+milk from organic farm,organic,train,en
+organic dairy milk no antibiotics,organic,train,en
+milk without pesticides and chemicals,organic,train,en
+natural organic cow milk,organic,train,en
+organic oat milk,organic,train,en
+gatas nga walay kemikal,organic,train,ceb
+natural nga gatas walay pestisidyo,organic,train,ceb
+gatas gikan sa organic nga uma,organic,train,ceb
+puro organic nga gatas sa baka,organic,train,ceb
+gatas nga walay antibiotics ug kemikal,organic,train,ceb
+gatas na walang kemikal,organic,train,tl
+gatas mula sa organic na bukid,organic,train,tl
+natural at organic na fresh milk,organic,train,taglish
+usda organic milk,organic,train,en
+organic low fat milk,organic,train,en
+gatas nga pulbos,powder,train,ceb
+gatas nga powdered,powder,train,ceb
+powdered milk,powder,train,en
+milk powder,powder,train,en
+powdered milk drink,powder,train,en
+gatas na pulbos,powder,train,tl
+powdered nga gatas,powder,train,ceb
+gatas sa pulbos,powder,train,ceb
+bear brand powder milk,powder,train,en
+gatas nga powder dili karton,powder,train,ceb
+powdered cow milk in a tin,powder,train,en
+gatas na powder hindi fresh milk,powder,train,tl
+bugas,other,train,ceb
+barato na bugas,other,train,ceb
+toyo,other,train,ceb
+mantika,other,train,ceb
+itlog,other,train,ceb
+keso,other,train,tl
+butter,other,train,en
+kape,other,train,tl
+milk tea,other,train,en
+coconut milk for ginataan,other,train,en
+gata sa lubi,other,train,ceb
+chocolate bar,other,train,en
+condensed milk,other,train,en
+evaporated creamer,other,train,en
+coffee creamer,other,train,en
+ice cream,other,train,en
+yogurt,other,train,en
+organic nga bugas,other,train,ceb
+organic brown rice,other,train,en
+sugar free biscuits,other,train,en
+low fat crackers,other,train,en
+karne sa baka,other,train,ceb
+beef tapa,other,train,en
+tapa sa baka,other,train,ceb
+coke 1 liter,other,train,en
+sabon,other,train,ceb
+tinapay,other,train,tl
+sardinas,other,train,tl
+organic vegetables,other,train,en
+asukal,other,train,tl
+Gatas sa baka,cow,test,ceb
+gatas sa baka 1 litro,cow,test,ceb
+palit kog gatas sa baka,cow,test,ceb
+fresh nga gatas sa baka,cow,test,ceb
+cow milk fresh,cow,test,en
+gatas sa baka nga fresh milk,cow,test,ceb
+Gatas nga dili makataba,low_fat,test,ceb
+gatas nga dili kaayo makataba,low_fat,test,ceb
+gatas nga dili makataba para sa diet,low_fat,test,ceb
+gatas dili makataba,low_fat,test,ceb
+low fat nga gatas,low_fat,test,ceb
+gatas na hindi makataba,low_fat,test,tl
+Gatas para sa mga diabetic,diabetic,test,ceb
+gatas para sa diabetic,diabetic,test,ceb
+gatas para sa mga may diabetes,diabetic,test,ceb
+gatas para sa mga diabetic nga walay asukal,diabetic,test,ceb
+diabetic nga gatas,diabetic,test,ceb
+milk for diabetics,diabetic,test,en
+Gatas na organic,organic,test,taglish
+gatas nga organic,organic,test,ceb
+organic nga gatas,organic,test,ceb
+organikong gatas,organic,test,tl
+gatas na organic 1 litro,organic,test,taglish
+organic na fresh milk,organic,test,taglish
+gatas nga powder,powder,test,ceb
+gatas na powder,powder,test,tl
+powdered milk 400g,powder,test,en
+palit kog gatas nga powder,powder,test,ceb
+barato na tuyo,other,test,ceb
+1 litro nga coke,other,test,ceb
+karne sa baka para sa sinugba,other,test,ceb
+organic nga lettuce,other,test,ceb
+biskwit para sa diabetic,other,test,ceb
+gata para sa ginataan,other,test,ceb
+milk tea nga wintermelon,other,test,ceb
+condensed milk para sa leche flan,other,test,taglish
+keso nga eden,other,test,ceb
+chocolate nga dairy milk,other,test,en
+mangita ko og gatas sa baka,cow,train,ceb
+unsa ang presko nga gatas gikan sa baka,cow,train,ceb
+palit ko og gatas nga gikan sa baka,cow,train,ceb
+gatas sa baka para sa mga bata,cow,train,ceb
+full cream nga gatas sa baka,cow,train,ceb
+gatas sa baka sa karton,cow,train,ceb
+gusto ko og tinuod nga gatas sa baka,cow,train,ceb
+duha ka litro nga gatas sa baka,cow,train,ceb
+gatas nga gamay ang tambok,low_fat,train,ceb
+mangita ko og low fat nga gatas,low_fat,train,ceb
+gatas para dili motaas ang timbang,low_fat,train,ceb
+non-fat nga gatas,low_fat,train,ceb
+gatas nga gaan ra ang tambok para sa diet,low_fat,train,ceb
+skim milk nga walay tambok,low_fat,train,ceb
+gatas para sa nagpaniwang,low_fat,train,ceb
+gatas nga dili makadugang og timbang,low_fat,train,ceb
+gatas para sa naay diabetes,diabetic,train,ceb
+gatas nga walay dugang nga asukal,diabetic,train,ceb
+mangita ko og gatas para sa diabetic,diabetic,train,ceb
+gatas nga dili makataas sa sugar,diabetic,train,ceb
+sugar free nga gatas,diabetic,train,ceb
+gatas para sa lolo nga diabetic,diabetic,train,ceb
+unsweetened nga gatas,diabetic,train,ceb
+gatas nga ubos ang asukal,diabetic,train,ceb
+organic nga gatas gikan sa baka,organic,train,ceb
+gatas nga organic ug natural,organic,train,ceb
+mangita ko og organic nga gatas,organic,train,ceb
+gatas nga walay pestisidyo ug kemikal,organic,train,ceb
+natural nga gatas nga organic,organic,train,ceb
+organic whole milk,organic,train,ceb
+palit ko og organic nga gatas,organic,train,ceb
+gatas gikan sa organic nga baka,organic,train,ceb
+presko nga isda,other,train,ceb
+manok nga tinola,other,train,ceb
+asin ug asukal,other,train,ceb
+pan de sal,other,train,ceb
+kape nga 3 in 1,other,train,ceb
+condensada nga gatas,other,train,ceb
+gatas nga mainom dretso,cow,train,ceb
+gatas nga probiotic,cow,train,ceb
+gatas nga pang kids,powder,train,ceb
+gatas nga mainom,cow,train,ceb
+gatas nga fresh,cow,train,ceb
+gatas nga naa sa botelya,cow,train,ceb
+gatas para sa kape,cow,train,ceb
+gatas nga tam-is,cow,train,ceb
+naay flavor nga gatas,cow,train,ceb
+pangluto nga gatas,cow,train,ceb
+gatas pangbaby,powder,train,ceb
+soya milk,cow,train,en
+Bear Brand nga gatas,powder,train,ceb
+Barato nga powdered milk,powder,train,ceb
+Gatas nga dili molapas 100,cow,train,ceb
+sabon nga naay gatas,other,train,ceb
+Gatas para sa kape pero dili tam-is,cow,train,ceb
+Gatas para sa dessert pero dili fresh milk,cow,train,ceb
+Gatas nga low fat pero dili powder,low_fat,train,ceb
+Gatas nga organic ug walay sugar,organic,train,ceb
+Gatas nga barato pero dako og size,cow,train,ceb
+Gatas para sa kape nga dili creamer,cow,train,ceb
+Gatas nga walay lactose,cow,train,ceb
+Gatas nga pulbos,powder,test,ceb
+Gatas nga liquid,cow,test,ceb
+Gatas nga full cream,cow,test,ceb
+Gatas nga non-fat,low_fat,test,ceb
+Gatas nga powdered pero chocolate,powder,test,ceb
+Gatas nga pwede imnon kada adlaw,cow,test,ceb
+Gatas nga naa sa karton,cow,test,ceb
+Gatas nga naa sa lata,cow,test,ceb
+Gatas nga evaporated,cow,test,ceb
+Gatas nga condensed,cow,test,ceb
+Gatas nga thick creamer,cow,test,ceb
+Gatas nga gikan sa tanom,cow,test,ceb
+Gatas para sa tigulang,powder,test,ceb
+Gatas para sa bukog,powder,test,ceb
+Gatas para sa edaran,powder,test,ceb
+Gatas para sa 3 years old,powder,test,ceb
+Gatas para sa 1 year old,powder,test,ceb
+Gatas para sa 6 months nga baby,powder,test,ceb
+Gatas para sa newborn,powder,test,ceb
+Gatas para sa 4 months old,powder,test,ceb
+Gatas para sa mango float,cow,test,ceb
+Gatas para sa fruit salad,cow,test,ceb
+Gatas para sa leche flan,cow,test,ceb
+Gatas para sa halo-halo,cow,test,ceb
+Gatas para sa champorado,cow,test,ceb
+Gatas para sa sopas,cow,test,ceb
+Gatas para sa cereal,cow,test,ceb
+Alaska nga gatas,powder,test,ceb
+Birch Tree nga gatas,powder,test,ceb
+Anchor nga gatas,cow,test,ceb
+Nestlé nga fresh milk,cow,test,ceb
+Nido nga gatas para sa bata,powder,test,ceb
+Anlene nga gatas,powder,test,ceb
+Ensure nga gatas,powder,test,ceb
+Chuckie nga chocolate milk,cow,test,ceb
+Gatas nga chocolate flavor,cow,test,ceb
+Gatas nga banana flavor,cow,test,ceb
+Gatas nga strawberry flavor,cow,test,ceb
+Gatas nga vanilla para sa adulto,powder,test,ceb
+Naa moy gatas nga fresh?,cow,test,ceb
+Mangita kog gatas para sa akong kape,cow,test,ceb
+Kanang gatas nga panghimog dessert,cow,test,ceb
+Naa moy gatas nga dili kaayo tambok?,low_fat,test,ceb
+Gusto kog gatas nga chocolate,cow,test,ceb
+Kanang gatas nga para sa akong anak nga tres anyos,powder,test,ceb
+Naa moy gatas nga pang tigulang?,powder,test,ceb
+Kanang gatas nga pwede diretso imnon,cow,test,ceb
+Mangita kog gatas nga pangluto og sopas,cow,test,ceb
+Naa moy gatas nga dili gikan sa hayop?,cow,test,ceb
+Kanang gatas nga naay probiotics,cow,test,ceb
+Gusto kog gatas nga tam-is para sa salad,cow,test,ceb
+Gatas nga fresh pero dili powdered,cow,test,ceb
+Gatas nga chocolate pero dili powder,cow,test,ceb
+Gatas nga powdered pero dili chocolate,powder,test,ceb
+Gatas nga pangluto pero dili condensed,cow,test,ceb
+Gatas nga tam-is pero dili chocolate,cow,test,ceb
+Gatas nga para sa adulto pero dili pangbata,powder,test,ceb
+Gatas nga para sa bata pero dili pangbaby,powder,test,ceb
+Gatas nga gikan sa baka pero dili full cream,low_fat,test,ceb
+Gatas nga vegan pero dili chocolate,cow,test,ceb
+Gatas nga soya pero dili chocolate,cow,test,ceb
+Gatas nga fresh pero dili low fat,cow,test,ceb
+Gatas para sa kape pero dili condensed,cow,test,ceb
+Gatas para sa dessert nga tam-is ug creamy,cow,test,ceb
+Gatas nga pangbaby pero dili pang 3 years old,powder,test,ceb
+Gatas nga naay flavor pero dili chocolate,cow,test,ceb
+Gatas nga 1 litro,cow,test,ceb
+Gatas nga 300 grams,powder,test,ceb
+Gatas nga 400 grams para sa baby,powder,test,ceb
+Gatas nga 680 grams,powder,test,ceb
+Gatas nga 2.4 kilos para sa bata,powder,test,ceb
+Gatas nga 4.8 kilos,powder,test,ceb

@@ -1,0 +1,654 @@
+[
+  {
+    "key": "alaska-evaporada-creamer-370ml",
+    "id": 98,
+    "name": "Alaska Evaporada Creamer 370ml",
+    "description": "Evaporated filled milk creamer for cooking and coffee.",
+    "category": "Canned Goods & Soups",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": null,
+      "brand": "alaska"
+    }
+  },
+  {
+    "key": "alaska-fresh-full-cream-milk-1l",
+    "id": 75,
+    "name": "Alaska Fresh Full Cream Milk 1L",
+    "description": "Rich and creamy 100% fresh cow milk, UHT processed.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "alaska"
+    }
+  },
+  {
+    "key": "alaska-low-fat-milk-1l",
+    "id": 84,
+    "name": "Alaska Low Fat Milk 1L",
+    "description": "Light milk with less fat for weight watchers.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "low",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "alaska"
+    }
+  },
+  {
+    "key": "alaska-sweetened-condensed-milk-300ml",
+    "id": 97,
+    "name": "Alaska Sweetened Condensed Milk 300ml",
+    "description": "Sweetened condensed creamer for desserts, leche flan and halo-halo.",
+    "category": "Canned Goods & Soups",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": "sweetened",
+      "organic": false,
+      "volume_ml": null,
+      "brand": "alaska"
+    }
+  },
+  {
+    "key": "almond-breeze-unsweetened-almond-milk-946ml",
+    "id": 88,
+    "name": "Almond Breeze Unsweetened Almond Milk 946ml",
+    "description": "Plant-based almond milk with zero sugar, only 30 calories per glass.",
+    "category": "Beverages",
+    "specs": {
+      "is_milk": true,
+      "source": "plant",
+      "fat": "low",
+      "sugar": "unsweetened",
+      "organic": false,
+      "volume_ml": 946,
+      "brand": "almond breeze"
+    }
+  },
+  {
+    "key": "anchor-skim-milk-powder-400g",
+    "id": 83,
+    "name": "Anchor Skim Milk Powder 400g",
+    "description": "New Zealand skimmed milk powder, 99% fat free.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "non",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 3200,
+      "brand": "anchor",
+      "form": "powder"
+    }
+  },
+  {
+    "key": "anlene-gold-no-added-sugar-milk-powder-600g",
+    "id": 86,
+    "name": "Anlene Gold No Added Sugar Milk Powder 600g",
+    "description": "High calcium adult milk powder with no added sugar, low fat.",
+    "category": "Nutrition & Wellness",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "low",
+      "sugar": "no_added",
+      "organic": false,
+      "volume_ml": 4500,
+      "brand": "anlene",
+      "form": "powder"
+    }
+  },
+  {
+    "key": "arla-lactose-free-semi-skimmed-milk-1l",
+    "id": 85,
+    "name": "Arla Lactose Free Semi-Skimmed Milk 1L",
+    "description": "Semi-skimmed cow milk, 1.5% fat, lactose free.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "low",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "arla"
+    }
+  },
+  {
+    "key": "arla-organic-whole-milk-1l",
+    "id": 92,
+    "name": "Arla Organic Whole Milk 1L",
+    "description": "Certified organic milk. No pesticides, no artificial fertilizer, no antibiotics.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": true,
+      "volume_ml": 1000,
+      "brand": "arla"
+    }
+  },
+  {
+    "key": "bear-brand-fortified-powdered-milk-320g",
+    "id": 77,
+    "name": "Bear Brand Fortified Powdered Milk 320g",
+    "description": "Powdered milk drink made from cow milk, fortified with iron and zinc.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 2400,
+      "brand": "bear brand",
+      "form": "powder"
+    }
+  },
+  {
+    "key": "beef-tapa-karne-sa-baka-500g",
+    "id": 109,
+    "name": "Beef Tapa (Karne sa Baka) 500g",
+    "description": "Cured beef from cow, ready to fry.",
+    "category": "Meat & Seafood",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": null,
+      "organic": false,
+      "volume_ml": null,
+      "brand": null
+    }
+  },
+  {
+    "key": "cadbury-dairy-milk-chocolate-bar-165g",
+    "id": 99,
+    "name": "Cadbury Dairy Milk Chocolate Bar 165g",
+    "description": "Milk chocolate bar.",
+    "category": "Cookies, Snacks & Candy",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": "sweetened",
+      "organic": false,
+      "volume_ml": null,
+      "brand": "cadbury"
+    }
+  },
+  {
+    "key": "coffee-mate-original-creamer-450g",
+    "id": 102,
+    "name": "Coffee-Mate Original Creamer 450g",
+    "description": "Non-dairy coffee creamer powder.",
+    "category": "Beverages",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": null,
+      "organic": false,
+      "volume_ml": null,
+      "brand": "coffee-mate"
+    }
+  },
+  {
+    "key": "eden-cheese-165g",
+    "id": 103,
+    "name": "Eden Cheese 165g",
+    "description": "Processed cheddar cheese from milk.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": null,
+      "organic": false,
+      "volume_ml": null,
+      "brand": "eden"
+    }
+  },
+  {
+    "key": "farm-fresh-organic-carabao-milk-500ml",
+    "id": 95,
+    "name": "Farm Fresh Organic Carabao Milk 500ml",
+    "description": "Organic carabao milk from grass-fed carabaos in Bohol. Walay kemikal.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "carabao",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": true,
+      "volume_ml": 500,
+      "brand": null
+    }
+  },
+  {
+    "key": "fresh-carabao-milk-500ml",
+    "id": 79,
+    "name": "Fresh Carabao Milk 500ml",
+    "description": "Gatas sa kalabaw from a Nueva Ecija dairy cooperative.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "carabao",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 500,
+      "brand": null
+    }
+  },
+  {
+    "key": "fresh-goat-milk-500ml",
+    "id": 80,
+    "name": "Fresh Goat Milk 500ml",
+    "description": "Gatas sa kanding. Easy to digest goat milk.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "goat",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 500,
+      "brand": null
+    }
+  },
+  {
+    "key": "fresh-milk-1l",
+    "id": 27,
+    "name": "Fresh Milk 1L",
+    "description": "Full-cream fresh cow milk.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": null
+    }
+  },
+  {
+    "key": "fresh-tomatoes-1kg",
+    "id": 2,
+    "name": "Fresh Tomatoes 1kg",
+    "description": "Locally sourced ripe tomatoes.",
+    "category": "Fruits & Vegetables",
+    "specs": null
+  },
+  {
+    "key": "glucerna-diabetes-nutrition-milk-400g",
+    "id": 87,
+    "name": "Glucerna Diabetes Nutrition Milk 400g",
+    "description": "Diabetes-specific milk formula with slow-release carbohydrates. Sugar free, helps manage blood sugar.",
+    "category": "Nutrition & Wellness",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "low",
+      "sugar": "no_added",
+      "organic": false,
+      "volume_ml": 1800,
+      "brand": "glucerna",
+      "form": "powder"
+    }
+  },
+  {
+    "key": "green-basket-organic-unsweetened-oat-milk-1l",
+    "id": 94,
+    "name": "Green Basket Organic Unsweetened Oat Milk 1L",
+    "description": "Organic oat drink with no added sugar. Vegan and dairy-free.",
+    "category": "Beverages",
+    "specs": {
+      "is_milk": true,
+      "source": "plant",
+      "fat": "low",
+      "sugar": "unsweetened",
+      "organic": true,
+      "volume_ml": 1000,
+      "brand": "green basket"
+    }
+  },
+  {
+    "key": "horizon-organic-low-fat-milk-946ml",
+    "id": 93,
+    "name": "Horizon Organic Low Fat Milk 946ml",
+    "description": "Certified organic 1% low fat milk.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "low",
+      "sugar": "regular",
+      "organic": true,
+      "volume_ml": 946,
+      "brand": "horizon"
+    }
+  },
+  {
+    "key": "jasmine-rice-5kg",
+    "id": 1,
+    "name": "Jasmine Rice 5kg",
+    "description": "Premium long-grain jasmine rice.",
+    "category": "Grains, Pasta & Sides",
+    "specs": null
+  },
+  {
+    "key": "low-fat-whole-wheat-crackers-250g",
+    "id": 108,
+    "name": "Low Fat Whole Wheat Crackers 250g",
+    "description": "Baked crackers with less fat.",
+    "category": "Cookies, Snacks & Candy",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": "low",
+      "sugar": null,
+      "organic": false,
+      "volume_ml": null,
+      "brand": null
+    }
+  },
+  {
+    "key": "magnolia-butter-salted-225g",
+    "id": 104,
+    "name": "Magnolia Butter Salted 225g",
+    "description": "Creamy butter made from cow cream.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": "full",
+      "sugar": null,
+      "organic": false,
+      "volume_ml": null,
+      "brand": "magnolia"
+    }
+  },
+  {
+    "key": "magnolia-fresh-milk-1l",
+    "id": 74,
+    "name": "Magnolia Fresh Milk 1L",
+    "description": "Pasteurized full cream fresh milk from local dairy cows.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "magnolia"
+    }
+  },
+  {
+    "key": "magnolia-low-fat-milk-1l",
+    "id": 81,
+    "name": "Magnolia Low Fat Milk 1L",
+    "description": "Fresh cow milk with reduced fat, only 1.5% fat.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "low",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "magnolia"
+    }
+  },
+  {
+    "key": "meiji-whole-milk-946ml",
+    "id": 78,
+    "name": "Meiji Whole Milk 946ml",
+    "description": "Japanese style whole milk from Holstein cows.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 946,
+      "brand": "meiji"
+    }
+  },
+  {
+    "key": "nesquik-chocolate-milk-drink-180ml",
+    "id": 96,
+    "name": "Nesquik Chocolate Milk Drink 180ml",
+    "description": "Chocolate flavored cow milk drink. Sweetened.",
+    "category": "Beverages",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "sweetened",
+      "organic": false,
+      "volume_ml": 180,
+      "brand": "nesquik"
+    }
+  },
+  {
+    "key": "nestle-fresh-milk-1l",
+    "id": 76,
+    "name": "Nestle Fresh Milk 1L",
+    "description": "Pure fresh milk from cows. Natural source of calcium and protein.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "nestle"
+    }
+  },
+  {
+    "key": "nestle-fresh-milk-no-sugar-added-1l",
+    "id": 90,
+    "name": "Nestle Fresh Milk No Sugar Added 1L",
+    "description": "Fresh cow milk with no sugar added. Suitable for people watching their sugar intake.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "no_added",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "nestle"
+    }
+  },
+  {
+    "key": "nestle-non-fat-skim-milk-1l",
+    "id": 82,
+    "name": "Nestle Non-Fat Skim Milk 1L",
+    "description": "Fat-free skim milk, 0% fat. Same calcium as regular milk.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "non",
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 1000,
+      "brand": "nestle"
+    }
+  },
+  {
+    "key": "nestle-vegan-oat-milk-300ml",
+    "id": 28,
+    "name": "Nestle Vegan Oat Milk 300ml",
+    "description": "Plant-based vegan oat milk. Dairy-free, not from cow.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "plant",
+      "fat": null,
+      "sugar": "regular",
+      "organic": false,
+      "volume_ml": 300,
+      "brand": "nestle"
+    }
+  },
+  {
+    "key": "organic-brown-rice-2kg",
+    "id": 106,
+    "name": "Organic Brown Rice 2kg",
+    "description": "Certified organic unpolished brown rice.",
+    "category": "Grains, Pasta & Sides",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": null,
+      "organic": true,
+      "volume_ml": null,
+      "brand": null
+    }
+  },
+  {
+    "key": "organic-lettuce-250g",
+    "id": 110,
+    "name": "Organic Lettuce 250g",
+    "description": "Pesticide-free organic romaine lettuce.",
+    "category": "Fruits & Vegetables",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": null,
+      "organic": true,
+      "volume_ml": null,
+      "brand": null
+    }
+  },
+  {
+    "key": "organic-valley-whole-milk-1l",
+    "id": 91,
+    "name": "Organic Valley Whole Milk 1L",
+    "description": "USDA certified organic whole milk from pasture-raised cows.",
+    "category": "Dairy, Eggs & Cheese",
+    "specs": {
+      "is_milk": true,
+      "source": "cow",
+      "fat": "full",
+      "sugar": "regular",
+      "organic": true,
+      "volume_ml": 1000,
+      "brand": "organic valley"
+    }
+  },
+  {
+    "key": "pandesal-12-pcs",
+    "id": 3,
+    "name": "Pandesal (12 pcs)",
+    "description": "Freshly baked Filipino bread rolls.",
+    "category": "Bread & Bakery",
+    "specs": null
+  },
+  {
+    "key": "selecta-cookies-and-cream-ice-cream-14l",
+    "id": 105,
+    "name": "Selecta Cookies and Cream Ice Cream 1.4L",
+    "description": "Ice cream made with fresh milk.",
+    "category": "Frozen Foods",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": "sweetened",
+      "organic": false,
+      "volume_ml": null,
+      "brand": "selecta"
+    }
+  },
+  {
+    "key": "silk-unsweetened-soy-milk-946ml",
+    "id": 89,
+    "name": "Silk Unsweetened Soy Milk 946ml",
+    "description": "Dairy-free soy milk with no sugar, good source of protein.",
+    "category": "Beverages",
+    "specs": {
+      "is_milk": true,
+      "source": "plant",
+      "fat": "low",
+      "sugar": "unsweetened",
+      "organic": false,
+      "volume_ml": 946,
+      "brand": "silk"
+    }
+  },
+  {
+    "key": "sugar-free-wafers-for-diabetics-150g",
+    "id": 107,
+    "name": "Sugar-Free Wafers for Diabetics 150g",
+    "description": "Vanilla wafers sweetened with stevia. No sugar added.",
+    "category": "Cookies, Snacks & Candy",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": "no_added",
+      "organic": false,
+      "volume_ml": null,
+      "brand": null
+    }
+  },
+  {
+    "key": "ufc-coconut-milk-gata-400ml",
+    "id": 101,
+    "name": "UFC Coconut Milk (Gata) 400ml",
+    "description": "Gata sa lubi for ginataan and curry. Coconut cream for cooking.",
+    "category": "Canned Goods & Soups",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": null,
+      "organic": false,
+      "volume_ml": null,
+      "brand": "ufc"
+    }
+  },
+  {
+    "key": "wintermelon-milk-tea-500ml",
+    "id": 100,
+    "name": "Wintermelon Milk Tea 500ml",
+    "description": "Ready-to-drink milk tea with tapioca pearls.",
+    "category": "Beverages",
+    "specs": {
+      "is_milk": false,
+      "source": null,
+      "fat": null,
+      "sugar": "sweetened",
+      "organic": false,
+      "volume_ml": null,
+      "brand": null
+    }
+  }
+]

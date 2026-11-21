@@ -1,0 +1,6 @@
+query,split,intent,lang,legacy_split,source
+barato na bugas,val,other,ceb,train,queries.csv
+barato na tuyo,val,other,ceb,test,queries.csv
+Barato nga powdered milk,val,powder,ceb,train,queries.csv
+Gatas nga dili molapas 100,train,cow,ceb,train,queries.csv
+Gatas nga barato pero dako og size,train,cow,ceb,train,queries.csv

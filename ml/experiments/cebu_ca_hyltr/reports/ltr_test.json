@@ -1,0 +1,114 @@
+{
+  "split": "test",
+  "held_out_ok": true,
+  "one_shot": true,
+  "retrained": false,
+  "hyperparameters_tuned_on_test": false,
+  "model_selected_on_test": false,
+  "best_iteration_frozen": 39,
+  "queries_fully_labeled": 100,
+  "catalog_size": 42,
+  "production_untouched": true,
+  "ndcg_reported": "Thesis DCG (2^grade-1) on raw grades 0/1/2; binary uses grade>=2",
+  "systems": {
+    "bm25": {
+      "ranking": {
+        "P@5": 0.192,
+        "R@5": 0.2860556453350571,
+        "NDCG@5": 0.5328711907491711,
+        "MRR": 0.4088198525612319
+      },
+      "binary_top5_micro": {
+        "TP": 96,
+        "FP": 404,
+        "FN": 587,
+        "TN": 3113,
+        "accuracy": 0.7640476190476191,
+        "precision": 0.192,
+        "recall": 0.14055636896046853,
+        "f1": 0.16229923922231615
+      },
+      "n_queries": 100
+    },
+    "labse": {
+      "ranking": {
+        "P@5": 0.45,
+        "R@5": 0.4639554905878435,
+        "NDCG@5": 0.8051695995064101,
+        "MRR": 0.7402565323565323
+      },
+      "binary_top5_micro": {
+        "TP": 225,
+        "FP": 275,
+        "FN": 458,
+        "TN": 3242,
+        "accuracy": 0.8254761904761905,
+        "precision": 0.45,
+        "recall": 0.3294289897510981,
+        "f1": 0.38038884192730343
+      },
+      "n_queries": 100
+    },
+    "hybrid_current": {
+      "ranking": {
+        "P@5": 0.542,
+        "R@5": 0.557381941587824,
+        "NDCG@5": 0.8573264524158969,
+        "MRR": 0.7191868686868687
+      },
+      "binary_top5_micro": {
+        "TP": 271,
+        "FP": 229,
+        "FN": 412,
+        "TN": 3288,
+        "accuracy": 0.8473809523809523,
+        "precision": 0.542,
+        "recall": 0.3967789165446559,
+        "f1": 0.4581572273879966
+      },
+      "n_queries": 100
+    },
+    "ltr_ablation": {
+      "ranking": {
+        "P@5": 0.5760000000000001,
+        "R@5": 0.557985680985681,
+        "NDCG@5": 0.8863763826990391,
+        "MRR": 0.7830724130231803
+      },
+      "binary_top5_micro": {
+        "TP": 288,
+        "FP": 212,
+        "FN": 395,
+        "TN": 3305,
+        "accuracy": 0.8554761904761905,
+        "precision": 0.576,
+        "recall": 0.4216691068814056,
+        "f1": 0.48689771766694845
+      },
+      "n_queries": 100
+    },
+    "cebu_ca_hyltr": {
+      "ranking": {
+        "P@5": 0.5880000000000001,
+        "R@5": 0.5789267301326125,
+        "NDCG@5": 0.8890831280888237,
+        "MRR": 0.7740966386554622
+      },
+      "binary_top5_micro": {
+        "TP": 294,
+        "FP": 206,
+        "FN": 389,
+        "TN": 3311,
+        "accuracy": 0.8583333333333333,
+        "precision": 0.588,
+        "recall": 0.43045387994143486,
+        "f1": 0.4970414201183432
+      },
+      "n_queries": 100
+    }
+  },
+  "cebu_ca_hyltr_beats_hybrid_ndcg": true,
+  "cebu_ca_hyltr_beats_ablation_ndcg": true,
+  "cebu_ca_hyltr_beats_labse_ndcg": true,
+  "cebu_ca_hyltr_beats_bm25_ndcg": true
+}

@@ -1,0 +1,132 @@
+{
+  "split": "val",
+  "status": "ok",
+  "training_succeeded": true,
+  "catalog_size": 42,
+  "train_queries": 171,
+  "val_queries": 51,
+  "test_evaluated": false,
+  "production_untouched": true,
+  "frozen_classifiers": true,
+  "ndcg_conventions": {
+    "early_stopping": "LightGBM lambdarank NDCG@5 with label_gain [0,1,3] (grade2 gain=3)",
+    "reported_metrics": "Thesis DCG (2^grade-1) on raw grades 0/1/2; binary metrics use grade>=2"
+  },
+  "cebu_ca_hyltr": {
+    "best_iteration": 39,
+    "lightgbm_best_score": {
+      "valid_0": {
+        "ndcg@5": 0.8895586436555147
+      }
+    },
+    "model_dir": "C:\\ASELCO\\Workspace\\GitHub\\Talipapa\\talipapa-store\\ml\\experiments\\cebu_ca_hyltr\\models\\cebu_ca_hyltr"
+  },
+  "ltr_ablation": {
+    "best_iteration": 39,
+    "lightgbm_best_score": {
+      "valid_0": {
+        "ndcg@5": 0.8815326246779424
+      }
+    },
+    "model_dir": "C:\\ASELCO\\Workspace\\GitHub\\Talipapa\\talipapa-store\\ml\\experiments\\cebu_ca_hyltr\\models\\ltr_ablation"
+  },
+  "systems": {
+    "bm25": {
+      "ranking": {
+        "P@5": 0.17647058823529413,
+        "R@5": 0.4123482726423903,
+        "NDCG@5": 0.6943342915922365,
+        "MRR": 0.4617822406969342
+      },
+      "binary_top5_micro": {
+        "TP": 45,
+        "FP": 210,
+        "FN": 79,
+        "TN": 1808,
+        "accuracy": 0.8650793650793651,
+        "precision": 0.17647058823529413,
+        "recall": 0.3629032258064516,
+        "f1": 0.23746701846965698
+      },
+      "n_queries": 51
+    },
+    "labse": {
+      "ranking": {
+        "P@5": 0.21960784313725493,
+        "R@5": 0.49762982115923293,
+        "NDCG@5": 0.7860541431299999,
+        "MRR": 0.5679738562091503
+      },
+      "binary_top5_micro": {
+        "TP": 56,
+        "FP": 199,
+        "FN": 68,
+        "TN": 1819,
+        "accuracy": 0.8753501400560224,
+        "precision": 0.2196078431372549,
+        "recall": 0.45161290322580644,
+        "f1": 0.2955145118733509
+      },
+      "n_queries": 51
+    },
+    "hybrid_current": {
+      "ranking": {
+        "P@5": 0.21176470588235297,
+        "R@5": 0.4954481792717087,
+        "NDCG@5": 0.753174978546517,
+        "MRR": 0.5313170469426161
+      },
+      "binary_top5_micro": {
+        "TP": 54,
+        "FP": 180,
+        "FN": 70,
+        "TN": 1838,
+        "accuracy": 0.8832866479925303,
+        "precision": 0.23076923076923078,
+        "recall": 0.43548387096774194,
+        "f1": 0.3016759776536313
+      },
+      "n_queries": 51
+    },
+    "cebu_ca_hyltr": {
+      "ranking": {
+        "P@5": 0.2980392156862745,
+        "R@5": 0.5778926955397543,
+        "NDCG@5": 0.8699508005182598,
+        "MRR": 0.6263469351704646
+      },
+      "binary_top5_micro": {
+        "TP": 76,
+        "FP": 179,
+        "FN": 48,
+        "TN": 1839,
+        "accuracy": 0.8940242763772176,
+        "precision": 0.2980392156862745,
+        "recall": 0.6129032258064516,
+        "f1": 0.4010554089709763
+      },
+      "n_queries": 51
+    },
+    "ltr_ablation": {
+      "ranking": {
+        "P@5": 0.2784313725490196,
+        "R@5": 0.5670652876535229,
+        "NDCG@5": 0.8619247815406875,
+        "MRR": 0.6189422923641001
+      },
+      "binary_top5_micro": {
+        "TP": 71,
+        "FP": 184,
+        "FN": 53,
+        "TN": 1834,
+        "accuracy": 0.8893557422969187,
+        "precision": 0.2784313725490196,
+        "recall": 0.5725806451612904,
+        "f1": 0.37467018469657
+      },
+      "n_queries": 51
+    }
+  },
+  "cebuano_features_improved_ndcg": true,
+  "cebuano_features_improved_vs_hybrid": true
+}

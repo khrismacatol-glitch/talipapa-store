@@ -1,0 +1,730 @@
+[
+    {
+        "key": "jasmine-rice-5kg",
+        "id": 1,
+        "name": "Jasmine Rice 5kg",
+        "description": "Premium long-grain jasmine rice.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "fresh-tomatoes-1kg",
+        "id": 2,
+        "name": "Fresh Tomatoes 1kg",
+        "description": "Locally sourced ripe tomatoes.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "pandesal-12-pcs",
+        "id": 3,
+        "name": "Pandesal (12 pcs)",
+        "description": "Freshly baked Filipino bread rolls.",
+        "category": "Bread & Bakery",
+        "specs": null
+    },
+    {
+        "key": "silver-swan-soy-sauce-200ml",
+        "id": 4,
+        "name": "Silver Swan Soy Sauce 200ml",
+        "description": "Everyday soy sauce. Barato na tuyo for the table.",
+        "category": "Condiments, Spice & Bake",
+        "specs": null
+    },
+    {
+        "key": "premium-soy-sauce-1l",
+        "id": 5,
+        "name": "Premium Soy Sauce 1L",
+        "description": "Large bottle of soy sauce.",
+        "category": "Condiments, Spice & Bake",
+        "specs": null
+    },
+    {
+        "key": "bulad-dried-fish-100g",
+        "id": 6,
+        "name": "Bulad (Dried Fish) 100g",
+        "description": "Budget dried fish.",
+        "category": "Meat & Seafood",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-1",
+        "id": 7,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 1",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-2",
+        "id": 8,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 2",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-3",
+        "id": 9,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 3",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-4",
+        "id": 10,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 4",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-5",
+        "id": 11,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 5",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-6",
+        "id": 12,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 6",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-7",
+        "id": 13,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 7",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-8",
+        "id": 14,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 8",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-9",
+        "id": 15,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 9",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-grains-pasta-sides-item-10",
+        "id": 16,
+        "name": "Talipapa Fresh Mart — Grains pasta sides Item 10",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-1",
+        "id": 17,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 1",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-2",
+        "id": 18,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 2",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-3",
+        "id": 19,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 3",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-4",
+        "id": 20,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 4",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-5",
+        "id": 21,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 5",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-6",
+        "id": 22,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 6",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-7",
+        "id": 23,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 7",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-8",
+        "id": 24,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 8",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-9",
+        "id": 25,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 9",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "talipapa-fresh-mart-fruits-vegetables-item-10",
+        "id": 26,
+        "name": "Talipapa Fresh Mart — Fruits vegetables Item 10",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "fresh-milk-1l",
+        "id": 27,
+        "name": "Fresh Milk 1L",
+        "description": "Full-cream fresh cow milk.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "nestle-vegan-oat-milk-300ml",
+        "id": 28,
+        "name": "Nestle Vegan Oat Milk 300ml",
+        "description": "Plant-based vegan oat milk. Dairy-free, not from cow.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "banana-bundle-1kg",
+        "id": 29,
+        "name": "Banana Bundle 1kg",
+        "description": "Ripe Saba bananas.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "greek-yogurt-450g",
+        "id": 30,
+        "name": "Greek Yogurt 450g",
+        "description": "Creamy plain yogurt.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-1",
+        "id": 31,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 1",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-2",
+        "id": 32,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 2",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-3",
+        "id": 33,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 3",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-4",
+        "id": 34,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 4",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-5",
+        "id": 35,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 5",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-6",
+        "id": 36,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 6",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-7",
+        "id": 37,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 7",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-8",
+        "id": 38,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 8",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-9",
+        "id": 39,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 9",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-dairy-eggs-cheese-item-10",
+        "id": 40,
+        "name": "Green Basket Groceries — Dairy eggs cheese Item 10",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-1",
+        "id": 41,
+        "name": "Green Basket Groceries — Fruits vegetables Item 1",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-2",
+        "id": 42,
+        "name": "Green Basket Groceries — Fruits vegetables Item 2",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-3",
+        "id": 43,
+        "name": "Green Basket Groceries — Fruits vegetables Item 3",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-4",
+        "id": 44,
+        "name": "Green Basket Groceries — Fruits vegetables Item 4",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-5",
+        "id": 45,
+        "name": "Green Basket Groceries — Fruits vegetables Item 5",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-6",
+        "id": 46,
+        "name": "Green Basket Groceries — Fruits vegetables Item 6",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-7",
+        "id": 47,
+        "name": "Green Basket Groceries — Fruits vegetables Item 7",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-8",
+        "id": 48,
+        "name": "Green Basket Groceries — Fruits vegetables Item 8",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-9",
+        "id": 49,
+        "name": "Green Basket Groceries — Fruits vegetables Item 9",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "green-basket-groceries-fruits-vegetables-item-10",
+        "id": 50,
+        "name": "Green Basket Groceries — Fruits vegetables Item 10",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Fruits & Vegetables",
+        "specs": null
+    },
+    {
+        "key": "bottled-water-1l-6-pack",
+        "id": 51,
+        "name": "Bottled Water 1L (6-pack)",
+        "description": "Purified drinking water.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "potato-chips-150g",
+        "id": 52,
+        "name": "Potato Chips 150g",
+        "description": "Classic salted potato chips.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "instant-noodles-5-pack",
+        "id": 53,
+        "name": "Instant Noodles (5-pack)",
+        "description": "Assorted flavors.",
+        "category": "Grains, Pasta & Sides",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-1",
+        "id": 54,
+        "name": "QuickStop Pantry — Beverages Item 1",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-2",
+        "id": 55,
+        "name": "QuickStop Pantry — Beverages Item 2",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-3",
+        "id": 56,
+        "name": "QuickStop Pantry — Beverages Item 3",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-4",
+        "id": 57,
+        "name": "QuickStop Pantry — Beverages Item 4",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-5",
+        "id": 58,
+        "name": "QuickStop Pantry — Beverages Item 5",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-6",
+        "id": 59,
+        "name": "QuickStop Pantry — Beverages Item 6",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-7",
+        "id": 60,
+        "name": "QuickStop Pantry — Beverages Item 7",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-8",
+        "id": 61,
+        "name": "QuickStop Pantry — Beverages Item 8",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-9",
+        "id": 62,
+        "name": "QuickStop Pantry — Beverages Item 9",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-beverages-item-10",
+        "id": 63,
+        "name": "QuickStop Pantry — Beverages Item 10",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Beverages",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-1",
+        "id": 64,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 1",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-2",
+        "id": 65,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 2",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-3",
+        "id": 66,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 3",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-4",
+        "id": 67,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 4",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-5",
+        "id": 68,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 5",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-6",
+        "id": 69,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 6",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-7",
+        "id": 70,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 7",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-8",
+        "id": 71,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 8",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-9",
+        "id": 72,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 9",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "quickstop-pantry-cookies-snacks-candy-item-10",
+        "id": 73,
+        "name": "QuickStop Pantry — Cookies snacks candy Item 10",
+        "description": "Demo highlight product for category carousel.",
+        "category": "Cookies, Snacks & Candy",
+        "specs": null
+    },
+    {
+        "key": "diabetasol-vanilla-milk-600g",
+        "id": 75,
+        "name": "Diabetasol Vanilla Milk | 600g",
+        "description": "a specialized milk-based nutritional powder and meal-replacement drink formulated for people with diabetes or prediabetes.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "nestle-fresh-milk-1000-ml",
+        "id": 76,
+        "name": "Nestlé Fresh Milk 1000 ml",
+        "description": "Fresh-tasting cow's liquid milk, rich in calcium, for everyday drinking.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "nestle-low-fat-milk-1000-ml",
+        "id": 77,
+        "name": "Nestle Low Fat Milk 1000 ml",
+        "description": "Cow's liquid milk with reduced fat for a lower-fat diet.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "nestle-non-fat-milk-1000-ml",
+        "id": 78,
+        "name": "Nestlé Non-Fat Milk 1000 ml",
+        "description": "Cow's liquid milk with virtually no fat, suitable for low-fat diets.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "anchor-full-cream-milk-1l",
+        "id": 79,
+        "name": "Anchor Full Cream Milk 1L",
+        "description": "Liquid, Rich and creamy New Zealand cow's milk.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "arla-organic-full-cream-milk-1-l",
+        "id": 80,
+        "name": "Arla Organic Full Cream Milk 1 L",
+        "description": "Organic whole cow's liquid milk with a creamy taste.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "nan-optipro-one-400g-for-0-6-months-old-infant-milk",
+        "id": 81,
+        "name": "NAN OPTIPRO ONE 400g for 0-6 Months Old Infant Milk",
+        "description": "Infant formula powdered milk for babies 0–6 months.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "lactum-6-to-12-months-plain-115kg-box",
+        "id": 82,
+        "name": "Lactum 6 to 12 Months Plain 1.15kg Box",
+        "description": "Powdered Milk supplement for babies 6–12 months.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "bear-brand-jr-milk-supplement-for-children-1-3-years-old-24kg",
+        "id": 83,
+        "name": "BEAR BRAND JR Milk Supplement For Children 1-3 Years Old 2.4kg",
+        "description": "Fortified powdered milk supplement for children 1–3 years old.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "alpine-evaporated-full-cream-milk-360-ml",
+        "id": 84,
+        "name": "Alpine Evaporated Full Cream Milk 360 mL",
+        "description": "Rich evaporated dairy milk for coffee, desserts and recipes.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "carnation-condensada-388-g",
+        "id": 85,
+        "name": "Carnation Condensada 388 g",
+        "description": "Sweetened condensed milk creamer for desserts, baking and drinks.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "angel-condensada-sweetened-condensed-milk-380-g",
+        "id": 86,
+        "name": "Angel Condensada Sweetened Condensed Milk 380 g",
+        "description": "Sweet creamy milk for dessert ingredient.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "alaska-crema-asada-2-in-1-sweetened-thick-creamer-370-ml",
+        "id": 87,
+        "name": "Alaska Crema-Asada 2-in-1 Sweetened Thick Creamer – 370 mL",
+        "description": "Thick, sweetened creamy milk product. Commonly used for fruit salad, mango float, pastillas, and other Filipino desserts.",
+        "category": "Dairy, Eggs & Cheese",
+        "specs": null
+    },
+    {
+        "key": "mega-sardines-in-tomato-sauce-155g",
+        "id": 88,
+        "name": "Mega Sardines in Tomato Sauce 155g",
+        "description": "Canned sardines in tomato sauce, commonly served with rice or sautéed with garlic and onions.",
+        "category": "Canned Goods & Soups",
+        "specs": null
+    },
+    {
+        "key": "century-tuna-flakes-in-oil-155g",
+        "id": 90,
+        "name": "Century Tuna Flakes in Oil 155g",
+        "description": "Canned tuna flakes in oil, suitable for sandwiches, salads, pasta and rice meals.",
+        "category": "Canned Goods & Soups",
+        "specs": null
+    },
+    {
+        "key": "century-tuna-hot-spicy-155g",
+        "id": 91,
+        "name": "Century Tuna Hot & Spicy 155g",
+        "description": "Spicy canned tuna flakes, ready to eat with rice or bread.",
+        "category": "Canned Goods & Soups",
+        "specs": null
+    },
+    {
+        "key": "ariel-sunrise-fresh-detergent-powder-119kg",
+        "id": 92,
+        "name": "Ariel Sunrise Fresh Detergent Powder 1.19kg",
+        "description": "Laundry detergent powder for cleaning garments and removing stubborn stains.",
+        "category": "Paper, Cleaning & Home",
+        "specs": null
+    },
+    {
+        "key": "tide-original-scent-laundry-bar-450g",
+        "id": 93,
+        "name": "Tide Original Scent Laundry Bar 450g",
+        "description": "Solid laundry soap bar for handwashing clothes, scrubbing fabric and treating stains.",
+        "category": "Paper, Cleaning & Home",
+        "specs": null
+    }
+]

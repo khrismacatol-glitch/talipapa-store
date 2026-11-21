@@ -1,0 +1,629 @@
+{
+  "test_queries": 34,
+  "milk_test_queries": 24,
+  "intent_accuracy": 0.8529411764705882,
+  "milk_routing_accuracy": 0.8529411764705882,
+  "intent_confusion": {
+    "cow": {
+      "cow": 6,
+      "low_fat": 0,
+      "diabetic": 0,
+      "organic": 0,
+      "other": 0
+    },
+    "low_fat": {
+      "cow": 0,
+      "low_fat": 6,
+      "diabetic": 0,
+      "organic": 0,
+      "other": 0
+    },
+    "diabetic": {
+      "cow": 0,
+      "low_fat": 0,
+      "diabetic": 6,
+      "organic": 0,
+      "other": 0
+    },
+    "organic": {
+      "cow": 0,
+      "low_fat": 0,
+      "diabetic": 0,
+      "organic": 6,
+      "other": 0
+    },
+    "other": {
+      "cow": 2,
+      "low_fat": 1,
+      "diabetic": 2,
+      "organic": 0,
+      "other": 5
+    }
+  },
+  "systems": {
+    "keyword": {
+      "macro": {
+        "P@5": 0.5,
+        "R@5": 0.30840017825311944,
+        "cR@5": 0.5,
+        "NDCG@5": 0.6567040523504083,
+        "MRR": 0.5997458925090504,
+        "MAP": 0.5321798547387209,
+        "Leak@5": 0.013888888888888888
+      },
+      "by_intent": {
+        "cow": {
+          "P@5": 0.9333333333333332,
+          "R@5": 0.2745098039215686,
+          "cR@5": 0.9333333333333332,
+          "NDCG@5": 0.9286712450884909,
+          "MRR": 1.0,
+          "MAP": 0.7409451066480752,
+          "Leak@5": 0.0
+        },
+        "low_fat": {
+          "P@5": 0.16666666666666666,
+          "R@5": 0.07575757575757576,
+          "cR@5": 0.16666666666666666,
+          "NDCG@5": 0.4444444444444445,
+          "MRR": 0.25925925925925924,
+          "MAP": 0.382078062559346,
+          "Leak@5": 0.0
+        },
+        "diabetic": {
+          "P@5": 0.10000000000000002,
+          "R@5": 0.08333333333333333,
+          "cR@5": 0.10000000000000002,
+          "NDCG@5": 0.37938997292562443,
+          "MRR": 0.2976190476190476,
+          "MAP": 0.18394186378255006,
+          "Leak@5": 0.05555555555555555
+        },
+        "organic": {
+          "P@5": 0.7999999999999999,
+          "R@5": 0.7999999999999999,
+          "cR@5": 0.7999999999999999,
+          "NDCG@5": 0.8743105469430731,
+          "MRR": 0.8421052631578947,
+          "MAP": 0.8217543859649123,
+          "Leak@5": 0.0
+        }
+      },
+      "required": {
+        "Gatas sa baka": {
+          "P@5": 0.8,
+          "R@5": 0.23529411764705882,
+          "cR@5": 0.8,
+          "NDCG@5": 0.7860137352654726,
+          "MRR": 1.0,
+          "MAP": 0.7690382716698507,
+          "Leak@5": 0.0
+        },
+        "Gatas nga dili makataba": {
+          "P@5": 0.0,
+          "R@5": 0.0,
+          "cR@5": 0.0,
+          "NDCG@5": 0.33333333333333337,
+          "MRR": 0.1111111111111111,
+          "MAP": 0.29331245106646175,
+          "Leak@5": 0.0
+        },
+        "Gatas para sa mga diabetic": {
+          "P@5": 0.0,
+          "R@5": 0.0,
+          "cR@5": 0.0,
+          "NDCG@5": 0.33333333333333337,
+          "MRR": 0.07142857142857142,
+          "MAP": 0.15088896669779023,
+          "Leak@5": 0.0
+        },
+        "Gatas na organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      }
+    },
+    "labse_cosine": {
+      "macro": {
+        "P@5": 0.65,
+        "R@5": 0.4279857397504456,
+        "cR@5": 0.65,
+        "NDCG@5": 0.7793520691452134,
+        "MRR": 1.0,
+        "MAP": 0.6967374939077762,
+        "Leak@5": 0.06666666666666667
+      },
+      "by_intent": {
+        "cow": {
+          "P@5": 0.7000000000000001,
+          "R@5": 0.2058823529411765,
+          "cR@5": 0.7000000000000001,
+          "NDCG@5": 0.826033972031902,
+          "MRR": 1.0,
+          "MAP": 0.7499890510146572,
+          "Leak@5": 0.0
+        },
+        "low_fat": {
+          "P@5": 0.6,
+          "R@5": 0.2727272727272727,
+          "cR@5": 0.6,
+          "NDCG@5": 0.7898789203896412,
+          "MRR": 1.0,
+          "MAP": 0.6260764723936845,
+          "Leak@5": 0.0
+        },
+        "diabetic": {
+          "P@5": 0.39999999999999997,
+          "R@5": 0.3333333333333333,
+          "cR@5": 0.39999999999999997,
+          "NDCG@5": 0.5589154184904095,
+          "MRR": 1.0,
+          "MAP": 0.46443664077495184,
+          "Leak@5": 0.23333333333333336
+        },
+        "organic": {
+          "P@5": 0.9,
+          "R@5": 0.9,
+          "cR@5": 0.9,
+          "NDCG@5": 0.9425799656689006,
+          "MRR": 1.0,
+          "MAP": 0.9464478114478113,
+          "Leak@5": 0.03333333333333333
+        }
+      },
+      "required": {
+        "Gatas sa baka": {
+          "P@5": 0.6,
+          "R@5": 0.17647058823529413,
+          "cR@5": 0.6,
+          "NDCG@5": 0.7714160225925206,
+          "MRR": 1.0,
+          "MAP": 0.7447954006777534,
+          "Leak@5": 0.0
+        },
+        "Gatas nga dili makataba": {
+          "P@5": 0.4,
+          "R@5": 0.18181818181818182,
+          "cR@5": 0.4,
+          "NDCG@5": 0.7020976466720958,
+          "MRR": 1.0,
+          "MAP": 0.5495737244749103,
+          "Leak@5": 0.0
+        },
+        "Gatas para sa mga diabetic": {
+          "P@5": 0.4,
+          "R@5": 0.3333333333333333,
+          "cR@5": 0.4,
+          "NDCG@5": 0.557429757857993,
+          "MRR": 1.0,
+          "MAP": 0.4313497291758161,
+          "Leak@5": 0.2
+        },
+        "Gatas na organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      }
+    },
+    "labse_cosine_gate": {
+      "macro": {
+        "P@5": 0.6583333333333333,
+        "R@5": 0.43493018419489005,
+        "cR@5": 0.6583333333333333,
+        "NDCG@5": 0.8078304912068823,
+        "MRR": 1.0,
+        "MAP": 0.7328486282349088,
+        "Leak@5": 0.0
+      },
+      "by_intent": {
+        "cow": {
+          "P@5": 0.7000000000000001,
+          "R@5": 0.2058823529411765,
+          "cR@5": 0.7000000000000001,
+          "NDCG@5": 0.826033972031902,
+          "MRR": 1.0,
+          "MAP": 0.779731747603324,
+          "Leak@5": 0.0
+        },
+        "low_fat": {
+          "P@5": 0.6,
+          "R@5": 0.2727272727272727,
+          "cR@5": 0.6,
+          "NDCG@5": 0.7898789203896412,
+          "MRR": 1.0,
+          "MAP": 0.6348348219184561,
+          "Leak@5": 0.0
+        },
+        "diabetic": {
+          "P@5": 0.43333333333333335,
+          "R@5": 0.3611111111111111,
+          "cR@5": 0.43333333333333335,
+          "NDCG@5": 0.6591440982434333,
+          "MRR": 1.0,
+          "MAP": 0.5538649804548926,
+          "Leak@5": 0.0
+        },
+        "organic": {
+          "P@5": 0.9,
+          "R@5": 0.9,
+          "cR@5": 0.9,
+          "NDCG@5": 0.9562649741625527,
+          "MRR": 1.0,
+          "MAP": 0.9629629629629629,
+          "Leak@5": 0.0
+        }
+      },
+      "required": {
+        "Gatas sa baka": {
+          "P@5": 0.6,
+          "R@5": 0.17647058823529413,
+          "cR@5": 0.6,
+          "NDCG@5": 0.7714160225925206,
+          "MRR": 1.0,
+          "MAP": 0.7920989813723378,
+          "Leak@5": 0.0
+        },
+        "Gatas nga dili makataba": {
+          "P@5": 0.4,
+          "R@5": 0.18181818181818182,
+          "cR@5": 0.4,
+          "NDCG@5": 0.7020976466720958,
+          "MRR": 1.0,
+          "MAP": 0.5531819410277908,
+          "Leak@5": 0.0
+        },
+        "Gatas para sa mga diabetic": {
+          "P@5": 0.4,
+          "R@5": 0.3333333333333333,
+          "cR@5": 0.4,
+          "NDCG@5": 0.653408196724527,
+          "MRR": 1.0,
+          "MAP": 0.5317564745196324,
+          "Leak@5": 0.0
+        },
+        "Gatas na organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      }
+    },
+    "ltr_text_only": {
+      "macro": {
+        "P@5": 1.0,
+        "R@5": 0.6454991087344029,
+        "cR@5": 1.0,
+        "NDCG@5": 1.0,
+        "MRR": 1.0,
+        "MAP": 0.9998638344226579,
+        "Leak@5": 0.0
+      },
+      "by_intent": {
+        "cow": {
+          "P@5": 1.0,
+          "R@5": 0.29411764705882354,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 0.9994553376906318,
+          "Leak@5": 0.0
+        },
+        "low_fat": {
+          "P@5": 1.0,
+          "R@5": 0.45454545454545453,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "diabetic": {
+          "P@5": 1.0,
+          "R@5": 0.8333333333333334,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      },
+      "required": {
+        "Gatas sa baka": {
+          "P@5": 1.0,
+          "R@5": 0.29411764705882354,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas nga dili makataba": {
+          "P@5": 1.0,
+          "R@5": 0.45454545454545453,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas para sa mga diabetic": {
+          "P@5": 1.0,
+          "R@5": 0.8333333333333334,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas na organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      }
+    },
+    "ltr_full": {
+      "macro": {
+        "P@5": 1.0,
+        "R@5": 0.6454991087344029,
+        "cR@5": 1.0,
+        "NDCG@5": 1.0,
+        "MRR": 1.0,
+        "MAP": 1.0,
+        "Leak@5": 0.0
+      },
+      "by_intent": {
+        "cow": {
+          "P@5": 1.0,
+          "R@5": 0.29411764705882354,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "low_fat": {
+          "P@5": 1.0,
+          "R@5": 0.45454545454545453,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "diabetic": {
+          "P@5": 1.0,
+          "R@5": 0.8333333333333334,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      },
+      "required": {
+        "Gatas sa baka": {
+          "P@5": 1.0,
+          "R@5": 0.29411764705882354,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas nga dili makataba": {
+          "P@5": 1.0,
+          "R@5": 0.45454545454545453,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas para sa mga diabetic": {
+          "P@5": 1.0,
+          "R@5": 0.8333333333333334,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas na organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      }
+    },
+    "laravel_semantic": {
+      "macro": {
+        "P@5": 1.0,
+        "R@5": 0.6454991087344029,
+        "cR@5": 1.0,
+        "NDCG@5": 1.0,
+        "MRR": 1.0,
+        "MAP": 0.9987894789607251,
+        "Leak@5": 0.0
+      },
+      "by_intent": {
+        "cow": {
+          "P@5": 1.0,
+          "R@5": 0.29411764705882354,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 0.9951579158429004,
+          "Leak@5": 0.0
+        },
+        "low_fat": {
+          "P@5": 1.0,
+          "R@5": 0.45454545454545453,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "diabetic": {
+          "P@5": 1.0,
+          "R@5": 0.8333333333333334,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      },
+      "required": {
+        "Gatas sa baka": {
+          "P@5": 1.0,
+          "R@5": 0.29411764705882354,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas nga dili makataba": {
+          "P@5": 1.0,
+          "R@5": 0.45454545454545453,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas para sa mga diabetic": {
+          "P@5": 1.0,
+          "R@5": 0.8333333333333334,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        },
+        "Gatas na organic": {
+          "P@5": 1.0,
+          "R@5": 1.0,
+          "cR@5": 1.0,
+          "NDCG@5": 1.0,
+          "MRR": 1.0,
+          "MAP": 1.0,
+          "Leak@5": 0.0
+        }
+      }
+    }
+  },
+  "required_top5": {
+    "keyword": {
+      "Gatas sa baka": [
+        "Fresh Milk 1L",
+        "Nestle Vegan Oat Milk 300ml",
+        "Magnolia Fresh Milk 1L",
+        "Alaska Fresh Full Cream Milk 1L",
+        "Nestle Fresh Milk 1L"
+      ],
+      "Gatas nga dili makataba": [
+        "Fresh Milk 1L",
+        "Nestle Vegan Oat Milk 300ml",
+        "Magnolia Fresh Milk 1L",
+        "Alaska Fresh Full Cream Milk 1L",
+        "Nestle Fresh Milk 1L"
+      ],
+      "Gatas para sa mga diabetic": [
+        "Fresh Milk 1L",
+        "Nestle Vegan Oat Milk 300ml",
+        "Magnolia Fresh Milk 1L",
+        "Alaska Fresh Full Cream Milk 1L",
+        "Nestle Fresh Milk 1L"
+      ],
+      "Gatas na organic": [
+        "Organic Valley Whole Milk 1L",
+        "Arla Organic Whole Milk 1L",
+        "Horizon Organic Low Fat Milk 946ml",
+        "Farm Fresh Organic Carabao Milk 500ml",
+        "Green Basket Organic Unsweetened Oat Milk 1L"
+      ]
+    },
+    "ltr_full": {
+      "Gatas sa baka": [
+        "Anlene Gold No Added Sugar Milk Powder 600g",
+        "Glucerna Diabetes Nutrition Milk 400g",
+        "Magnolia Low Fat Milk 1L",
+        "Horizon Organic Low Fat Milk 946ml",
+        "Nestle Non-Fat Skim Milk 1L"
+      ],
+      "Gatas nga dili makataba": [
+        "Anlene Gold No Added Sugar Milk Powder 600g",
+        "Glucerna Diabetes Nutrition Milk 400g",
+        "Green Basket Organic Unsweetened Oat Milk 1L",
+        "Almond Breeze Unsweetened Almond Milk 946ml",
+        "Silk Unsweetened Soy Milk 946ml"
+      ],
+      "Gatas para sa mga diabetic": [
+        "Glucerna Diabetes Nutrition Milk 400g",
+        "Anlene Gold No Added Sugar Milk Powder 600g",
+        "Green Basket Organic Unsweetened Oat Milk 1L",
+        "Almond Breeze Unsweetened Almond Milk 946ml",
+        "Silk Unsweetened Soy Milk 946ml"
+      ],
+      "Gatas na organic": [
+        "Horizon Organic Low Fat Milk 946ml",
+        "Arla Organic Whole Milk 1L",
+        "Organic Valley Whole Milk 1L",
+        "Farm Fresh Organic Carabao Milk 500ml",
+        "Green Basket Organic Unsweetened Oat Milk 1L"
+      ]
+    }
+  }
+}
