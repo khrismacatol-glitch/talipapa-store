@@ -151,7 +151,7 @@ class ProductSearchService
 
         $scoreMap = $ranked['scores'] ?? [];
 
-        return $this->preferAgeMilkResults(
+        $kept = $this->preferAgeMilkResults(
             collect($ranked['ids'])
                 ->map(function (int $id) use ($candidates, $scoreMap) {
                     $product = $candidates->get($id);
@@ -165,7 +165,9 @@ class ProductSearchService
                 ->reject(fn (Product $product) => $this->isExcluded($product, $nlp) || $this->missesCanonicalProduct($product, $nlp))
                 ->values(),
             $nlp,
-        )->take($limit)->values();
+        );
+
+        return $this->rejectWrongMilkSource($kept, $ranked['intents'] ?? [], $text, $nlp)->take($limit)->values();
     }
 
     /**
@@ -259,13 +261,15 @@ class ProductSearchService
             });
         }
 
-        return $this->preferAgeMilkResults(
+        $kept = $this->preferAgeMilkResults(
             $scored
                 ->sortByDesc('score')
                 ->pluck('product')
                 ->values(),
             $nlp,
-        )->take($limit)->values();
+        );
+
+        return $this->rejectWrongMilkSource($kept, [], (string) ($nlp['original_text'] ?? ''), $nlp)->take($limit)->values();
     }
 
     /**
@@ -697,7 +701,65 @@ class ProductSearchService
             }
         }
 
+        if ($this->isFreshMilkQuery($nlp)) {
+            $fresh = $products->filter(fn (Product $product) => $this->looksLikeFreshDrinkingMilk($product));
+            if ($fresh->isNotEmpty()) {
+                return $fresh->values();
+            }
+        }
+
         return $products;
+    }
+
+    /**
+     * @param  array<string, mixed>  $nlp
+     */
+    private function isFreshMilkQuery(array $nlp): bool
+    {
+        $original = Str::lower((string) ($nlp['original_text'] ?? ''));
+        $aboutMilk = (bool) preg_match('/(?:^|[^\p{L}\p{N}])(gatas|milk)(?:[^\p{L}\p{N}]|$)/u', $original)
+            || in_array(Str::lower((string) ($nlp['product'] ?? '')), ['milk', 'low fat milk', 'low fat'], true);
+
+        if (! $aboutMilk) {
+            return false;
+        }
+
+        return $this->queryHasAnyPhrase($nlp, config('voc.fresh_milk_query_phrases', []));
+    }
+
+    private function looksLikeFreshDrinkingMilk(Product $product): bool
+    {
+        $specs = is_array($product->specs) ? $product->specs : [];
+        if (($specs['form'] ?? null) === 'powder') {
+            return false;
+        }
+
+        $haystack = Str::lower($product->name.' '.(string) $product->description);
+        foreach (['powder', 'powdered', 'pulbos', 'chocolate', 'choco', 'tsokolate', 'vanilla', 'banana', 'strawberry', 'flavored', 'flavoured', 'creamer'] as $term) {
+            if (str_contains($haystack, $term)) {
+                return false;
+            }
+        }
+
+        if ($this->looksLikeProbioticMilk($haystack)
+            || $this->looksLikeCondensedMilk($haystack)
+            || $this->looksLikeEvaporatedMilk($haystack)
+            || $this->looksLikeInfantFormula($haystack)
+            || $this->looksLikeNonBeverageMilk($haystack)) {
+            return false;
+        }
+
+        $name = Str::lower($product->name);
+        $namedMilk = str_contains($name, 'milk') || str_contains($name, 'gatas');
+        if (! $namedMilk && ($specs['is_milk'] ?? false) !== true) {
+            return false;
+        }
+
+        if (($specs['form'] ?? null) === 'liquid' || str_contains($name, 'fresh') || str_contains($name, 'presko')) {
+            return true;
+        }
+
+        return (bool) preg_match('/\d+(?:\.\d+)?\s*(?:ml|liters|litres|liter|litre|l)\b/u', $name);
     }
 
     /**
@@ -973,6 +1035,101 @@ class ProductSearchService
         }
 
         return false;
+    }
+
+    /**
+     * @param  Collection<int, Product>  $products
+     * @param  array<string, mixed>  $intents
+     * @param  array<string, mixed>  $nlp
+     * @return Collection<int, Product>
+     */
+    private function rejectWrongMilkSource(Collection $products, array $intents, string $text, array $nlp = []): Collection
+    {
+        return $products
+            ->reject(fn (Product $product) => $this->hideWrongMilkSource($product, $intents, $text, $nlp))
+            ->values();
+    }
+
+    /**
+     * @param  array<string, mixed>  $intents
+     * @param  array<string, mixed>  $nlp
+     */
+    private function hideWrongMilkSource(Product $product, array $intents, string $text, array $nlp = []): bool
+    {
+        $required = $this->requiredMilkSource($intents, $text, $nlp);
+        if ($required === null) {
+            return false;
+        }
+
+        $source = $this->productMilkSource($product);
+        if ($required === 'cow') {
+            return in_array($source, ['plant', 'goat', 'carabao'], true);
+        }
+
+        return $source !== $required;
+    }
+
+    /**
+     * @param  array<string, mixed>  $intents
+     * @param  array<string, mixed>  $nlp
+     */
+    private function requiredMilkSource(array $intents, string $text, array $nlp = []): ?string
+    {
+        $query = Str::lower($text.' '.(string) ($nlp['original_text'] ?? ''));
+        $query = str_replace(['-', '–', '—', '.', ',', '/', '_'], ' ', $query);
+        $dietary = array_map(fn ($item) => Str::lower((string) $item), (array) ($nlp['dietary'] ?? []));
+
+        if (preg_match('/(?:^| )(goat|goats|kambing|kanding)(?: |$)/u', $query)) {
+            return 'goat';
+        }
+        if (preg_match('/(?:^| )(carabao|kalabaw|kabaw|kabao|buffalo)(?: |$)/u', $query)) {
+            return 'carabao';
+        }
+        if (preg_match('/(?:^| )(oat|almond|soya|soy|vegan|tanom|tanum|halaman|niyog|lubi|plant)(?: |$)/u', $query)
+            || str_contains($query, 'plant based')
+            || str_contains($query, 'gikan sa tanom')
+            || array_intersect($dietary, ['vegan', 'plant-based', 'non-dairy']) !== []) {
+            return 'plant';
+        }
+        if (preg_match('/(?:^| )(baka|cow)(?: |$)/u', $query) || str_contains($query, 'cow milk')) {
+            return 'cow';
+        }
+
+        $numeric = [];
+        foreach ($intents as $name => $value) {
+            if (is_numeric($value)) {
+                $numeric[(string) $name] = (float) $value;
+            }
+        }
+        if ($numeric !== []) {
+            arsort($numeric);
+            if (array_key_first($numeric) === 'cow') {
+                return 'cow';
+            }
+        }
+
+        return null;
+    }
+
+    private function productMilkSource(Product $product): ?string
+    {
+        $source = $product->specs['source'] ?? null;
+        if (in_array($source, ['cow', 'plant', 'goat', 'carabao'], true)) {
+            return $source;
+        }
+
+        $haystack = Str::lower($product->name.' '.(string) $product->description);
+        if (preg_match('/\b(goat|goats|kambing|kanding)\b/u', $haystack) || str_contains($haystack, "goat's")) {
+            return 'goat';
+        }
+        if (preg_match('/\b(carabao|kalabaw|kabaw|kabao|buffalo)\b/u', $haystack) || str_contains($haystack, "carabao's")) {
+            return 'carabao';
+        }
+        if ($this->looksLikePlantMilk($haystack)) {
+            return 'plant';
+        }
+
+        return is_string($source) ? $source : null;
     }
 
     /**

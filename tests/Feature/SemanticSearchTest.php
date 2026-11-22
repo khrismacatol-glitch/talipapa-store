@@ -59,15 +59,16 @@ class SemanticSearchTest extends TestCase
 
     /**
      * @param  array<int, Product>  $ranked
+     * @param  array<string, float>  $intents
      */
-    private function fakeRanker(array $ranked, bool $isMilkQuery = true): void
+    private function fakeRanker(array $ranked, bool $isMilkQuery = true, array $intents = ['low_fat' => 0.8, 'cow' => 0.1]): void
     {
         Http::fake([
             'ml.test/rank' => Http::response([
                 'milk_query' => $isMilkQuery ? 0.95 : 0.1,
                 'is_milk_query' => $isMilkQuery,
                 'mode' => 'grocery_ltr',
-                'intents' => ['low_fat' => 0.8, 'cow' => 0.1],
+                'intents' => $intents,
                 'results' => array_map(fn (Product $p) => [
                     'id' => $p->id,
                     'score' => 1.0,
@@ -114,6 +115,131 @@ class SemanticSearchTest extends TestCase
             ->assertSee('BM25')
             ->assertSee('LTR')
             ->assertSee('Total');
+    }
+
+    public function test_cow_query_hides_oat_goat_carabao_keeps_arla(): void
+    {
+        $storeId = $this->fullCream->store_profile_id;
+        $categoryId = $this->fullCream->category_id;
+        $make = fn (string $name, array $specs) => Product::factory()->create([
+            'store_profile_id' => $storeId,
+            'category_id' => $categoryId,
+            'name' => $name,
+            'description' => $name,
+            'specs' => $specs,
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+        $oat = $make('Nestle Vegan Oat Milk 300ml', ['is_milk' => true, 'source' => 'plant']);
+        $goat = $make('Alaminos Milk Star Fresh Goat\'s Milk Plain 1L', ['is_milk' => true, 'source' => 'goat']);
+        $carabao = $make('Carabao\'s Milk 1L', ['is_milk' => true, 'source' => 'carabao']);
+
+        $this->fakeRanker(
+            [$oat, $goat, $carabao, $this->organic, $this->fullCream],
+            intents: ['cow' => 0.7, 'low_fat' => 0.1],
+        );
+
+        $this->get(route('products.index', ['q' => 'gatas gikan sa baka']))
+            ->assertOk()
+            ->assertSee('Arla Organic Whole Milk 1L')
+            ->assertDontSee('Nestle Vegan Oat Milk')
+            ->assertDontSee('Goat')
+            ->assertDontSee('Carabao');
+    }
+
+    public function test_kanding_query_keeps_goat_hides_oat_and_cow(): void
+    {
+        $storeId = $this->fullCream->store_profile_id;
+        $categoryId = $this->fullCream->category_id;
+        $make = fn (string $name, array $specs) => Product::factory()->create([
+            'store_profile_id' => $storeId,
+            'category_id' => $categoryId,
+            'name' => $name,
+            'description' => $name,
+            'specs' => $specs,
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+        $oat = $make('Nestle Vegan Oat Milk 300ml', ['is_milk' => true, 'source' => 'plant']);
+        $goat = $make('Alaminos Milk Star Fresh Goat\'s Milk Plain 1L', ['is_milk' => true, 'source' => 'goat']);
+        $carabao = $make('Carabao\'s Milk 1L', ['is_milk' => true, 'source' => 'carabao']);
+
+        $this->fakeRanker(
+            [$oat, $this->fullCream, $goat, $carabao, $this->organic],
+            intents: ['cow' => 0.7, 'low_fat' => 0.1],
+        );
+
+        $this->get(route('products.index', ['q' => 'Gatas gikan sa kanding']))
+            ->assertOk()
+            ->assertSee('Goat')
+            ->assertDontSee('Nestle Vegan Oat Milk')
+            ->assertDontSee('Magnolia Fresh Milk')
+            ->assertDontSee('Arla Organic')
+            ->assertDontSee('Carabao');
+    }
+
+    public function test_kabaw_query_keeps_carabao_hides_oat_and_cow(): void
+    {
+        $storeId = $this->fullCream->store_profile_id;
+        $categoryId = $this->fullCream->category_id;
+        $make = fn (string $name, array $specs) => Product::factory()->create([
+            'store_profile_id' => $storeId,
+            'category_id' => $categoryId,
+            'name' => $name,
+            'description' => $name,
+            'specs' => $specs,
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+        $oat = $make('Nestle Vegan Oat Milk 300ml', ['is_milk' => true, 'source' => 'plant']);
+        $goat = $make('Alaminos Milk Star Fresh Goat\'s Milk Plain 1L', ['is_milk' => true, 'source' => 'goat']);
+        $carabao = $make('Carabao\'s Milk 1L', ['is_milk' => true, 'source' => 'carabao']);
+
+        foreach (['Gatas gikan sa kabaw', 'gatas gikan sa kabao'] as $q) {
+            $this->fakeRanker(
+                [$oat, $this->fullCream, $goat, $carabao, $this->organic],
+                intents: ['cow' => 0.7, 'low_fat' => 0.1],
+            );
+
+            $this->get(route('products.index', ['q' => $q]))
+                ->assertOk()
+                ->assertSee('Carabao')
+                ->assertDontSee('Nestle Vegan Oat Milk')
+                ->assertDontSee('Magnolia Fresh Milk')
+                ->assertDontSee('Arla Organic')
+                ->assertDontSee('Goat');
+        }
+    }
+
+    public function test_vegan_and_tanom_queries_keep_oat_hide_cow_dairy(): void
+    {
+        $storeId = $this->fullCream->store_profile_id;
+        $categoryId = $this->fullCream->category_id;
+        $make = fn (string $name, array $specs) => Product::factory()->create([
+            'store_profile_id' => $storeId,
+            'category_id' => $categoryId,
+            'name' => $name,
+            'description' => $name,
+            'specs' => $specs,
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+        $oat = $make('Nestle Vegan Oat Milk 300ml', ['is_milk' => true, 'source' => 'plant']);
+        $make('Jolly Cow Condensada 1kg', ['is_milk' => true, 'source' => 'cow']);
+
+        foreach (['Gatas nga vegan.', 'gatas nga gikan sa tanom', 'Gatas na plant-based.'] as $q) {
+            $this->fakeRanker(
+                [$this->fullCream, $oat, $this->organic],
+                intents: ['cow' => 0.7, 'low_fat' => 0.1],
+            );
+
+            $this->get(route('products.index', ['q' => $q]))
+                ->assertOk()
+                ->assertSee('Nestle Vegan Oat Milk')
+                ->assertDontSee('Magnolia Fresh Milk')
+                ->assertDontSee('Arla Organic')
+                ->assertDontSee('Jolly Cow');
+        }
     }
 
     public function test_search_falls_back_to_keywords_when_service_is_down(): void

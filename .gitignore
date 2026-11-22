@@ -25,13 +25,13 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
-/ml/.venv
-/ml/.pip.log
-/ml/data/feedback/*.json
-/ml/data/feedback/qrels.csv
-/ml/models/candidates/
-/ml/models/archive/
-/ml/models/labse_text_cache.npz
+# /ml/.venv
+# /ml/.pip.log
+# /ml/data/feedback/*.json
+# /ml/data/feedback/qrels.csv
+# /ml/models/candidates/
+# /ml/models/archive/
+# /ml/models/labse_text_cache.npz
 __pycache__/
 .pytest_cache/
 /storage/search-bench.sqlite

@@ -52,7 +52,12 @@
                 <dd class="font-medium text-gray-900">₱{{ number_format($cart->subtotal(), 2) }}</dd>
             </div>
             <div class="flex justify-between text-gray-600">
-                <dt>Delivery fee</dt>
+                <dt>
+                    Delivery fee
+                    @if (($storeCount ?? 1) > 1)
+                        <span class="font-normal text-gray-500">(₱{{ number_format($perStoreFee ?? 50, 2) }} × {{ $storeCount }} stores)</span>
+                    @endif
+                </dt>
                 <dd class="font-medium text-gray-900">₱{{ number_format($deliveryFee, 2) }}</dd>
             </div>
             <div class="flex justify-between border-t border-gray-100 pt-2 text-base font-bold text-gray-900">

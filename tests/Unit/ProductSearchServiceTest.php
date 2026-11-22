@@ -175,6 +175,48 @@ class ProductSearchServiceTest extends TestCase
         $this->assertFalse($lowFatNames->contains('NAN Optipro Infant Milk 800g'));
     }
 
+    public function test_presko_nga_gatas_keeps_liquid_milk_drops_powder_drinks_and_yakult(): void
+    {
+        $store = StoreProfile::factory()->approved()->create();
+        $category = Category::factory()->create(['name' => 'Dairy']);
+        $extractor = app(QueryAttributeExtractor::class);
+        $make = fn (string $name, array $specs = []) => Product::factory()->create([
+            'store_profile_id' => $store->id,
+            'category_id' => $category->id,
+            'name' => $name,
+            'description' => $name,
+            'specs' => $specs,
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+
+        $make('Fresh Milk 1L', ['is_milk' => true, 'source' => 'cow', 'form' => 'liquid']);
+        $make('Arla Organic Full Cream Milk 1 L', ['is_milk' => true, 'source' => 'cow', 'form' => 'liquid']);
+        $make('Alaska Fortified Powdered Filled Milk 300g', ['is_milk' => true, 'source' => 'cow', 'form' => 'powder']);
+        $make('Bear Brand Fortified Choco Milk Drink');
+        $make('Diabetasol Vanilla Milk 600g');
+        $make('Selecta Banana Flavored Milk Drink 200 ml');
+        $make('Yakult Original Cultured Milk 80ml');
+        $make('Birch Tree Fortified Milk');
+        $make('Rebisco Hansel Milk Sandwich');
+        $make('Nescafe Creamy White Twin Pack 58g');
+        $make("Palmolive Naturals Shampoo Intensive Moisture 15ml");
+
+        $names = $this->service->searchFromNlp($extractor->extract('presko nga gatas'))->pluck('name');
+
+        $this->assertTrue($names->contains('Fresh Milk 1L'));
+        $this->assertTrue($names->contains('Arla Organic Full Cream Milk 1 L'));
+        $this->assertFalse($names->contains('Alaska Fortified Powdered Filled Milk 300g'));
+        $this->assertFalse($names->contains('Bear Brand Fortified Choco Milk Drink'));
+        $this->assertFalse($names->contains('Diabetasol Vanilla Milk 600g'));
+        $this->assertFalse($names->contains('Selecta Banana Flavored Milk Drink 200 ml'));
+        $this->assertFalse($names->contains('Yakult Original Cultured Milk 80ml'));
+        $this->assertFalse($names->contains('Birch Tree Fortified Milk'));
+        $this->assertFalse($names->contains('Rebisco Hansel Milk Sandwich'));
+        $this->assertFalse($names->contains('Nescafe Creamy White Twin Pack 58g'));
+        $this->assertFalse($names->contains("Palmolive Naturals Shampoo Intensive Moisture 15ml"));
+    }
+
     public function test_gatas_nga_pangdiet_keeps_low_fat_not_condensada(): void
     {
         $store = StoreProfile::factory()->approved()->create();
@@ -1205,6 +1247,46 @@ class ProductSearchServiceTest extends TestCase
         $names = $this->service->searchFromNlp($nlp)->pluck('name');
         $this->assertTrue($names->contains('Pandesal 10 pcs'));
         $this->assertFalse($names->contains('Mustela Gentle Cleansing Gel 750 Ml'));
+    }
+
+    public function test_gatas_pang_snacks_keeps_cookies_not_drinking_milk(): void
+    {
+        $store = StoreProfile::factory()->approved()->create();
+        $snacks = Category::factory()->create(['name' => 'Cookies, Snacks & Candy']);
+        $dairy = Category::factory()->create(['name' => 'Dairy']);
+        $extractor = app(QueryAttributeExtractor::class);
+
+        Product::factory()->create([
+            'store_profile_id' => $store->id,
+            'category_id' => $snacks->id,
+            'name' => 'Kokola Kukis Kelapa Coconut Cookies 60g',
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+
+        Product::factory()->create([
+            'store_profile_id' => $store->id,
+            'category_id' => $dairy->id,
+            'name' => 'Fresh Milk 1L',
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+
+        Product::factory()->create([
+            'store_profile_id' => $store->id,
+            'category_id' => $dairy->id,
+            'name' => 'Lactum Milk for 6 to 12 Months Plain 1.15kg Box',
+            'description' => 'Infant formula.',
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+
+        $nlp = $extractor->extract('gatas pang snacks');
+        $this->assertSame('snacks', $nlp['product']);
+        $names = $this->service->searchFromNlp($nlp)->pluck('name');
+        $this->assertTrue($names->contains('Kokola Kukis Kelapa Coconut Cookies 60g'));
+        $this->assertFalse($names->contains('Fresh Milk 1L'));
+        $this->assertFalse($names->contains('Lactum Milk for 6 to 12 Months Plain 1.15kg Box'));
     }
 
     public function test_tsokolate_keeps_chocolate_not_chili_or_cinnamon(): void

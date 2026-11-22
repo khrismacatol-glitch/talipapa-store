@@ -3,6 +3,8 @@
     'checkout' => [],
     'addresses',
     'deliveryFee',
+    'storeCount' => 1,
+    'perStoreFee' => 50,
     'step',
 ])
 
@@ -50,7 +52,12 @@
                 <span class="font-medium text-gray-900">₱{{ number_format($subtotal, 2) }}</span>
             </div>
             <div class="flex justify-between text-gray-600">
-                <span>Delivery fee</span>
+                <span>
+                    Delivery fee
+                    @if ($storeCount > 1)
+                        <span class="font-normal text-gray-500">(₱{{ number_format($perStoreFee, 2) }} × {{ $storeCount }} stores)</span>
+                    @endif
+                </span>
                 <span class="font-medium text-gray-900">₱{{ number_format($deliveryFee, 2) }}</span>
             </div>
             <div class="flex justify-between border-t border-gray-100 pt-3 text-base font-bold text-gray-900">

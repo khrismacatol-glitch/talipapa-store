@@ -23,19 +23,34 @@ class TrainLabelsController extends Controller
             'status' => $this->labels->status(),
             'intents' => HumanTrainLabelService::INTENTS,
             'categories' => Category::query()->orderBy('name')->get(['id', 'name']),
+            'trainQueries' => $this->labels->trainQueriesFromFile(),
         ]);
+    }
+
+    public function downloadExisting(): StreamedResponse
+    {
+        $rows = $this->labels->existingJudgmentRows();
+        abort_if($rows === [], 422, 'No training qrels yet. Grade some queries first, or copy an upload into qrels.');
+
+        return $this->judgmentDownload('train-qrels-all-queries.csv', $this->labels->judgmentHeaders(), $rows);
     }
 
     public function download(Request $request): StreamedResponse
     {
         $validated = $request->validate([
-            'q' => ['required', 'string', 'max:8000'],
+            'q' => ['nullable', 'string', 'max:20000'],
+            'query_source' => ['required', 'in:pasted,all_train'],
             'sku_scope' => ['required', 'in:all,contains,category'],
             'contains' => ['nullable', 'string', 'max:200'],
             'category_id' => ['nullable', 'integer', 'exists:categories,id'],
         ]);
-        $queries = $this->labels->queriesFrom($validated['q']);
-        abort_if($queries === [], 422, 'Enter at least one query, one per line.');
+        $pasted = $this->labels->queriesFrom((string) ($validated['q'] ?? ''));
+        $queries = $pasted !== []
+            ? $pasted
+            : ($validated['query_source'] === 'all_train'
+                ? array_column($this->labels->trainQueriesFromFile(), 'query')
+                : []);
+        abort_if($queries === [], 422, 'Paste at least one query, or clear the box and choose all train queries from queries.csv.');
         abort_if(
             $validated['sku_scope'] === 'contains'
                 && $this->labels->containsNeedles((string) ($validated['contains'] ?? '')) === [],
@@ -53,19 +68,12 @@ class TrainLabelsController extends Controller
             (string) ($validated['contains'] ?? ''),
             isset($validated['category_id']) ? (int) $validated['category_id'] : null,
         );
-        $rows = $this->labels->judgmentRows($queries, $products);
-        $headers = $this->labels->judgmentHeaders();
 
-        return response()->streamDownload(function () use ($headers, $rows) {
-            $out = fopen('php://output', 'w');
-            fputcsv($out, $headers);
-            foreach ($rows as $row) {
-                fputcsv($out, $row);
-            }
-            fclose($out);
-        }, 'train-judgment.csv', [
-            'Content-Type' => 'text/csv; charset=UTF-8',
-        ]);
+        return $this->judgmentDownload(
+            'train-judgment.csv',
+            $this->labels->judgmentHeaders(),
+            $this->labels->judgmentRows($queries, $products),
+        );
     }
 
     public function upload(Request $request): RedirectResponse
@@ -78,7 +86,7 @@ class TrainLabelsController extends Controller
             return back()->withErrors(['grades' => $result['errors'][0]]);
         }
 
-        $msg = 'Saved '.$result['qrels'].' graded pairs and '.$result['queries'].' queries (skipped '.$result['skipped'].' blank grades). Live ranker.txt was not changed.';
+        $msg = 'Merged '.$result['incoming'].' graded rows into staging ('.$result['qrels'].' pairs, '.$result['queries'].' queries; skipped '.$result['skipped'].' blank). Other queries already in staging were kept. Live ranker.txt was not changed.';
         if ($result['errors'] !== []) {
             $msg .= ' Notes: '.implode(' ', $result['errors']);
         }
@@ -111,14 +119,70 @@ class TrainLabelsController extends Controller
         $version = now()->utc()->format('Ymd\\THis\\Z');
         $out = base_path('ml/models/candidates/'.$version);
         set_time_limit(3600);
-        $train = Process::path(base_path('ml'))->timeout(3600)->run([
-            $python, 'train.py', '--out-dir', $out,
-        ]);
+        $train = Process::path(base_path('ml'))
+            ->timeout(3600)
+            ->env($this->windowsProcessEnv())
+            ->run([$python, 'train.py', '--out-dir', $out]);
         if ($train->failed()) {
-            return back()->withErrors(['train' => 'Training failed: '.$train->errorOutput()]);
+            $err = trim($train->errorOutput().' '.$train->output());
+            if (str_contains($err, '10106') || str_contains($err, '_overlapped')) {
+                return back()->withErrors(['train' => 'Windows blocked Python when started from this page (Winsock). In Git Bash, from the ml folder, run: .venv/Scripts/python.exe train.py --out-dir models/candidates/'.$version.'  Then click Promote candidate to live.']);
+            }
+
+            return back()->withErrors(['train' => 'Training failed: '.$err]);
         }
 
-        return back()->with('status', 'Candidate written to '.$out.'. Live ml/models/ranker.txt was not overwritten. Restart uvicorn only after you copy/promote this candidate.');
+        return back()->with('status', 'Candidate written to '.$out.'. Live ml/models/ranker.txt was not overwritten. Click Promote candidate, then restart uvicorn.');
+    }
+
+    public function promoteCandidate(): RedirectResponse
+    {
+        $result = $this->labels->promoteLatestCandidate();
+        if (! ($result['ok'] ?? false)) {
+            return back()->withErrors(['promote' => $result['message'] ?? 'Could not promote.']);
+        }
+
+        return back()->with('status', $result['message']);
+    }
+
+    /**
+     * @param  array<int, string>  $headers
+     * @param  array<int, array<int, string>>  $rows
+     */
+    private function judgmentDownload(string $filename, array $headers, array $rows): StreamedResponse
+    {
+        return response()->streamDownload(function () use ($headers, $rows) {
+            $out = fopen('php://output', 'w');
+            fputcsv($out, $headers);
+            foreach ($rows as $row) {
+                fputcsv($out, $row);
+            }
+            fclose($out);
+        }, $filename, [
+            'Content-Type' => 'text/csv; charset=UTF-8',
+        ]);
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private function windowsProcessEnv(): array
+    {
+        $root = getenv('SYSTEMROOT') ?: (getenv('SystemRoot') ?: 'C:\\Windows');
+
+        return [
+            'SYSTEMROOT' => $root,
+            'SystemRoot' => $root,
+            'WINDIR' => getenv('WINDIR') ?: $root,
+            'COMSPEC' => getenv('COMSPEC') ?: $root.'\\system32\\cmd.exe',
+            'PATH' => getenv('PATH') ?: $root.'\\system32',
+            'TEMP' => getenv('TEMP') ?: sys_get_temp_dir(),
+            'TMP' => getenv('TMP') ?: sys_get_temp_dir(),
+            'PATHEXT' => getenv('PATHEXT') ?: '.COM;.EXE;.BAT;.CMD',
+            'USERPROFILE' => getenv('USERPROFILE') ?: '',
+            'HOMEDRIVE' => getenv('HOMEDRIVE') ?: '',
+            'HOMEPATH' => getenv('HOMEPATH') ?: '',
+        ];
     }
 
     private function python(): ?string

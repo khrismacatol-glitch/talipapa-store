@@ -54,7 +54,7 @@ data-voice-context="checkout" data-checkout-step="{{ $step }}"
 
     @if ($step === 0)
         <div class="mx-auto max-w-2xl">
-            @include('customer.checkout._combined', compact('checkout', 'addresses', 'cart', 'deliveryFee', 'inputClass'))
+            @include('customer.checkout._combined', compact('checkout', 'addresses', 'cart', 'deliveryFee', 'storeCount', 'perStoreFee', 'inputClass'))
         </div>
     @else
         <div class="grid items-start gap-6 lg:grid-cols-3 lg:gap-8">
@@ -82,7 +82,7 @@ data-voice-context="checkout" data-checkout-step="{{ $step }}"
                         @elseif ($step === 4)
                             @include('customer.checkout._payment-step', compact('checkout', 'inputClass'))
                         @elseif ($step === 5)
-                            @include('customer.checkout._step-confirm', compact('checkout', 'addresses', 'cart', 'deliveryFee'))
+                            @include('customer.checkout._step-confirm', compact('checkout', 'addresses', 'cart', 'deliveryFee', 'storeCount', 'perStoreFee'))
                         @endif
                     </div>
                 </div>
@@ -93,6 +93,8 @@ data-voice-context="checkout" data-checkout-step="{{ $step }}"
                 :checkout="$checkout"
                 :addresses="$addresses"
                 :delivery-fee="$deliveryFee"
+                :store-count="$storeCount"
+                :per-store-fee="$perStoreFee"
                 :step="$step"
             />
         </div>

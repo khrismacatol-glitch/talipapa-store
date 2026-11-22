@@ -392,7 +392,7 @@ class QueryAttributeExtractor
             }
         }
 
-        $milkLike = ['milk', 'low fat milk', 'low fat', 'condensed milk', 'evaporated milk', 'creamer', 'soap', 'coconut milk', 'chocolate'];
+        $milkLike = ['milk', 'low fat milk', 'low fat', 'condensed milk', 'evaporated milk', 'creamer', 'soap', 'coconut milk', 'chocolate', 'snacks'];
         if ($this->containsPhrase($lower, 'gatas') && $hit !== null && ! in_array($hit, $milkLike, true)) {
             return 'milk';
         }

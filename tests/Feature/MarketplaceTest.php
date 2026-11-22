@@ -27,6 +27,25 @@ class MarketplaceTest extends TestCase
         $this->get(route('landing'))->assertOk();
     }
 
+    public function test_landing_page_loads_popular_products_per_category(): void
+    {
+        $store = StoreProfile::factory()->approved()->create();
+        $category = Category::query()->where('is_active', true)->orderBy('sort_order')->orderBy('name')->first();
+        $this->assertNotNull($category);
+        Product::factory()->create([
+            'store_profile_id' => $store->id,
+            'category_id' => $category->id,
+            'name' => 'Landing Highlight Milk 1L',
+            'is_available' => true,
+            'stock' => 8,
+        ]);
+
+        $this->get(route('landing'))
+            ->assertOk()
+            ->assertSee('Landing Highlight Milk 1L', false)
+            ->assertSee($category->name, false);
+    }
+
     public function test_products_page_loads(): void
     {
         $this->get(route('products.index'))->assertOk();

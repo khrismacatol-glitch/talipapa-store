@@ -58,9 +58,19 @@ class CheckoutController extends Controller
             ];
         }
         $request->session()->put('checkout', $checkout);
-        $deliveryFee = $this->orderService->calculateDeliveryFee();
+        $storeCount = max(1, $cart->storeCount());
+        $perStoreFee = $this->orderService->perStoreDeliveryFee();
+        $deliveryFee = $this->orderService->calculateDeliveryFee($storeCount);
 
-        return view('customer.checkout', compact('step', 'cart', 'checkout', 'addresses', 'deliveryFee'));
+        return view('customer.checkout', compact(
+            'step',
+            'cart',
+            'checkout',
+            'addresses',
+            'deliveryFee',
+            'storeCount',
+            'perStoreFee',
+        ));
     }
 
     public function selectAddress(Request $request): RedirectResponse
@@ -221,7 +231,7 @@ class CheckoutController extends Controller
         $paymentNote = CheckoutPaymentSummary::orderNote($checkout);
         $orderNotes = collect([$checkout['notes'] ?? null, $paymentNote])->filter()->implode("\n");
 
-        $order = $this->orderService->createFromCart(
+        $orders = $this->orderService->createFromCart(
             $cart,
             $request->user(),
             $address,
@@ -229,14 +239,21 @@ class CheckoutController extends Controller
             $orderNotes ?: null,
         );
 
-        \App\Events\OrderStatusChanged::dispatch($order, \App\Enums\OrderStatus::Pending, \App\Enums\OrderStatus::Pending);
-
-        $this->searchFeedback->recordPurchases($request, $order);
+        foreach ($orders as $order) {
+            \App\Events\OrderStatusChanged::dispatch($order, \App\Enums\OrderStatus::Pending, \App\Enums\OrderStatus::Pending);
+            $this->searchFeedback->recordPurchases($request, $order);
+        }
 
         $request->session()->forget('checkout');
 
+        if ($orders->count() === 1) {
+            return redirect()
+                ->route('customer.orders.show', $orders->first())
+                ->with('success', 'Order placed successfully!');
+        }
+
         return redirect()
-            ->route('customer.orders.show', $order)
-            ->with('success', 'Order placed successfully!');
+            ->route('customer.orders.index')
+            ->with('success', $orders->count().' orders placed (₱'.number_format($this->orderService->perStoreDeliveryFee(), 2).' delivery per store).');
     }
 }

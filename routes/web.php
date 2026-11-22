@@ -197,9 +197,11 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::post('/ranking-lab/upload-family', [AdminEvalLabelsController::class, 'uploadFamily'])->name('ranking-lab.upload-family');
         Route::get('/train-labels', [AdminTrainLabelsController::class, 'index'])->name('train-labels.index');
         Route::post('/train-labels/download', [AdminTrainLabelsController::class, 'download'])->name('train-labels.download');
+        Route::get('/train-labels/download-existing', [AdminTrainLabelsController::class, 'downloadExisting'])->name('train-labels.download-existing');
         Route::post('/train-labels/upload', [AdminTrainLabelsController::class, 'upload'])->name('train-labels.upload');
         Route::post('/train-labels/apply', [AdminTrainLabelsController::class, 'apply'])->name('train-labels.apply');
         Route::post('/train-labels/train', [AdminTrainLabelsController::class, 'trainCandidate'])->name('train-labels.train');
+        Route::post('/train-labels/promote', [AdminTrainLabelsController::class, 'promoteCandidate'])->name('train-labels.promote');
         Route::get('/eval-labels', [AdminEvalLabelsController::class, 'index'])->name('eval-labels.index');
         Route::get('/settings', [AdminSettingController::class, 'index'])->name('settings');
         Route::put('/settings', [AdminSettingController::class, 'update'])->name('settings.update');

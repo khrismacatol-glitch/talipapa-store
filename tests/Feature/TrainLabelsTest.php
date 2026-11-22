@@ -29,6 +29,7 @@ class TrainLabelsTest extends TestCase
             'ranking-lab.human_dir' => $this->dir.DIRECTORY_SEPARATOR.'human',
             'ranking-lab.qrels_path' => $this->dir.DIRECTORY_SEPARATOR.'qrels.csv',
             'ranking-lab.queries_path' => $this->dir.DIRECTORY_SEPARATOR.'queries.csv',
+            'ranking-lab.models_dir' => $this->dir.DIRECTORY_SEPARATOR.'models',
         ]);
         file_put_contents($this->dir.DIRECTORY_SEPARATOR.'queries.csv', "query,intent,split,lang\nexisting query,cow,train,ceb\n");
     }
@@ -56,6 +57,7 @@ class TrainLabelsTest extends TestCase
         $response = $this->actingAs($admin)
             ->post(route('admin.train-labels.download'), [
                 'q' => "1. gatas nga pangluto\n",
+                'query_source' => 'pasted',
                 'sku_scope' => 'all',
             ]);
 
@@ -102,6 +104,7 @@ class TrainLabelsTest extends TestCase
         $csv = $this->actingAs($admin)
             ->post(route('admin.train-labels.download'), [
                 'q' => 'gatas nga pangluto',
+                'query_source' => 'pasted',
                 'sku_scope' => 'contains',
                 'contains' => 'milk',
             ])
@@ -111,6 +114,35 @@ class TrainLabelsTest extends TestCase
         $this->assertStringContainsString('Fresh Cow Milk 1L', $csv);
         $this->assertStringContainsString('Alaska Evaporada', $csv);
         $this->assertStringNotContainsString('Jasmine Rice 5kg', $csv);
+    }
+
+    public function test_download_uses_pasted_queries_even_if_all_train_is_selected(): void
+    {
+        $admin = User::factory()->create(['role' => UserRole::Admin]);
+        $store = StoreProfile::factory()->approved()->create();
+        $category = Category::factory()->create(['name' => 'Dairy']);
+        Product::factory()->create([
+            'store_profile_id' => $store->id,
+            'category_id' => $category->id,
+            'name' => 'Fresh Cow Milk 1L',
+            'description' => 'Pasteurized milk',
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+
+        $csv = $this->actingAs($admin)
+            ->post(route('admin.train-labels.download'), [
+                'q' => "gatas gikan sa baka\ngatas sa baka\n",
+                'query_source' => 'all_train',
+                'sku_scope' => 'contains',
+                'contains' => 'milk',
+            ])
+            ->assertOk()
+            ->streamedContent();
+
+        $this->assertStringContainsString('gatas gikan sa baka', $csv);
+        $this->assertStringContainsString('gatas sa baka', $csv);
+        $this->assertStringNotContainsString('existing query', $csv);
     }
 
     public function test_download_contains_comma_list_matches_any_word(): void
@@ -146,6 +178,7 @@ class TrainLabelsTest extends TestCase
         $csv = $this->actingAs($admin)
             ->post(route('admin.train-labels.download'), [
                 'q' => 'sud-an',
+                'query_source' => 'pasted',
                 'sku_scope' => 'contains',
                 'contains' => 'canned, noodles',
             ])
@@ -181,6 +214,7 @@ class TrainLabelsTest extends TestCase
         $csv = $this->actingAs($admin)
             ->post(route('admin.train-labels.download'), [
                 'q' => 'gatas',
+                'query_source' => 'pasted',
                 'sku_scope' => 'category',
                 'category_id' => $dairy->id,
             ])
@@ -219,8 +253,68 @@ class TrainLabelsTest extends TestCase
         $this->assertFileExists($human->qrelsPath());
         $this->assertStringContainsString('alaska-evaporada', file_get_contents($human->qrelsPath()));
         $this->assertStringContainsString('gatas nga pangluto', file_get_contents($human->queriesPath()));
+        $this->assertStringContainsString('existing query', file_get_contents($human->queriesPath()));
         $this->assertStringNotContainsString(storage_path('app'.DIRECTORY_SEPARATOR.'private'.DIRECTORY_SEPARATOR.'eval'), $human->humanQrelsPath());
         $this->assertStringNotContainsString(storage_path('app'.DIRECTORY_SEPARATOR.'private'.DIRECTORY_SEPARATOR.'eval'), $human->qrelsPath());
+    }
+
+    public function test_apply_merges_grades_and_keeps_other_queries(): void
+    {
+        $admin = User::factory()->create(['role' => UserRole::Admin]);
+        file_put_contents(
+            $this->dir.DIRECTORY_SEPARATOR.'qrels.csv',
+            "query,product_key,grade\nexisting query,old-sku,2\n",
+        );
+        $csv = "query,product_id,product_key,name,description,category,grade,intent,split\n".
+            "gatas sa baka,1,alaminos-goat,Goat milk,goat,Dairy,0,cow,train\n".
+            "gatas sa baka,2,fresh-milk-1l,Fresh Milk,fresh,Dairy,2,cow,train\n";
+        $file = UploadedFile::fake()->createWithContent('grades.csv', $csv);
+
+        $this->actingAs($admin)
+            ->post(route('admin.train-labels.upload'), ['grades' => $file])
+            ->assertRedirect();
+        $this->actingAs($admin)
+            ->post(route('admin.train-labels.apply'))
+            ->assertRedirect()
+            ->assertSessionHas('status');
+
+        $qrels = str_replace('"', '', (string) file_get_contents(app(HumanTrainLabelService::class)->qrelsPath()));
+        $this->assertStringContainsString('existing query,old-sku,2', $qrels);
+        $this->assertStringContainsString('alaminos-goat,0', $qrels);
+        $this->assertStringContainsString('fresh-milk-1l,2', $qrels);
+    }
+
+    public function test_download_existing_qrels_includes_every_graded_query(): void
+    {
+        $admin = User::factory()->create(['role' => UserRole::Admin]);
+        $store = StoreProfile::factory()->approved()->create();
+        $category = Category::factory()->create(['name' => 'Dairy']);
+        $milk = Product::factory()->create([
+            'store_profile_id' => $store->id,
+            'category_id' => $category->id,
+            'name' => 'Horizon Organic Milk 1L',
+            'description' => 'Organic cow milk',
+            'is_available' => true,
+            'stock' => 10,
+        ]);
+        file_put_contents(
+            $this->dir.DIRECTORY_SEPARATOR.'qrels.csv',
+            "query,product_key,grade\ngatas sa baka,fresh-milk-1l,2\ngatas nga pangluto,alaska-evaporada,2\n",
+        );
+
+        $csv = $this->actingAs($admin)
+            ->get(route('admin.train-labels.download-existing'))
+            ->assertOk()
+            ->assertDownload('train-qrels-all-queries.csv')
+            ->streamedContent();
+
+        $this->assertStringContainsString('gatas sa baka', $csv);
+        $this->assertStringContainsString('gatas nga pangluto', $csv);
+        $this->assertStringContainsString('fresh-milk-1l', $csv);
+        $this->assertStringContainsString(',2,', $csv);
+        $this->assertStringContainsString('Horizon Organic Milk 1L', $csv);
+        $this->assertStringContainsString((string) $milk->id, $csv);
+        $this->assertEquals(2, substr_count($csv, 'Horizon Organic Milk 1L'));
     }
 
     public function test_page_explains_grade_intent_and_excel_editing(): void
@@ -231,10 +325,34 @@ class TrainLabelsTest extends TestCase
             ->get(route('admin.train-labels.index'))
             ->assertOk()
             ->assertSee('How to fill the CSV')
+            ->assertSee('correct every query')
+            ->assertSee('Merge upload into')
+            ->assertSee('Train candidate')
+            ->assertSee('Promote candidate to live')
+            ->assertSee('5. Promote candidate to live')
             ->assertSee('Excel')
             ->assertSee('Notepad++')
             ->assertSee('this SKU matches the query')
             ->assertSee('cow');
+    }
+
+    public function test_admin_can_promote_latest_candidate_without_copying_by_hand(): void
+    {
+        $admin = User::factory()->create(['role' => UserRole::Admin]);
+        $models = $this->dir.DIRECTORY_SEPARATOR.'models';
+        $candidate = $models.DIRECTORY_SEPARATOR.'candidates'.DIRECTORY_SEPARATOR.'20261121T160000Z';
+        mkdir($candidate, 0777, true);
+        file_put_contents($models.DIRECTORY_SEPARATOR.'ranker.txt', 'old-ranker');
+        file_put_contents($candidate.DIRECTORY_SEPARATOR.'ranker.txt', 'new-ranker');
+        file_put_contents($candidate.DIRECTORY_SEPARATOR.'meta.json', '{"version":"20261121T160000Z"}');
+
+        $this->actingAs($admin)
+            ->post(route('admin.train-labels.promote'))
+            ->assertRedirect()
+            ->assertSessionHas('status');
+
+        $this->assertSame('new-ranker', file_get_contents($models.DIRECTORY_SEPARATOR.'ranker.txt'));
+        $this->assertSame('{"version":"20261121T160000Z"}', file_get_contents($models.DIRECTORY_SEPARATOR.'meta.json'));
     }
 
     public function test_customer_cannot_open_train_labels(): void

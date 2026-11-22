@@ -24,4 +24,13 @@ class Cart extends Model
     {
         return $this->items->sum(fn (CartItem $item) => $item->unit_price * $item->quantity);
     }
+
+    public function storeCount(): int
+    {
+        return $this->items
+            ->pluck('product.store_profile_id')
+            ->filter()
+            ->unique()
+            ->count();
+    }
 }

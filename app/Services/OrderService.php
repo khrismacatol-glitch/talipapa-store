@@ -11,6 +11,7 @@ use App\Models\PlatformSetting;
 use App\Models\Product;
 use App\Models\StoreProfile;
 use App\Models\User;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\ValidationException;
 
@@ -50,13 +51,18 @@ class OrderService
         private readonly CartService $cartService,
     ) {}
 
+    /**
+     * One order per store in the cart. Delivery fee is charged once per store.
+     *
+     * @return Collection<int, Order>
+     */
     public function createFromCart(
         Cart $cart,
         User $customer,
         Address $address,
         PaymentMethod $paymentMethod = PaymentMethod::Cod,
         ?string $notes = null,
-    ): Order {
+    ): Collection {
         $cart->load('items.product');
 
         if ($cart->items->isEmpty()) {
@@ -65,9 +71,8 @@ class OrderService
             ]);
         }
 
-        $storeProfileId = $this->resolveStoreProfileId($cart);
-        $subtotal = $cart->subtotal();
-        $deliveryFee = $this->calculateDeliveryFee();
+        $groups = $cart->items->groupBy(fn ($item) => (int) $item->product->store_profile_id);
+        $deliveryFee = $this->perStoreDeliveryFee();
 
         return DB::transaction(function () use (
             $cart,
@@ -75,44 +80,56 @@ class OrderService
             $address,
             $paymentMethod,
             $notes,
-            $storeProfileId,
-            $subtotal,
+            $groups,
             $deliveryFee,
-        ): Order {
-            $order = Order::query()->create([
-                'order_number' => $this->generateOrderNumber(),
-                'customer_id' => $customer->id,
-                'store_profile_id' => $storeProfileId,
-                'address_id' => $address->id,
-                'status' => OrderStatus::Pending,
-                'payment_method' => $paymentMethod,
-                'subtotal' => $subtotal,
-                'delivery_fee' => $deliveryFee,
-                'total' => $subtotal + $deliveryFee,
-                'notes' => $notes,
-            ]);
+        ): Collection {
+            $orders = collect();
 
-            foreach ($cart->items as $item) {
-                $product = Product::query()->lockForUpdate()->findOrFail($item->product_id);
-
-                if (! $product->is_available || $product->stock < $item->quantity) {
+            foreach ($groups as $storeProfileId => $items) {
+                if ($storeProfileId <= 0) {
                     throw ValidationException::withMessages([
-                        'cart' => ["Insufficient stock for {$product->name}."],
+                        'cart' => ['Each cart item must belong to a store.'],
                     ]);
                 }
 
-                $order->items()->create([
-                    'product_id' => $product->id,
-                    'quantity' => $item->quantity,
-                    'unit_price' => $item->unit_price,
+                $subtotal = $items->sum(fn ($item) => $item->unit_price * $item->quantity);
+                $order = Order::query()->create([
+                    'order_number' => $this->generateOrderNumber(),
+                    'customer_id' => $customer->id,
+                    'store_profile_id' => $storeProfileId,
+                    'address_id' => $address->id,
+                    'status' => OrderStatus::Pending,
+                    'payment_method' => $paymentMethod,
+                    'subtotal' => $subtotal,
+                    'delivery_fee' => $deliveryFee,
+                    'total' => $subtotal + $deliveryFee,
+                    'notes' => $notes,
                 ]);
 
-                $product->decrement('stock', $item->quantity);
+                foreach ($items as $item) {
+                    $product = Product::query()->lockForUpdate()->findOrFail($item->product_id);
+
+                    if (! $product->is_available || $product->stock < $item->quantity) {
+                        throw ValidationException::withMessages([
+                            'cart' => ["Insufficient stock for {$product->name}."],
+                        ]);
+                    }
+
+                    $order->items()->create([
+                        'product_id' => $product->id,
+                        'quantity' => $item->quantity,
+                        'unit_price' => $item->unit_price,
+                    ]);
+
+                    $product->decrement('stock', $item->quantity);
+                }
+
+                $orders->push($order->fresh(['items.product', 'store', 'address', 'customer']));
             }
 
             $this->cartService->clearCart($cart);
 
-            return $order->fresh(['items.product', 'store', 'address', 'customer']);
+            return $orders;
         });
     }
 
@@ -270,9 +287,14 @@ class OrderService
         });
     }
 
-    public function calculateDeliveryFee(): float
+    public function perStoreDeliveryFee(): float
     {
         return (float) PlatformSetting::get('delivery_fee', 50);
+    }
+
+    public function calculateDeliveryFee(int $storeCount = 1): float
+    {
+        return $this->perStoreDeliveryFee() * max(1, $storeCount);
     }
 
     private function calculatePosDiscount(float $subtotal, string $discountType, float $discountValue): float
@@ -288,22 +310,6 @@ class OrderService
         };
 
         return round(min($discountAmount, $subtotal), 2);
-    }
-
-    private function resolveStoreProfileId(Cart $cart): int
-    {
-        $storeIds = $cart->items
-            ->pluck('product.store_profile_id')
-            ->unique()
-            ->values();
-
-        if ($storeIds->count() !== 1) {
-            throw ValidationException::withMessages([
-                'cart' => ['All cart items must belong to the same store.'],
-            ]);
-        }
-
-        return (int) $storeIds->first();
     }
 
     private function generateOrderNumber(): string

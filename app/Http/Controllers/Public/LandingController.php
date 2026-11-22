@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Public;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Product;
 use App\Models\StoreProfile;
 use Illuminate\View\View;
 
@@ -14,7 +15,7 @@ class LandingController extends Controller
         $featuredStores = StoreProfile::query()
             ->approved()
             ->with('addresses')
-            ->withCount(['products' => fn ($query) => $query->where('is_available', true)->where('stock', '>', 0)])
+            ->withCount(['products' => fn ($query) => $query->available()])
             ->latest('approved_at')
             ->limit(3)
             ->get();
@@ -26,20 +27,23 @@ class LandingController extends Controller
             ->orderBy('name')
             ->get();
 
-        $popularCategoryHighlights = Category::query()
-            ->where('is_active', true)
-            ->whereHas('products', fn ($query) => $query->available())
-            ->with([
-                'products' => fn ($query) => $query
+        $popularCategoryHighlights = $categories
+            ->filter(fn (Category $category) => $category->products_count > 0)
+            ->take(3)
+            ->values();
+
+        foreach ($popularCategoryHighlights as $category) {
+            $category->setRelation(
+                'products',
+                Product::query()
                     ->available()
                     ->with('store')
+                    ->where('category_id', $category->id)
                     ->latest()
-                    ->limit(10),
-            ])
-            ->orderBy('sort_order')
-            ->orderBy('name')
-            ->limit(3)
-            ->get();
+                    ->limit(10)
+                    ->get(),
+            );
+        }
 
         return view('public.landing', compact('featuredStores', 'categories', 'popularCategoryHighlights'));
     }
